@@ -1,0 +1,68 @@
+# =========================================
+# Node / JS / TS
+# =========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# Vite / SvelteKit build output
+.build/
+.svelte-kit/
+dist/
+build/
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# TypeScript
+*.tsbuildinfo
+
+# =========================================
+# Tauri-specific
+# =========================================
+# Tauri build artifacts
+/src-tauri/target/
+# Tauri bundler output
+/src-tauri/bundled/
+# Tauri platform-specific files
+/src-tauri/**/*.dSYM
+/src-tauri/Cargo.lock
+
+# Rust build artifacts
+target/
+**/*.rs.bk
+
+# =========================================
+# macOS / Linux / Windows junk
+# =========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================================
+# IDE / Editor settings
+# =========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.sublime-project
+*.sublime-workspace
+
+# =========================================
+# Logs
+# =========================================
+*.log
+logs/
