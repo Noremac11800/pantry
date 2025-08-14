@@ -1,135 +1,42 @@
 <script lang="ts">
-  import { invoke } from "@tauri-apps/api/core";
-
-  let name = $state("");
-  let greetMsg = $state("");
-
-  async function greet(event: Event) {
-    event.preventDefault();
-    // Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
-    greetMsg = await invoke("greet", { name });
-  }
 </script>
 
-<main class="container">
-  <h1 class="text-3xl text-red-700 underline">Welcome to Tauri + Svelte</h1>
+{#snippet colourCircle(color: string)}
+  <div
+    class="w-8 h-8 rounded-full border border-gray-200"
+    style="background-color: var({color})"
+  ></div>
+{/snippet}
 
-  <div class="row">
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo vite" alt="Vite Logo" />
-    </a>
-    <a href="https://tauri.app" target="_blank">
-      <img src="/tauri.svg" class="logo tauri" alt="Tauri Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank">
-      <img src="/svelte.svg" class="logo svelte-kit" alt="SvelteKit Logo" />
-    </a>
+<main class="flex flex-col gap-4 p-8">
+  <h1 class="text-2xl font-bold">TauriFlow</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus
+    et magnis dis parturient montes, nascetur ridiculus mus.
+  </p>
+
+  <div class="flex flex-wrap gap-2">
+    {@render colourCircle("--color-primary-50")}
+    {@render colourCircle("--color-primary-100")}
+    {@render colourCircle("--color-primary-200")}
+    {@render colourCircle("--color-primary-300")}
+    {@render colourCircle("--color-primary-400")}
+    {@render colourCircle("--color-primary-500")}
+    {@render colourCircle("--color-primary-600")}
+    {@render colourCircle("--color-primary-700")}
+    {@render colourCircle("--color-primary-800")}
+    {@render colourCircle("--color-primary-900")}
+    {@render colourCircle("--color-secondary-50")}
+    {@render colourCircle("--color-secondary-100")}
+    {@render colourCircle("--color-secondary-200")}
+    {@render colourCircle("--color-secondary-300")}
+    {@render colourCircle("--color-secondary-400")}
+    {@render colourCircle("--color-secondary-500")}
+    {@render colourCircle("--color-secondary-600")}
+    {@render colourCircle("--color-secondary-700")}
+    {@render colourCircle("--color-secondary-800")}
+    {@render colourCircle("--color-secondary-900")}
   </div>
-  <p>Click on the Tauri, Vite, and SvelteKit logos to learn more.</p>
-
-  <form class="row" onsubmit={greet}>
-    <input id="greet-input" placeholder="Enter a name..." bind:value={name} />
-    <button type="submit">Greet</button>
-  </form>
-  <p>{greetMsg}</p>
 </main>
-
-<style>
-  .logo.vite:hover {
-    filter: drop-shadow(0 0 2em #747bff);
-  }
-
-  .logo.svelte-kit:hover {
-    filter: drop-shadow(0 0 2em #ff3e00);
-  }
-
-  :root {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-
-    color: #0f0f0f;
-    background-color: #f6f6f6;
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-  }
-
-  .container {
-    margin: 0;
-    padding-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: 0.75s;
-  }
-
-  .logo.tauri:hover {
-    filter: drop-shadow(0 0 2em #24c8db);
-  }
-
-  .row {
-    display: flex;
-    justify-content: center;
-  }
-
-  a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: inherit;
-  }
-
-  a:hover {
-    color: #535bf2;
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  input,
-  button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    color: #0f0f0f;
-    background-color: #ffffff;
-    transition: border-color 0.25s;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  }
-
-  button {
-    cursor: pointer;
-  }
-
-  button:hover {
-    border-color: #396cd8;
-  }
-  button:active {
-    border-color: #396cd8;
-    background-color: #e8e8e8;
-  }
-
-  input,
-  button {
-    outline: none;
-  }
-
-  #greet-input {
-    margin-right: 5px;
-  }
-</style>

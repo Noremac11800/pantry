@@ -37,3 +37,14 @@
     display: none;
   }
 }
+
+/* ============================================================================== */
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("/fonts/NunitoSans.ttf");
+}
+
+* {
+  font-family: "Nunito Sans";
+}
