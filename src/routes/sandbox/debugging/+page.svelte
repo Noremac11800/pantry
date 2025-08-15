@@ -55,9 +55,6 @@
       <Button class="brand-solid-button" onclick={openLogDir}>
         <Icons.FolderOutline />
       </Button>
-      <Tooltip type="light" transition={scale}>
-        <span>Open log directory</span>
-      </Tooltip>
     {:else}
       <div></div>
     {/if}
