@@ -3,8 +3,6 @@
   import { Button, Tooltip } from "flowbite-svelte";
   import { scale } from "svelte/transition";
   import * as Icons from "flowbite-svelte-icons";
-  import { onMount } from "svelte";
-  import { warn, debug, trace, info, error } from "@tauri-apps/plugin-log";
 
   let isDark = $state(false);
 
@@ -12,15 +10,6 @@
     isDark = !isDark;
     document.documentElement.classList.toggle("dark");
   }
-
-  onMount(() => {
-    trace("Trace");
-    debug("Debug");
-    info("Info", { file: "/routes/+page.svelte", line: 27 });
-    warn("Warn", { file: "/routes/+page.svelte", line: 28 });
-    error("Error", { file: "/routes/+page.svelte", line: 29 });
-    error("Error");
-  });
 </script>
 
 {#snippet colourCircle(color: string)}

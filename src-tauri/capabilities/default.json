@@ -5,12 +5,13 @@
   "windows": ["main"],
   "permissions": [
     "core:default",
-    "opener:default",
     "sql:default",
     "sql:allow-execute",
     "fs:default",
     "fs:allow-applog-read-recursive",
+    "fs:allow-applog-write-recursive",
     "http:default",
-    "log:default"
+    "log:default",
+    "opener:default"
   ]
 }

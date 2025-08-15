@@ -1,20 +1,42 @@
 <script lang="ts">
   import { appLogDir } from "@tauri-apps/api/path";
-  import { info } from "@tauri-apps/plugin-log";
+  import { info, warn, error } from "@tauri-apps/plugin-log";
   import { onMount } from "svelte";
   import { Breadcrumb, BreadcrumbItem } from "flowbite-svelte";
-  import { readTextFile } from "@tauri-apps/plugin-fs";
+  import { readTextFile, writeTextFile } from "@tauri-apps/plugin-fs";
   import { path } from "@tauri-apps/api";
+  import { revealItemInDir } from "@tauri-apps/plugin-opener";
+  import { Button, Tooltip } from "flowbite-svelte";
+  import * as Icons from "flowbite-svelte-icons";
+  import { scale } from "svelte/transition";
+  import { AppInfo } from "../../../lib/app-info";
 
   const logFileName = "app-logs.log";
   let logDir = $state<string>("");
   let logInfo = $state<string>("");
+  let logPath = $state<string>("");
+
+  function openLogDir() {
+    revealItemInDir(logDir);
+  }
+
+  function clearLogs() {
+    writeTextFile(logPath, "");
+    logInfo = "";
+  }
 
   onMount(async () => {
-    logDir = await appLogDir();
-    info(logDir);
+    info("Info", { file: "/routes/sandbox/debugging/+page.svelte", line: 28 });
+    warn("Warn", { file: "/routes/sandbox/debugging/+page.svelte", line: 29 });
+    error("Error", {
+      file: "/routes/sandbox/debugging/+page.svelte",
+      line: 30,
+    });
 
-    logInfo = await readTextFile(await path.join(logDir, logFileName));
+    logDir = await appLogDir();
+
+    logPath = await path.join(logDir, logFileName);
+    logInfo = await readTextFile(logPath);
   });
 </script>
 
@@ -27,10 +49,27 @@
   <h1>Debugging</h1>
 
   <h2>Logs</h2>
-  <p>{logDir}</p>
+  {#if AppInfo.isDesktop()}
+    <div class="flex gap-2 items-center justify-between">
+      <Button class="brand-solid-button" onclick={openLogDir}>
+        <Icons.FolderOutline />
+      </Button>
+      <Tooltip type="light" transition={scale}>
+        <span>Open log directory</span>
+      </Tooltip>
+
+      <Button class="status-danger-button" onclick={clearLogs}>
+        <Icons.TrashBinOutline />
+        Clear logs
+      </Button>
+    </div>
+  {/if}
   <div
     class="bg-[var(--bg1)] border border-[var(--border1)] p-4 rounded whitespace-pre-wrap max-h-[60vh] overflow-y-scroll"
   >
     {logInfo}
   </div>
+
+  <h2>Platform</h2>
+  <p>{AppInfo.getPlatform()}</p>
 </main>
