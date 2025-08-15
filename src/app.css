@@ -70,6 +70,36 @@
   --status-info3: var(--color-blue-600);
 }
 
+.dark {
+  --brand1: var(--color-blue-500);
+  --brand2: var(--color-blue-400);
+  --brand3: var(--color-blue-300);
+  --fg: var(--color-gray-900);
+  --bg1: var(--color-gray-900);
+  --bg2: var(--color-gray-800);
+  --bg3: var(--color-gray-700);
+  --border1: var(--color-gray-300);
+  --border2: var(--color-gray-400);
+  --border3: var(--color-gray-500);
+  --text1: var(--color-white);
+  --text2: var(--color-gray-200);
+  --text3: var(--color-gray-400);
+  --text-inverse: var(--color-black);
+  --text-invariant: var(--color-white);
+  --status-success1: var(--color-green-400);
+  --status-success2: var(--color-green-300);
+  --status-success3: var(--color-green-200);
+  --status-warning1: var(--color-yellow-400);
+  --status-warning2: var(--color-yellow-300);
+  --status-warning3: var(--color-yellow-200);
+  --status-danger1: var(--color-red-400);
+  --status-danger2: var(--color-red-300);
+  --status-danger3: var(--color-red-200);
+  --status-info1: var(--color-blue-300);
+  --status-info2: var(--color-blue-200);
+  --status-info3: var(--color-blue-100);
+}
+
 @font-face {
   font-family: "Nunito Sans";
   src: url("/fonts/NunitoSans.ttf");
@@ -77,13 +107,27 @@
 
 html,
 body {
-  /* @apply bg-gray-800; */
+  @apply bg-[var(--fg)];
 }
 
 * {
   @apply focus-visible:ring-2! focus-visible:ring-[var(--text3)]! outline-none!;
   font-family: "Nunito Sans";
-  /* color: white; */
+}
+/* Workaround for Android focus behaviour */
+*:focus:not(:focus-visible) {
+  @apply outline-none! ring-0!;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
+  color: var(--text1);
 }
 
 main {
@@ -94,35 +138,43 @@ h1 {
   @apply text-2xl font-bold;
 }
 
+/* Buttons */
+/* ============================================================== */
 .brand-solid-button {
-  @apply bg-[var(--brand1)] hover:bg-[var(--brand2)] active:bg-[var(--brand3)] text-[var(--text-invariant)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer;
+  @apply bg-[var(--brand1)] hover:bg-[var(--brand2)] active:bg-[var(--brand3)] text-[var(--text-invariant)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center;
 }
 
 .brand-outline-button {
-  @apply border border-[var(--brand1)] hover:border-[var(--brand2)] active:border-[var(--brand3)] bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--brand1)] hover:text-[var(--brand2)] active:text-[var(--brand3)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer;
+  @apply border border-[var(--brand1)] hover:border-[var(--brand2)] active:border-[var(--brand3)] bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--brand1)] hover:text-[var(--brand2)] active:text-[var(--brand3)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center;
 }
 
 .brand-transparent-button {
-  @apply bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--brand1)] hover:text-[var(--brand2)] active:text-[var(--brand3)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer;
+  @apply bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--brand1)] hover:text-[var(--brand2)] active:text-[var(--brand3)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center;
 }
 
 .neutral-solid-button {
-  @apply bg-[var(--bg1)] hover:bg-[var(--bg2)] active:bg-[var(--bg3)] text-[var(--text1)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer;
+  @apply bg-[var(--bg1)] hover:bg-[var(--bg2)] active:bg-[var(--bg3)] text-[var(--text1)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center;
 }
 
 .neutral-outline-button {
-  @apply border border-[var(--border1)] hover:border-[var(--border2)] active:border-[var(--border3)] bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--text1)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer;
+  @apply border border-[var(--border1)] hover:border-[var(--border2)] active:border-[var(--border3)] bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--text1)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center;
 }
 
 .neutral-transparent-button {
-  @apply bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--text1)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer;
+  @apply bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--text1)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center;
 }
+
+.status-danger-button {
+  @apply bg-transparent text-[var(--status-danger1)] hover:text-[var(--status-danger2)] active:text-[var(--status-danger3)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center;
+}
+/* ============================================================== */
 
 a {
   @apply text-[var(--status-info1)] hover:text-[var(--status-info2)] active:text-[var(--status-info3)];
 }
 
-/* WebKit (Chrome, Edge, Safari) */
+/* Scrollbar */
+/* ============================================================== */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -141,8 +193,8 @@ a {
   background-color: rgba(100, 100, 100, 0.6);
 }
 
-/* Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(100, 100, 100, 0.4) transparent;
 }
+/* ============================================================== */

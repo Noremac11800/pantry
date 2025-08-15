@@ -4,6 +4,7 @@
     BreadcrumbItem,
     Button,
     Input,
+    Label,
     Table,
     TableBody,
     TableBodyCell,
@@ -84,12 +85,18 @@
   </Button>
 
   <form class="flex flex-col gap-2" onsubmit={(e) => submit()}>
-    Name: <Input type="text" bind:value={name} />
-    Email: <Input type="email" bind:value={email} />
-    <Button class="brand-solid-button" type="submit">Insert new user</Button>
+    <Label for="name">Name</Label>
+    <Input type="text" bind:value={name} />
+    <Label for="email">Email</Label>
+    <Input type="email" bind:value={email} />
+    <Button class="brand-solid-button" type="submit">
+      <Icons.PlusOutline />
+      Insert new user
+    </Button>
   </form>
 
   <Button class="brand-outline-button" onclick={() => submit(true)}>
+    <Icons.ShuffleOutline />
     Insert random user
   </Button>
 
@@ -109,7 +116,7 @@
             <TableBodyRow>
               <TableBodyCell>
                 <Button
-                  class="brand-transparent-button"
+                  class="status-danger-button"
                   onclick={() => deleteUser(user)}
                 >
                   <Icons.TrashBinOutline />

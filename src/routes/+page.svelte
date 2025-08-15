@@ -2,6 +2,14 @@
   import { goto } from "$app/navigation";
   import { Button, Tooltip } from "flowbite-svelte";
   import { scale } from "svelte/transition";
+  import * as Icons from "flowbite-svelte-icons";
+
+  let isDark = $state(false);
+
+  function toggleTheme() {
+    isDark = !isDark;
+    document.documentElement.classList.toggle("dark");
+  }
 </script>
 
 {#snippet colourCircle(color: string)}
@@ -15,6 +23,15 @@
 {/snippet}
 
 <main>
+  <Button class="brand-outline-button self-start" onclick={toggleTheme}>
+    {#if isDark}
+      <Icons.SunSolid />
+    {/if}
+    {#if !isDark}
+      <Icons.MoonSolid />
+    {/if}
+  </Button>
+
   <Button class="brand-solid-button" onclick={() => goto("/sandbox")}>
     Go to Sandbox
   </Button>
