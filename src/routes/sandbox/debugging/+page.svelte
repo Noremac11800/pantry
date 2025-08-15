@@ -49,25 +49,28 @@
   <h1>Debugging</h1>
 
   <h2>Logs</h2>
-  {#if AppInfo.isDesktop()}
-    <div class="flex gap-2 items-center justify-between">
+
+  <div class="flex gap-2 items-center justify-between">
+    {#if AppInfo.isDesktop()}
       <Button class="brand-solid-button" onclick={openLogDir}>
         <Icons.FolderOutline />
       </Button>
       <Tooltip type="light" transition={scale}>
         <span>Open log directory</span>
       </Tooltip>
+    {:else}
+      <div></div>
+    {/if}
 
-      <Button class="status-danger-button" onclick={clearLogs}>
-        <Icons.TrashBinOutline />
-        Clear logs
-      </Button>
-    </div>
-  {/if}
+    <Button class="status-danger-button" onclick={clearLogs}>
+      <Icons.TrashBinOutline />
+      Clear logs
+    </Button>
+  </div>
   <div
     class="bg-[var(--bg1)] border border-[var(--border1)] p-4 rounded whitespace-pre-wrap max-h-[60vh] overflow-y-scroll"
   >
-    {logInfo}
+    <span>{logInfo}</span>
   </div>
 
   <h2>Platform</h2>
