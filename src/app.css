@@ -45,6 +45,49 @@
   src: url("/fonts/NunitoSans.ttf");
 }
 
+html,
+body {
+  /* @apply bg-gray-800; */
+}
+
 * {
   font-family: "Nunito Sans";
+  /* color: white; */
+}
+
+main {
+  @apply flex flex-col gap-4 p-8;
+}
+
+h1 {
+  @apply text-2xl font-bold;
+}
+
+button {
+  @apply bg-[var(--color-primary-500)] hover:bg-[var(--color-primary-600)] text-white font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer;
+}
+
+/* WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 100, 0.4);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(100, 100, 100, 0.6);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(100, 100, 100, 0.4) transparent;
 }

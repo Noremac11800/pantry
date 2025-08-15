@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { Breadcrumb, BreadcrumbItem, Tooltip } from "flowbite-svelte";
+  import { scale } from "svelte/transition";
 </script>
 
 {#snippet colourCircle(color: string)}
@@ -6,10 +8,19 @@
     class="w-8 h-8 rounded-full border border-gray-200"
     style="background-color: var({color})"
   ></div>
+  <Tooltip type="light" class="bg-gray-600" transition={scale}>
+    <span class="font-mono text-white!">{color}</span>
+  </Tooltip>
 {/snippet}
 
-<main class="flex flex-col gap-4 p-8">
-  <h1 class="text-2xl font-bold">TauriFlow</h1>
+<main>
+  <Breadcrumb>
+    <BreadcrumbItem href="/">Home</BreadcrumbItem>
+    <BreadcrumbItem href="/sandbox">Sandbox</BreadcrumbItem>
+    <BreadcrumbItem href="/sandbox/database">Database</BreadcrumbItem>
+  </Breadcrumb>
+
+  <h1>TauriFlow</h1>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
     bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
@@ -17,6 +28,7 @@
     et magnis dis parturient montes, nascetur ridiculus mus.
   </p>
 
+  <h1 class="mt-4">Flowbite theme colours</h1>
   <div class="flex flex-wrap gap-2">
     {@render colourCircle("--color-primary-50")}
     {@render colourCircle("--color-primary-100")}
@@ -39,4 +51,6 @@
     {@render colourCircle("--color-secondary-800")}
     {@render colourCircle("--color-secondary-900")}
   </div>
+
+  <h1 class="mt-4">Default theme colours</h1>
 </main>
