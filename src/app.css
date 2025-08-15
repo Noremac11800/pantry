@@ -40,6 +40,36 @@
 
 /* ============================================================================== */
 
+:root {
+  --brand1: var(--color-blue-500);
+  --brand2: var(--color-blue-600);
+  --brand3: var(--color-blue-700);
+  --fg: var(--color-gray-100);
+  --bg1: var(--color-gray-100);
+  --bg2: var(--color-gray-200);
+  --bg3: var(--color-gray-300);
+  --border1: var(--color-gray-700);
+  --border2: var(--color-gray-600);
+  --border3: var(--color-gray-500);
+  --text1: var(--color-black);
+  --text2: var(--color-gray-800);
+  --text3: var(--color-gray-600);
+  --text-inverse: var(--color-white);
+  --text-invariant: var(--color-white);
+  --status-success1: var(--color-green-500);
+  --status-success2: var(--color-green-600);
+  --status-success3: var(--color-green-700);
+  --status-warning1: var(--color-yellow-500);
+  --status-warning2: var(--color-yellow-600);
+  --status-warning3: var(--color-yellow-700);
+  --status-danger1: var(--color-red-500);
+  --status-danger2: var(--color-red-600);
+  --status-danger3: var(--color-red-700);
+  --status-info1: var(--color-blue-400);
+  --status-info2: var(--color-blue-500);
+  --status-info3: var(--color-blue-600);
+}
+
 @font-face {
   font-family: "Nunito Sans";
   src: url("/fonts/NunitoSans.ttf");
@@ -51,6 +81,7 @@ body {
 }
 
 * {
+  @apply focus-visible:ring-2! focus-visible:ring-[var(--text3)]! outline-none!;
   font-family: "Nunito Sans";
   /* color: white; */
 }
@@ -63,8 +94,32 @@ h1 {
   @apply text-2xl font-bold;
 }
 
-button {
-  @apply bg-[var(--color-primary-500)] hover:bg-[var(--color-primary-600)] text-white font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer;
+.brand-solid-button {
+  @apply bg-[var(--brand1)] hover:bg-[var(--brand2)] active:bg-[var(--brand3)] text-[var(--text-invariant)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer;
+}
+
+.brand-outline-button {
+  @apply border border-[var(--brand1)] hover:border-[var(--brand2)] active:border-[var(--brand3)] bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--brand1)] hover:text-[var(--brand2)] active:text-[var(--brand3)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer;
+}
+
+.brand-transparent-button {
+  @apply bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--brand1)] hover:text-[var(--brand2)] active:text-[var(--brand3)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer;
+}
+
+.neutral-solid-button {
+  @apply bg-[var(--bg1)] hover:bg-[var(--bg2)] active:bg-[var(--bg3)] text-[var(--text1)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer;
+}
+
+.neutral-outline-button {
+  @apply border border-[var(--border1)] hover:border-[var(--border2)] active:border-[var(--border3)] bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--text1)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer;
+}
+
+.neutral-transparent-button {
+  @apply bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--text1)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer;
+}
+
+a {
+  @apply text-[var(--status-info1)] hover:text-[var(--status-info2)] active:text-[var(--status-info3)];
 }
 
 /* WebKit (Chrome, Edge, Safari) */

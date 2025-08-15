@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { Breadcrumb, BreadcrumbItem, Tooltip } from "flowbite-svelte";
+  import { goto } from "$app/navigation";
+  import { Button, Tooltip } from "flowbite-svelte";
   import { scale } from "svelte/transition";
 </script>
 
@@ -14,11 +15,9 @@
 {/snippet}
 
 <main>
-  <Breadcrumb>
-    <BreadcrumbItem href="/">Home</BreadcrumbItem>
-    <BreadcrumbItem href="/sandbox">Sandbox</BreadcrumbItem>
-    <BreadcrumbItem href="/sandbox/database">Database</BreadcrumbItem>
-  </Breadcrumb>
+  <Button class="brand-solid-button" onclick={() => goto("/sandbox")}>
+    Go to Sandbox
+  </Button>
 
   <h1>TauriFlow</h1>
   <p>
@@ -53,4 +52,33 @@
   </div>
 
   <h1 class="mt-4">Default theme colours</h1>
+  <div class="flex flex-wrap gap-2">
+    {@render colourCircle("--brand1")}
+    {@render colourCircle("--brand2")}
+    {@render colourCircle("--brand3")}
+    {@render colourCircle("--fg")}
+    {@render colourCircle("--bg1")}
+    {@render colourCircle("--bg2")}
+    {@render colourCircle("--bg3")}
+    {@render colourCircle("--border1")}
+    {@render colourCircle("--border2")}
+    {@render colourCircle("--border3")}
+    {@render colourCircle("--text1")}
+    {@render colourCircle("--text2")}
+    {@render colourCircle("--text3")}
+    {@render colourCircle("--text-inverse")}
+    {@render colourCircle("--text-invariant")}
+    {@render colourCircle("--status-success1")}
+    {@render colourCircle("--status-success2")}
+    {@render colourCircle("--status-success3")}
+    {@render colourCircle("--status-warning1")}
+    {@render colourCircle("--status-warning2")}
+    {@render colourCircle("--status-warning3")}
+    {@render colourCircle("--status-danger1")}
+    {@render colourCircle("--status-danger2")}
+    {@render colourCircle("--status-danger3")}
+    {@render colourCircle("--status-info1")}
+    {@render colourCircle("--status-info2")}
+    {@render colourCircle("--status-info3")}
+  </div>
 </main>

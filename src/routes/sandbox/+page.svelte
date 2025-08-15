@@ -5,9 +5,10 @@
 <main>
   <Breadcrumb>
     <BreadcrumbItem href="/">Home</BreadcrumbItem>
-    <BreadcrumbItem href="/sandbox">Sandbox</BreadcrumbItem>
-    <BreadcrumbItem href="/sandbox/database">Database</BreadcrumbItem>
   </Breadcrumb>
 
   <h1>Sandbox</h1>
+
+  <a href="/sandbox/components">Components</a>
+  <a href="/sandbox/database">Database</a>
 </main>

@@ -60,7 +60,7 @@
     db = await Database.load("sqlite:test.db"); // stored in AppConfig dir
     await db.execute(`
         CREATE TABLE IF NOT EXISTS users (
-          id INTEGER PRIMARY KEY,
+          id INTEGER PRIMARY KEY AUTOINCREMENT,
           name TEXT,
           email TEXT,
           timeCreated TEXT,
@@ -75,22 +75,26 @@
   <Breadcrumb>
     <BreadcrumbItem href="/">Home</BreadcrumbItem>
     <BreadcrumbItem href="/sandbox">Sandbox</BreadcrumbItem>
-    <BreadcrumbItem href="/sandbox/database">Database</BreadcrumbItem>
   </Breadcrumb>
 
   <h1>Database</h1>
-  <Button onclick={() => select()}>Refresh</Button>
+  <Button class="brand-solid-button gap-2" onclick={() => select()}>
+    <Icons.RefreshOutline />
+    Refresh
+  </Button>
 
   <form class="flex flex-col gap-2" onsubmit={(e) => submit()}>
     Name: <Input type="text" bind:value={name} />
     Email: <Input type="email" bind:value={email} />
-    <Button type="submit">Insert new user</Button>
+    <Button class="brand-solid-button" type="submit">Insert new user</Button>
   </form>
 
-  <Button onclick={() => submit(true)}>Insert random user</Button>
+  <Button class="brand-outline-button" onclick={() => submit(true)}>
+    Insert random user
+  </Button>
 
   <div class="border border-gray-400 rounded-lg overflow-hidden">
-    <Table color="default" striped hoverable>
+    <Table color="default" striped>
       <TableHead>
         <TableHeadCell></TableHeadCell>
         <TableHeadCell>ID</TableHeadCell>
@@ -104,7 +108,10 @@
           {#each selectResult as user (user.id)}
             <TableBodyRow>
               <TableBodyCell>
-                <Button onclick={() => deleteUser(user)}>
+                <Button
+                  class="brand-transparent-button"
+                  onclick={() => deleteUser(user)}
+                >
                   <Icons.TrashBinOutline />
                 </Button>
               </TableBodyCell>
