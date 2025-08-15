@@ -2,14 +2,15 @@
   import { appLogDir } from "@tauri-apps/api/path";
   import { info, warn, error } from "@tauri-apps/plugin-log";
   import { onMount } from "svelte";
-  import { Breadcrumb, BreadcrumbItem } from "flowbite-svelte";
+  import { Breadcrumb, BreadcrumbItem, Label } from "flowbite-svelte";
   import { readTextFile, writeTextFile } from "@tauri-apps/plugin-fs";
   import { path } from "@tauri-apps/api";
   import { revealItemInDir } from "@tauri-apps/plugin-opener";
-  import { Button, Tooltip } from "flowbite-svelte";
+  import { Button } from "flowbite-svelte";
   import * as Icons from "flowbite-svelte-icons";
-  import { scale } from "svelte/transition";
   import { AppInfo } from "../../../lib/app-info";
+
+  import * as os from "@tauri-apps/plugin-os";
 
   const logFileName = "app-logs.log";
   let logDir = $state<string>("");
@@ -39,6 +40,15 @@
     logInfo = await readTextFile(logPath);
   });
 </script>
+
+{#snippet systemInfo(title: string, info: any)}
+  <div class="flex gap-2 items-center">
+    <h3>{title}:</h3>
+    {#await info then info}
+      <p>{info}</p>
+    {/await}
+  </div>
+{/snippet}
 
 <main>
   <Breadcrumb>
@@ -70,6 +80,11 @@
     <span>{logInfo}</span>
   </div>
 
-  <h2>Platform</h2>
-  <p>{AppInfo.getPlatform()}</p>
+  <h2>System Info</h2>
+
+  {@render systemInfo("Platform", AppInfo.platform)}
+  {@render systemInfo("Version", AppInfo.version)}
+  {@render systemInfo("Family", AppInfo.family)}
+  {@render systemInfo("Arch", AppInfo.arch)}
+  {@render systemInfo("Locale", AppInfo.locale)}
 </main>
