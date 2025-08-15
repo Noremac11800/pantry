@@ -44,7 +44,7 @@
   --brand1: var(--color-blue-500);
   --brand2: var(--color-blue-600);
   --brand3: var(--color-blue-700);
-  --fg: var(--color-gray-100);
+  --fg: var(--color-gray-50);
   --bg1: var(--color-gray-100);
   --bg2: var(--color-gray-200);
   --bg3: var(--color-gray-300);
@@ -136,6 +136,10 @@ main {
 
 h1 {
   @apply text-2xl font-bold;
+}
+
+h2 {
+  @apply text-xl font-bold;
 }
 
 /* Buttons */
