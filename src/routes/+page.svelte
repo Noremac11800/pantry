@@ -12,7 +12,7 @@
   }
 </script>
 
-{#snippet colourCircle(color: string)}
+{#snippet colorCircle(color: string)}
   <div
     class="w-8 h-8 rounded-full border border-gray-200"
     style="background-color: var({color})"
@@ -59,58 +59,58 @@
     et magnis dis parturient montes, nascetur ridiculus mus.
   </p>
 
-  <h1 class="mt-4">Flowbite theme colours</h1>
+  <h1 class="mt-4">Flowbite theme colors</h1>
   <div class="flex flex-wrap gap-2">
-    {@render colourCircle("--color-primary-50")}
-    {@render colourCircle("--color-primary-100")}
-    {@render colourCircle("--color-primary-200")}
-    {@render colourCircle("--color-primary-300")}
-    {@render colourCircle("--color-primary-400")}
-    {@render colourCircle("--color-primary-500")}
-    {@render colourCircle("--color-primary-600")}
-    {@render colourCircle("--color-primary-700")}
-    {@render colourCircle("--color-primary-800")}
-    {@render colourCircle("--color-primary-900")}
-    {@render colourCircle("--color-secondary-50")}
-    {@render colourCircle("--color-secondary-100")}
-    {@render colourCircle("--color-secondary-200")}
-    {@render colourCircle("--color-secondary-300")}
-    {@render colourCircle("--color-secondary-400")}
-    {@render colourCircle("--color-secondary-500")}
-    {@render colourCircle("--color-secondary-600")}
-    {@render colourCircle("--color-secondary-700")}
-    {@render colourCircle("--color-secondary-800")}
-    {@render colourCircle("--color-secondary-900")}
+    {@render colorCircle("--color-primary-50")}
+    {@render colorCircle("--color-primary-100")}
+    {@render colorCircle("--color-primary-200")}
+    {@render colorCircle("--color-primary-300")}
+    {@render colorCircle("--color-primary-400")}
+    {@render colorCircle("--color-primary-500")}
+    {@render colorCircle("--color-primary-600")}
+    {@render colorCircle("--color-primary-700")}
+    {@render colorCircle("--color-primary-800")}
+    {@render colorCircle("--color-primary-900")}
+    {@render colorCircle("--color-secondary-50")}
+    {@render colorCircle("--color-secondary-100")}
+    {@render colorCircle("--color-secondary-200")}
+    {@render colorCircle("--color-secondary-300")}
+    {@render colorCircle("--color-secondary-400")}
+    {@render colorCircle("--color-secondary-500")}
+    {@render colorCircle("--color-secondary-600")}
+    {@render colorCircle("--color-secondary-700")}
+    {@render colorCircle("--color-secondary-800")}
+    {@render colorCircle("--color-secondary-900")}
   </div>
 
-  <h1 class="mt-4">Default theme colours</h1>
+  <h1 class="mt-4">Default theme colors</h1>
   <div class="flex flex-wrap gap-2">
-    {@render colourCircle("--brand1")}
-    {@render colourCircle("--brand2")}
-    {@render colourCircle("--brand3")}
-    {@render colourCircle("--fg")}
-    {@render colourCircle("--bg1")}
-    {@render colourCircle("--bg2")}
-    {@render colourCircle("--bg3")}
-    {@render colourCircle("--border1")}
-    {@render colourCircle("--border2")}
-    {@render colourCircle("--border3")}
-    {@render colourCircle("--text1")}
-    {@render colourCircle("--text2")}
-    {@render colourCircle("--text3")}
-    {@render colourCircle("--text-inverse")}
-    {@render colourCircle("--text-invariant")}
-    {@render colourCircle("--status-success1")}
-    {@render colourCircle("--status-success2")}
-    {@render colourCircle("--status-success3")}
-    {@render colourCircle("--status-warning1")}
-    {@render colourCircle("--status-warning2")}
-    {@render colourCircle("--status-warning3")}
-    {@render colourCircle("--status-danger1")}
-    {@render colourCircle("--status-danger2")}
-    {@render colourCircle("--status-danger3")}
-    {@render colourCircle("--status-info1")}
-    {@render colourCircle("--status-info2")}
-    {@render colourCircle("--status-info3")}
+    {@render colorCircle("--brand1")}
+    {@render colorCircle("--brand2")}
+    {@render colorCircle("--brand3")}
+    {@render colorCircle("--fg")}
+    {@render colorCircle("--bg1")}
+    {@render colorCircle("--bg2")}
+    {@render colorCircle("--bg3")}
+    {@render colorCircle("--border1")}
+    {@render colorCircle("--border2")}
+    {@render colorCircle("--border3")}
+    {@render colorCircle("--text1")}
+    {@render colorCircle("--text2")}
+    {@render colorCircle("--text3")}
+    {@render colorCircle("--text-inverse")}
+    {@render colorCircle("--text-invariant")}
+    {@render colorCircle("--status-success1")}
+    {@render colorCircle("--status-success2")}
+    {@render colorCircle("--status-success3")}
+    {@render colorCircle("--status-warning1")}
+    {@render colorCircle("--status-warning2")}
+    {@render colorCircle("--status-warning3")}
+    {@render colorCircle("--status-danger1")}
+    {@render colorCircle("--status-danger2")}
+    {@render colorCircle("--status-danger3")}
+    {@render colorCircle("--status-info1")}
+    {@render colorCircle("--status-info2")}
+    {@render colorCircle("--status-info3")}
   </div>
 </main>
