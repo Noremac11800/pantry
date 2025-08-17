@@ -75,9 +75,9 @@
   --brand2: var(--color-blue-400);
   --brand3: var(--color-blue-300);
   --fg: var(--color-gray-900);
-  --bg1: var(--color-gray-900);
-  --bg2: var(--color-gray-800);
-  --bg3: var(--color-gray-700);
+  --bg1: var(--color-gray-800);
+  --bg2: var(--color-gray-700);
+  --bg3: var(--color-gray-600);
   --border1: var(--color-gray-300);
   --border2: var(--color-gray-400);
   --border3: var(--color-gray-500);
@@ -127,7 +127,7 @@ h5,
 h6,
 span,
 p {
-  color: var(--text1);
+  @apply text-[var(--text1)];
 }
 
 main {
