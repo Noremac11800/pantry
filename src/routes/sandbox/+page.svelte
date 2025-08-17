@@ -12,4 +12,5 @@
   <a href="/sandbox/components">Components</a>
   <a href="/sandbox/database">Database</a>
   <a href="/sandbox/debugging">Debugging</a>
+  <a href="/sandbox/wcag-accessibility">WCAG Accessibility</a>
 </main>
