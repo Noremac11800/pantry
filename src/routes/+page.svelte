@@ -1,6 +1,6 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
-  import { Button, Tooltip } from "flowbite-svelte";
+  import { Button, Checkbox, Tooltip } from "flowbite-svelte";
   import { scale } from "svelte/transition";
   import * as Icons from "flowbite-svelte-icons";
 
@@ -35,6 +35,21 @@
   <Button class="brand-solid-button" onclick={() => goto("/sandbox")}>
     Go to Sandbox
   </Button>
+
+  <div id="TODO" class="flex flex-col gap-2">
+    <h1>TODO</h1>
+    <ul class="text-[var(--text3)]">
+      <li>
+        <Checkbox>WCAG accessibility standards</Checkbox>
+      </li>
+      <li>
+        <Checkbox>Internationalization</Checkbox>
+      </li>
+      <li>
+        <Checkbox>Theme management</Checkbox>
+      </li>
+    </ul>
+  </div>
 
   <h1>TauriFlow</h1>
   <p>
