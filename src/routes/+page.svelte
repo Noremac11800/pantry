@@ -3,12 +3,19 @@
   import { Button, Checkbox, Tooltip } from "flowbite-svelte";
   import { scale } from "svelte/transition";
   import * as Icons from "flowbite-svelte-icons";
+  import { _, locale } from "svelte-i18n";
+  import { info } from "@tauri-apps/plugin-log";
 
   let isDark = $state(false);
 
   function toggleTheme() {
     isDark = !isDark;
     document.documentElement.classList.toggle("dark");
+  }
+
+  function toggleLanguage() {
+    info("Toggle language. The current locale is: " + $locale);
+    locale.set($locale === "en-AU" ? "de" : $locale === "de" ? "ar" : "en-AU");
   }
 </script>
 
@@ -32,8 +39,12 @@
     {/if}
   </Button>
 
+  <Button class="brand-outline-button self-start" onclick={toggleLanguage}>
+    <Icons.LanguageOutline />
+  </Button>
+
   <Button class="brand-solid-button" onclick={() => goto("/sandbox")}>
-    Go to Sandbox
+    {$_("page.home.sandbox")}
   </Button>
 
   <div id="TODO" class="flex flex-col gap-2">
@@ -51,7 +62,7 @@
     </ul>
   </div>
 
-  <h1>TauriFlow</h1>
+  <h1>{$_("page.home.title")}</h1>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
     bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra

@@ -22,6 +22,7 @@
     "@tauri-apps/plugin-os": "^2.3.0",
     "@tauri-apps/plugin-sql": "^2.3.0",
     "@tauri-apps/plugin-window-state": "^2.4.0",
+    "svelte-i18n": "^4.0.1",
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
