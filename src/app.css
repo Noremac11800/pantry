@@ -178,7 +178,7 @@ h3 {
 /* ============================================================== */
 
 a {
-  @apply text-[var(--status-info1)] hover:text-[var(--status-info2)] active:text-[var(--status-info3)];
+  @apply text-[var(--status-info1)] hover:text-[var(--status-info2)] active:text-[var(--status-info3)] cursor-pointer;
 }
 
 /* Scrollbar */

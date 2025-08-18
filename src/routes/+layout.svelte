@@ -7,6 +7,8 @@
   import { waitLocale, locale } from "svelte-i18n";
 
   import { appSession } from "$lib/app-session.svelte";
+  import { fly } from "svelte/transition";
+  import { page } from "$app/stores";
 
   let isLocaleReady = $state(false);
 
@@ -24,5 +26,9 @@
 </script>
 
 {#if isLocaleReady && appSession.loaded}
-  {@render children()}
+  {#key $page.url.pathname}
+    <div in:fly={{ duration: 1000 }}>
+      {@render children()}
+    </div>
+  {/key}
 {/if}

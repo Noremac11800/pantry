@@ -66,6 +66,12 @@
       "Contains debugging information and examples of using the Tauri 2.0 log plugin"
     )}
     {@render topic(
+      "i18n: Internationalization",
+      "/sandbox/internationalization",
+      Icons.LanguageOutline,
+      "Contains examples of the internationalization features available in the application"
+    )}
+    {@render topic(
       "Theming",
       "/sandbox/theming",
       Icons.PaletteOutline,
@@ -78,10 +84,10 @@
       "Demonstrates the different typography options available in the application"
     )}
     {@render topic(
-      "WCAG Accessibility",
+      "WCAG 2.1 Accessibility",
       "/sandbox/wcag-accessibility",
       Icons.EyeOutline,
-      "Demonstrates the WCAG accessibility features available in the application. Considerable emphasis is placed on WCAG 2.x AA compliance, especially in the context of color contrast"
+      "Demonstrates the WCAG accessibility features available in the application. Considerable emphasis is placed on WCAG 2.1 AA compliance, especially in the context of color contrast"
     )}
   </div>
 </main>

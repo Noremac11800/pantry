@@ -1,5 +1,7 @@
 <script lang="ts">
   import { contrastRatio, getContrastColor } from "$lib/color-helpers";
+  import { info } from "@tauri-apps/plugin-log";
+  import { openUrl } from "@tauri-apps/plugin-opener";
   import {
     Breadcrumb,
     BreadcrumbItem,
@@ -69,8 +71,14 @@
         </div>
       </div>
       <span class="text-sm text-[var(--text3)]!">
+        <!-- svelte-ignore a11y_click_events_have_key_events -->
+        <!-- svelte-ignore a11y_no_static_element_interactions -->
+        <!-- svelte-ignore a11y_missing_attribute -->
         <a
-          href="https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=143#contrast-minimum"
+          onclick={() =>
+            openUrl(
+              "https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=143#contrast-minimum"
+            )}
           class="underline"
         >
           WCAG 2.x AA

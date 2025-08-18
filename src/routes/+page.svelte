@@ -5,6 +5,7 @@
   import { _ } from "svelte-i18n";
   import LanguageSwitcher from "./sandbox/components/LanguageSwitcher.svelte";
   import { appSession } from "$lib/app-session.svelte";
+  import { openUrl } from "@tauri-apps/plugin-opener";
 </script>
 
 <main>
@@ -24,7 +25,14 @@
     <LanguageSwitcher />
   </div>
 
-  <img src="app-icon.svg" alt="App Icon" class="w-48 h-48 self-center" />
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
+  <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
+  <img
+    src="app-icon.svg"
+    alt="App Icon"
+    onclick={() => openUrl("https://github.com/Noremac11800/TauriFlow")}
+    class="w-48 h-48 self-center hover:scale-105 transition-transform duration-200 cursor-pointer"
+  />
 
   <h1 class="self-center">Welcome to {$_("page.home.title")}</h1>
 
@@ -37,9 +45,6 @@
   <div id="TODO" class="flex flex-col gap-2">
     <h1>TODO</h1>
     <ul class="text-[var(--text3)]">
-      <li>
-        <Checkbox>Theme management</Checkbox>
-      </li>
       <li>
         <Checkbox>Translate all hard-coded text</Checkbox>
       </li>
