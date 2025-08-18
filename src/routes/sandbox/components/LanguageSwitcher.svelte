@@ -39,7 +39,6 @@
     {@render languageDropdownItem("de-DE")}
     {@render languageDropdownItem("en-AU")}
     {@render languageDropdownItem("en-US")}
-    {@render languageDropdownItem("es-419")}
     {@render languageDropdownItem("es-ES")}
     {@render languageDropdownItem("fa-IR")}
     {@render languageDropdownItem("fr-CA")}
@@ -48,7 +47,7 @@
     {@render languageDropdownItem("id-ID")}
     {@render languageDropdownItem("it-IT")}
     {@render languageDropdownItem("ja-JP")}
-    {@render languageDropdownItem("ko-KR")}
+    {@render languageDropdownItem("ko")}
     {@render languageDropdownItem("pl-PL")}
     {@render languageDropdownItem("pt-BR")}
     {@render languageDropdownItem("pt-PT")}

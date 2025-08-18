@@ -31,6 +31,4 @@ This repository is intended to be used as an all-inclusive\* starting point for 
 
 ## Recommended IDE Setup
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
-
 - Install [i18n-ally](https://github.com/lokalise/i18n-ally) plugin for VS Code

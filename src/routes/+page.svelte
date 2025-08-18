@@ -25,16 +25,25 @@
 {/snippet}
 
 <main>
-  <Button class="brand-outline-button self-start" onclick={toggleTheme}>
-    {#if isDark}
-      <Icons.SunSolid />
-    {/if}
-    {#if !isDark}
-      <Icons.MoonSolid />
-    {/if}
-  </Button>
+  <div class="flex justify-between items-center">
+    <Button
+      class="brand-outline-button rounded-full! p-4!"
+      onclick={toggleTheme}
+    >
+      {#if isDark}
+        <Icons.MoonSolid />
+      {/if}
+      {#if !isDark}
+        <Icons.SunSolid />
+      {/if}
+    </Button>
 
-  <LanguageSwitcher />
+    <LanguageSwitcher />
+  </div>
+
+  <img src="app-icon.svg" alt="App Icon" class="w-48 h-48 self-center" />
+
+  <h1 class="self-center">Welcome to {$_("page.home.title")}</h1>
 
   <Button class="brand-solid-button" onclick={() => goto("/sandbox")}>
     {$_("page.home.sandbox")}
@@ -46,18 +55,14 @@
     <h1>TODO</h1>
     <ul class="text-[var(--text3)]">
       <li>
-        <Checkbox>WCAG accessibility standards</Checkbox>
-      </li>
-      <li>
-        <Checkbox>Internationalization</Checkbox>
-      </li>
-      <li>
         <Checkbox>Theme management</Checkbox>
+      </li>
+      <li>
+        <Checkbox>Translate all hard-coded text</Checkbox>
       </li>
     </ul>
   </div>
 
-  <h1>{$_("page.home.title")}</h1>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
     bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
