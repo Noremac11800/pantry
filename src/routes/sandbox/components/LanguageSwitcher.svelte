@@ -8,10 +8,20 @@
     DropdownItem,
   } from "flowbite-svelte";
   import * as Icons from "flowbite-svelte-icons";
+
+  let { isOpen = $bindable(false) }: { isOpen?: boolean } = $props();
+
+  function selectLanguage(langCode: string) {
+    locale.set(langCode);
+    isOpen = false;
+  }
 </script>
 
 {#snippet languageDropdownItem(langCode: string)}
-  <DropdownItem onclick={() => locale.set(langCode)} class="w-full m-0! p-0!">
+  <DropdownItem
+    onclick={() => selectLanguage(langCode)}
+    class="w-full m-0! p-0!"
+  >
     <Button class="neutral-solid-button w-full justify-start font-normal!">
       {langCode}
       {#if langCode === $locale}
@@ -21,13 +31,14 @@
   </DropdownItem>
 {/snippet}
 
-<Button class="brand-outline-button self-start">
+<Button class="brand-outline-button">
   <Icons.LanguageOutline />
   {$locale}
 </Button>
 <Dropdown
   class="bg-[var(--bg1)]! border border-[var(--border1)]"
   placement="bottom-start"
+  bind:isOpen
 >
   <DropdownHeader>
     <span class="font-semibold">Select language</span>

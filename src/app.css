@@ -131,7 +131,7 @@ p {
 }
 
 main {
-  @apply flex flex-col gap-4 p-8;
+  @apply flex flex-col gap-4 px-4 py-8;
 }
 
 h1 {
