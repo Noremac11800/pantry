@@ -22,12 +22,15 @@ export class AppSession {
    * Loads app settings asynchronously from a lazy store and sets the theme manager theme based on the loaded theme.
    */
   constructor() {
-    this.appSettings.init().then(() => {
-      this.loaded = true;
-      this.appSettings
-        .get<string>("theme")
-        .then((theme) => this.themeManager.setTheme(theme ?? "light"));
-    });
+    this.initAsync();
+  }
+
+  private async initAsync() {
+    await this.appSettings.init();
+    this.themeManager.setTheme(
+      (await this.appSettings.get<string>("theme")) ?? "light"
+    );
+    this.loaded = true;
   }
 }
 

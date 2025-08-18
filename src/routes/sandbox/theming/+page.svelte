@@ -46,7 +46,7 @@
     {@render colorCircle("--color-secondary-900")}
   </div>
 
-  <h1 class="mt-4">Application theme colors (used wherever possible)</h1>
+  <h1 class="mt-4">Application theme colors</h1>
   <div class="flex flex-wrap gap-2">
     {@render colorCircle("--brand1")}
     {@render colorCircle("--brand2")}
