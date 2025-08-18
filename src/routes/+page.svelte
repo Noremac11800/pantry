@@ -3,19 +3,14 @@
   import { Button, Checkbox, Tooltip } from "flowbite-svelte";
   import { scale } from "svelte/transition";
   import * as Icons from "flowbite-svelte-icons";
-  import { _, locale } from "svelte-i18n";
-  import { info } from "@tauri-apps/plugin-log";
+  import { _ } from "svelte-i18n";
+  import LanguageSwitcher from "./sandbox/components/LanguageSwitcher.svelte";
 
   let isDark = $state(false);
 
   function toggleTheme() {
     isDark = !isDark;
     document.documentElement.classList.toggle("dark");
-  }
-
-  function toggleLanguage() {
-    info("Toggle language. The current locale is: " + $locale);
-    locale.set($locale === "en-AU" ? "de" : $locale === "de" ? "ar" : "en-AU");
   }
 </script>
 
@@ -39,13 +34,13 @@
     {/if}
   </Button>
 
-  <Button class="brand-outline-button self-start" onclick={toggleLanguage}>
-    <Icons.LanguageOutline />
-  </Button>
+  <LanguageSwitcher />
 
   <Button class="brand-solid-button" onclick={() => goto("/sandbox")}>
     {$_("page.home.sandbox")}
   </Button>
+
+  <span>This is some text that needs to be translated</span>
 
   <div id="TODO" class="flex flex-col gap-2">
     <h1>TODO</h1>

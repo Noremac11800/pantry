@@ -2,9 +2,9 @@
   let { children } = $props();
   import "../app.css";
 
-  import { setupI18n } from "$lib/locales/i18n";
+  import { setupI18n, updateDisplayDirection } from "$lib/locales/i18n";
   import { onMount } from "svelte";
-  import { waitLocale } from "svelte-i18n";
+  import { waitLocale, locale } from "svelte-i18n";
 
   let isReady = $state(false);
 
@@ -12,6 +12,11 @@
     await setupI18n();
     waitLocale().then(() => {
       isReady = true;
+    });
+
+    // Update display direction when locale changes
+    locale.subscribe((localeCode) => {
+      updateDisplayDirection(localeCode ?? "en-AU");
     });
   });
 </script>
