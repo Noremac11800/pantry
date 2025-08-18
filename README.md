@@ -1,4 +1,4 @@
-<p align="center" style="flex-direction: row; justify-content: space-between">
+<p align="center" style="flex-direction: row;">
   <img src="assets/app-icon.svg" width="200" />
   <img src="assets/platforms.jpeg" width="200" />
 </p>
@@ -15,7 +15,7 @@ This repository is intended to be used as an all-inclusive\* starting point for 
 - Flowbite Svelte UI components
 - Flowbite Svelte Icons
 - Theme support (including dark mode or brand themes)
-- Svelte i18n internalization support
+- Svelte i18n internationalization support
 - SQLite support
 - WCAG 2.1 AA accessibility compliance
 
