@@ -6,12 +6,14 @@
   import { onMount } from "svelte";
   import { waitLocale, locale } from "svelte-i18n";
 
-  let isReady = $state(false);
+  import { appSession } from "$lib/app-session.svelte";
+
+  let isLocaleReady = $state(false);
 
   onMount(async () => {
     await setupI18n();
     waitLocale().then(() => {
-      isReady = true;
+      isLocaleReady = true;
     });
 
     // Update display direction when locale changes
@@ -21,6 +23,6 @@
   });
 </script>
 
-{#if isReady}
+{#if isLocaleReady && appSession.loaded}
   {@render children()}
 {/if}

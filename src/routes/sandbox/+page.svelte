@@ -26,7 +26,12 @@
     class="flex flex-col gap-2 border border-[var(--border1)] p-2 rounded-md hover:bg-[var(--bg1)] active:bg-[var(--bg2)] hover:border-[var(--brand2)] active:border-[var(--brand3)] transition-colors duration-200 cursor-pointer"
   >
     <div class="flex gap-2 items-center">
-      <svelte:component this={icon} size="xl" strokeWidth={1.5} />
+      <svelte:component
+        this={icon}
+        size="xl"
+        strokeWidth={1.5}
+        color="var(--text1)"
+      />
       <span class="text-xl">{title}</span>
     </div>
     {#if description}

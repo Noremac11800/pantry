@@ -5,8 +5,6 @@
   import { _ } from "svelte-i18n";
   import LanguageSwitcher from "./sandbox/components/LanguageSwitcher.svelte";
   import { appSession } from "$lib/app-session.svelte";
-
-  let languageSwitcher: LanguageSwitcher;
 </script>
 
 <main>
@@ -23,7 +21,7 @@
       {/if}
     </Button>
 
-    <LanguageSwitcher bind:this={languageSwitcher} />
+    <LanguageSwitcher />
   </div>
 
   <img src="app-icon.svg" alt="App Icon" class="w-48 h-48 self-center" />
