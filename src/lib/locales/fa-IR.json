@@ -1,1 +1,8 @@
-
+{
+  "page": {
+    "home": {
+      "sandbox": "به Sandbox بروید",
+      "title": "Tauriflow"
+    }
+  }
+}

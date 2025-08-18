@@ -1,1 +1,8 @@
-
+{
+  "page": {
+    "home": {
+      "sandbox": "Перейти к песочнице",
+      "title": "Tauriflow"
+    }
+  }
+}
