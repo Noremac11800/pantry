@@ -1,30 +1,24 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
-  import { Button, Checkbox, Tooltip } from "flowbite-svelte";
-  import { scale } from "svelte/transition";
+  import { Button, Checkbox } from "flowbite-svelte";
   import * as Icons from "flowbite-svelte-icons";
   import { _ } from "svelte-i18n";
   import LanguageSwitcher from "./sandbox/components/LanguageSwitcher.svelte";
+  import { appSession } from "$lib/app-session.svelte";
 
-  let isDark = $state(false);
   let languageSwitcher: LanguageSwitcher;
-
-  function toggleTheme() {
-    isDark = !isDark;
-    document.documentElement.classList.toggle("dark");
-  }
 </script>
 
 <main>
   <div class="flex justify-between items-center">
     <Button
       class="brand-outline-button rounded-full! p-4!"
-      onclick={toggleTheme}
+      onclick={() => appSession.themeManager.toggleTheme()}
     >
-      {#if isDark}
+      {#if appSession.themeManager.isDark}
         <Icons.MoonSolid />
       {/if}
-      {#if !isDark}
+      {#if !appSession.themeManager.isDark}
         <Icons.SunSolid />
       {/if}
     </Button>
