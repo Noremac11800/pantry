@@ -63,6 +63,12 @@
       <li>
         <Checkbox>Fill out README</Checkbox>
       </li>
+      <li>
+        <Checkbox
+          >Implement device safe areas (see theming page for example using
+          Drawer)</Checkbox
+        >
+      </li>
     </ul>
   </div>
 

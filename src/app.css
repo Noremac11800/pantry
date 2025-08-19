@@ -48,9 +48,9 @@
   --bg1: var(--color-gray-100);
   --bg2: var(--color-gray-200);
   --bg3: var(--color-gray-300);
-  --border1: var(--color-gray-700);
-  --border2: var(--color-gray-600);
-  --border3: var(--color-gray-500);
+  --border1: var(--color-neutral-400);
+  --border2: var(--color-neutral-500);
+  --border3: var(--color-neutral-600);
   --text1: var(--color-black);
   --text2: var(--color-gray-800);
   --text3: var(--color-gray-600);
@@ -59,9 +59,9 @@
   --status-success1: var(--color-green-500);
   --status-success2: var(--color-green-600);
   --status-success3: var(--color-green-700);
-  --status-warning1: var(--color-yellow-500);
-  --status-warning2: var(--color-yellow-600);
-  --status-warning3: var(--color-yellow-700);
+  --status-warning1: #ffc527;
+  --status-warning2: #d2b20d;
+  --status-warning3: #ba8e14;
   --status-danger1: var(--color-red-500);
   --status-danger2: var(--color-red-600);
   --status-danger3: var(--color-red-700);
@@ -78,9 +78,9 @@
   --bg1: var(--color-gray-800);
   --bg2: var(--color-gray-700);
   --bg3: var(--color-gray-600);
-  --border1: var(--color-gray-300);
-  --border2: var(--color-gray-400);
-  --border3: var(--color-gray-500);
+  --border1: var(--color-neutral-300);
+  --border2: var(--color-neutral-400);
+  --border3: var(--color-neutral-500);
   --text1: var(--color-white);
   --text2: var(--color-gray-200);
   --text3: var(--color-gray-400);
