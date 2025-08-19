@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Input, InputAddon, Label } from "flowbite-svelte";
+  import { Input, InputAddon } from "flowbite-svelte";
   import { Button } from "flowbite-svelte";
   import * as Icons from "flowbite-svelte-icons";
   import ColorPicker, {

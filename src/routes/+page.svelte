@@ -49,9 +49,6 @@
         <Checkbox>Translate all hard-coded text</Checkbox>
       </li>
       <li>
-        <Checkbox>Implement Theme page</Checkbox>
-      </li>
-      <li>
         <Checkbox>Implement Typography page</Checkbox>
       </li>
       <li>
