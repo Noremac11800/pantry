@@ -2,6 +2,9 @@
   import { Breadcrumb, BreadcrumbItem } from "flowbite-svelte";
   import { Tooltip } from "flowbite-svelte";
   import { scale } from "svelte/transition";
+  import { appSession } from "$lib/app-session.svelte";
+  import { Button } from "flowbite-svelte";
+  import * as Icons from "flowbite-svelte-icons";
 </script>
 
 {#snippet colorCircle(color: string)}
@@ -9,8 +12,8 @@
     class="w-8 h-8 rounded-full border border-gray-200"
     style="background-color: var({color})"
   ></div>
-  <Tooltip type="light" class="bg-gray-600" transition={scale}>
-    <span class="font-mono text-white!">{color}</span>
+  <Tooltip class="bg-[var(--bg1)]!" transition={scale}>
+    <span class="font-mono text-[var(--text1)]!">{color}</span>
   </Tooltip>
 {/snippet}
 
@@ -21,6 +24,18 @@
   </Breadcrumb>
 
   <h1>Theming</h1>
+
+  <Button
+    class="brand-outline-button rounded-full! p-4! self-center"
+    onclick={() => appSession.themeManager.toggleTheme()}
+  >
+    {#if appSession.themeManager.isDark}
+      <Icons.MoonSolid />
+    {/if}
+    {#if !appSession.themeManager.isDark}
+      <Icons.SunSolid />
+    {/if}
+  </Button>
 
   <h1 class="mt-4">Flowbite default theme colors</h1>
   <div class="flex flex-wrap gap-2">
