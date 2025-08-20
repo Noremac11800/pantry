@@ -105,6 +105,15 @@
   src: url("/fonts/NunitoSans.ttf");
 }
 
+@font-face {
+  font-family: "Google Sans Mono";
+  src: url("/fonts/GoogleSansCodeMono.ttf");
+}
+
+.google-sans-mono {
+  font-family: "Google Sans Mono";
+}
+
 html,
 body {
   @apply bg-[var(--fg)];
@@ -125,8 +134,13 @@ h3,
 h4,
 h5,
 h6,
+section,
+p,
 span,
-p {
+pre,
+ul,
+ol,
+li {
   @apply text-[var(--text1)];
 }
 
@@ -135,15 +149,27 @@ main {
 }
 
 h1 {
-  @apply text-2xl font-bold;
+  @apply text-3xl font-bold;
 }
 
 h2 {
-  @apply text-xl font-bold;
+  @apply text-2xl font-bold;
 }
 
 h3 {
+  @apply text-xl font-semibold;
+}
+
+h4 {
+  @apply text-lg font-semibold;
+}
+
+h5 {
   @apply text-base font-semibold;
+}
+
+h6 {
+  @apply text-sm font-semibold;
 }
 
 /* Buttons */
