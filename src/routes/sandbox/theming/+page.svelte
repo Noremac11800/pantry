@@ -301,7 +301,11 @@
         bind:hex={border2}
         onColorChanged={(hex) => setColor("--border2", hex)}
       />
-      <ColorPickerInput label="--border3" bind:hex={border3} />
+      <ColorPickerInput
+        label="--border3"
+        bind:hex={border3}
+        onColorChanged={(hex) => setColor("--border3", hex)}
+      />
     </TabItem>
     <TabItem
       class="w-full"
