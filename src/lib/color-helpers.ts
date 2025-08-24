@@ -29,7 +29,7 @@ function relativeLuminance([r, g, b]: [number, number, number]): number {
  * @param hex2 The second hex color
  * @returns The contrast ratio
  *
- * @description
+ * @remarks
  * A contrast ratio of 4.5 or higher is recommended for accessibility. WCAG 2.1 AA https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=143#contrast-minimum
  *
  * @example
@@ -50,7 +50,7 @@ export function contrastRatio(hex1: string, hex2: string): number {
  * @param hex The hex color
  * @returns Black or white depending on which provides the best contrast with the provided color
  *
- * @description
+ * @remarks
  * If the luminance of the color is high, returns black, otherwise white.
  *
  * @example

@@ -1,0 +1,11 @@
+{
+  "entryPoints": ["src"],
+  "entryPointStrategy": "expand",
+  "out": "docs",
+  "includeVersion": true,
+  "exclude": ["**/*.svelte.d.ts", "**/node_modules/**", "**/dist/**", "**/sandbox/**"],
+  "validation": {
+    "notExported": true,
+    "notDocumented": true
+  }
+}

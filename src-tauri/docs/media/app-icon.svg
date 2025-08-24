@@ -1,0 +1,26 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">TauriFlow App Icon (Node &amp; Connection Style)</title>
+  <desc id="desc">Square app icon with charcoal background and orange geometric nodes connected by flow lines, symbolizing templates and flow.</desc>
+
+  <defs>
+    <style>
+      .charcoal { fill: #1E1E1E; }
+      .orange { fill: #FF8C32; }
+      .stroke-orange { stroke: #FF8C32; }
+    </style>
+  </defs>
+
+  <!-- Rounded app tile background -->
+  <rect x="32" y="32" width="448" height="448" rx="96" ry="96" class="charcoal"></rect>
+
+  <!-- Flow connections -->
+  <line x1="160" y1="180" x2="256" y2="256" class="stroke-orange" stroke-width="16" stroke-linecap="round"></line>
+  <line x1="256" y1="256" x2="352" y2="180" class="stroke-orange" stroke-width="16" stroke-linecap="round"></line>
+  <line x1="256" y1="256" x2="256" y2="360" class="stroke-orange" stroke-width="16" stroke-linecap="round"></line>
+
+  <!-- Nodes -->
+  <circle cx="160" cy="180" r="28" class="orange"></circle>
+  <circle cx="352" cy="180" r="28" class="orange"></circle>
+  <circle cx="256" cy="256" r="32" fill="#ffffff" stroke="#FF8C32" stroke-width="12"></circle>
+  <circle cx="256" cy="360" r="28" class="orange"></circle>
+</svg>
