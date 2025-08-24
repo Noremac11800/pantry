@@ -120,8 +120,8 @@ body {
 }
 
 * {
-  @apply focus-visible:ring-2! focus-visible:ring-[var(--text3)]! outline-none!;
-  font-family: "Nunito Sans";
+  @apply focus-visible:ring-2! focus-visible:ring-[var(--text3)]! outline-none subpixel-antialiased!;
+  font-family: "Nunito Sans", system-ui, sans-serif;
 }
 /* Workaround for Android focus behaviour */
 *:focus:not(:focus-visible) {
@@ -149,11 +149,11 @@ main {
 }
 
 h1 {
-  @apply text-3xl font-bold;
+  @apply text-3xl font-bold leading-tight;
 }
 
 h2 {
-  @apply text-2xl font-bold;
+  @apply text-2xl font-bold leading-snug;
 }
 
 h3 {
@@ -172,10 +172,20 @@ h6 {
   @apply text-sm font-semibold;
 }
 
+p,
+span {
+  @apply text-[var(--text1)] text-base leading-relaxed;
+}
+
+small,
+.caption {
+  @apply text-sm text-[var(--text3)];
+}
+
 /* Buttons */
 /* ============================================================== */
 .brand-solid-button {
-  @apply bg-[var(--brand1)] hover:bg-[var(--brand2)] active:bg-[var(--brand3)] text-[var(--text-invariant)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center;
+  @apply bg-[var(--brand1)] hover:bg-[var(--brand2)] active:bg-[var(--brand3)] text-[var(--text-invariant)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center shadow;
 }
 
 .brand-outline-button {

@@ -9,6 +9,7 @@
 </script>
 
 <main>
+  <small>&copy; {new Date().getFullYear()} TauriFlow v0.1.0</small>
   <div class="flex justify-between items-center">
     <Button
       class="brand-outline-button rounded-full! p-4!"
