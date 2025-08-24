@@ -72,65 +72,63 @@
   });
 </script>
 
-<main>
-  <Breadcrumb>
-    <BreadcrumbItem href="/">Home</BreadcrumbItem>
-    <BreadcrumbItem href="/sandbox">Sandbox</BreadcrumbItem>
-  </Breadcrumb>
+<Breadcrumb>
+  <BreadcrumbItem href="/">Home</BreadcrumbItem>
+  <BreadcrumbItem href="/sandbox">Sandbox</BreadcrumbItem>
+</Breadcrumb>
 
-  <h1>Database</h1>
-  <Button class="brand-solid-button gap-2" onclick={() => select()}>
-    <Icons.RefreshOutline />
-    Refresh
+<h1>Database</h1>
+<Button class="brand-solid-button gap-2" onclick={() => select()}>
+  <Icons.RefreshOutline />
+  Refresh
+</Button>
+
+<form class="flex flex-col gap-2" onsubmit={(e) => submit()}>
+  <Label for="name">Name</Label>
+  <Input type="text" bind:value={name} />
+  <Label for="email">Email</Label>
+  <Input type="email" bind:value={email} />
+  <Button class="brand-solid-button" type="submit">
+    <Icons.PlusOutline />
+    Insert new user
   </Button>
+</form>
 
-  <form class="flex flex-col gap-2" onsubmit={(e) => submit()}>
-    <Label for="name">Name</Label>
-    <Input type="text" bind:value={name} />
-    <Label for="email">Email</Label>
-    <Input type="email" bind:value={email} />
-    <Button class="brand-solid-button" type="submit">
-      <Icons.PlusOutline />
-      Insert new user
-    </Button>
-  </form>
+<Button class="brand-outline-button" onclick={() => submit(true)}>
+  <Icons.ShuffleOutline />
+  Insert random user
+</Button>
 
-  <Button class="brand-outline-button" onclick={() => submit(true)}>
-    <Icons.ShuffleOutline />
-    Insert random user
-  </Button>
-
-  <div class="border border-gray-400 rounded-lg overflow-hidden">
-    <Table color="default" striped>
-      <TableHead>
-        <TableHeadCell></TableHeadCell>
-        <TableHeadCell>ID</TableHeadCell>
-        <TableHeadCell>Name</TableHeadCell>
-        <TableHeadCell>Email</TableHeadCell>
-        <TableHeadCell>Time Created</TableHeadCell>
-        <TableHeadCell>Time Since Last Update</TableHeadCell>
-      </TableHead>
-      <TableBody>
-        {#if selectResult}
-          {#each selectResult as user (user.id)}
-            <TableBodyRow>
-              <TableBodyCell>
-                <Button
-                  class="status-danger-button"
-                  onclick={() => deleteUser(user)}
-                >
-                  <Icons.TrashBinOutline />
-                </Button>
-              </TableBodyCell>
-              <TableBodyCell>{user.id}</TableBodyCell>
-              <TableBodyCell>{user.name}</TableBodyCell>
-              <TableBodyCell>{user.email}</TableBodyCell>
-              <TableBodyCell>{user.timeCreated}</TableBodyCell>
-              <TableBodyCell>{user.timeSinceLastUpdate}</TableBodyCell>
-            </TableBodyRow>
-          {/each}
-        {/if}
-      </TableBody>
-    </Table>
-  </div>
-</main>
+<div class="border border-gray-400 rounded-lg overflow-hidden">
+  <Table color="default" striped>
+    <TableHead>
+      <TableHeadCell></TableHeadCell>
+      <TableHeadCell>ID</TableHeadCell>
+      <TableHeadCell>Name</TableHeadCell>
+      <TableHeadCell>Email</TableHeadCell>
+      <TableHeadCell>Time Created</TableHeadCell>
+      <TableHeadCell>Time Since Last Update</TableHeadCell>
+    </TableHead>
+    <TableBody>
+      {#if selectResult}
+        {#each selectResult as user (user.id)}
+          <TableBodyRow>
+            <TableBodyCell>
+              <Button
+                class="status-danger-button"
+                onclick={() => deleteUser(user)}
+              >
+                <Icons.TrashBinOutline />
+              </Button>
+            </TableBodyCell>
+            <TableBodyCell>{user.id}</TableBodyCell>
+            <TableBodyCell>{user.name}</TableBodyCell>
+            <TableBodyCell>{user.email}</TableBodyCell>
+            <TableBodyCell>{user.timeCreated}</TableBodyCell>
+            <TableBodyCell>{user.timeSinceLastUpdate}</TableBodyCell>
+          </TableBodyRow>
+        {/each}
+      {/if}
+    </TableBody>
+  </Table>
+</div>

@@ -40,54 +40,52 @@
   </div>
 {/snippet}
 
-<main>
-  <Breadcrumb>
-    <BreadcrumbItem href="/">Home</BreadcrumbItem>
-  </Breadcrumb>
+<Breadcrumb>
+  <BreadcrumbItem href="/">Home</BreadcrumbItem>
+</Breadcrumb>
 
-  <h1>Sandbox</h1>
-  <div class="flex flex-col gap-4">
-    {@render topic(
-      "Components",
-      "/sandbox/components",
-      Icons.GridOutline,
-      "A collection of components, styles, and classes implemented by default for convenience, based on Flowbite Svelte. Any components and styles can be easily extended or replaced"
-    )}
-    {@render topic(
-      "Database",
-      "/sandbox/database",
-      Icons.DatabaseOutline,
-      "Contains examples of using the Tauri 2.0 SQL plugin in order to interact with a local SQLite database"
-    )}
-    {@render topic(
-      "Debugging",
-      "/sandbox/debugging",
-      Icons.BugOutline,
-      "Contains debugging information and examples of using the Tauri 2.0 log plugin"
-    )}
-    {@render topic(
-      "i18n: Internationalization",
-      "/sandbox/internationalization",
-      Icons.LanguageOutline,
-      "Contains examples of the internationalization features available in the application"
-    )}
-    {@render topic(
-      "Theming",
-      "/sandbox/theming",
-      Icons.PaletteOutline,
-      "Demonstrates the app-level theming defaults and capabilities of the application"
-    )}
-    {@render topic(
-      "Typography",
-      "/sandbox/typography",
-      Icons.FontFamilyOutline,
-      "Demonstrates the different typography options available in the application"
-    )}
-    {@render topic(
-      "WCAG 2.1 Accessibility",
-      "/sandbox/wcag-accessibility",
-      Icons.EyeOutline,
-      "Demonstrates the WCAG accessibility features available in the application. Considerable emphasis is placed on WCAG 2.1 AA compliance, especially in the context of color contrast"
-    )}
-  </div>
-</main>
+<h1>Sandbox</h1>
+<div class="flex flex-col gap-4">
+  {@render topic(
+    "Components",
+    "/sandbox/components",
+    Icons.GridOutline,
+    "A collection of components, styles, and classes implemented by default for convenience, based on Flowbite Svelte. Any components and styles can be easily extended or replaced"
+  )}
+  {@render topic(
+    "Database",
+    "/sandbox/database",
+    Icons.DatabaseOutline,
+    "Contains examples of using the Tauri 2.0 SQL plugin in order to interact with a local SQLite database"
+  )}
+  {@render topic(
+    "Debugging",
+    "/sandbox/debugging",
+    Icons.BugOutline,
+    "Contains debugging information and examples of using the Tauri 2.0 log plugin"
+  )}
+  {@render topic(
+    "i18n: Internationalization",
+    "/sandbox/internationalization",
+    Icons.LanguageOutline,
+    "Contains examples of the internationalization features available in the application"
+  )}
+  {@render topic(
+    "Theming",
+    "/sandbox/theming",
+    Icons.PaletteOutline,
+    "Demonstrates the app-level theming defaults and capabilities of the application"
+  )}
+  {@render topic(
+    "Typography",
+    "/sandbox/typography",
+    Icons.FontFamilyOutline,
+    "Demonstrates the different typography options available in the application"
+  )}
+  {@render topic(
+    "WCAG 2.1 Accessibility",
+    "/sandbox/wcag-accessibility",
+    Icons.EyeOutline,
+    "Demonstrates the WCAG accessibility features available in the application. Considerable emphasis is placed on WCAG 2.1 AA compliance, especially in the context of color contrast"
+  )}
+</div>

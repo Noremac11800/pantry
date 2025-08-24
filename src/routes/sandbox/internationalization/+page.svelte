@@ -2,11 +2,9 @@
   import { Breadcrumb, BreadcrumbItem } from "flowbite-svelte";
 </script>
 
-<main>
-  <Breadcrumb>
-    <BreadcrumbItem href="/">Home</BreadcrumbItem>
-    <BreadcrumbItem href="/sandbox">Sandbox</BreadcrumbItem>
-  </Breadcrumb>
+<Breadcrumb>
+  <BreadcrumbItem href="/">Home</BreadcrumbItem>
+  <BreadcrumbItem href="/sandbox">Sandbox</BreadcrumbItem>
+</Breadcrumb>
 
-  <h1>i18n: Internationalization</h1>
-</main>
+<h1>i18n: Internationalization</h1>

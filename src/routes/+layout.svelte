@@ -27,8 +27,11 @@
 
 {#if isLocaleReady && appSession.loaded}
   {#key $page.url.pathname}
-    <div in:fly={{ duration: 1000 }}>
+    <main in:fly={{ duration: 1000 }}>
+      <small>
+        &copy; {new Date().getFullYear()} TauriFlow v{appSession.appVersion}
+      </small>
       {@render children()}
-    </div>
+    </main>
   {/key}
 {/if}
