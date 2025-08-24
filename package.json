@@ -39,6 +39,7 @@
     "svelte": "^5.0.0",
     "svelte-awesome-color-picker": "^4.0.2",
     "svelte-check": "^4.0.0",
+    "typedoc": "^0.28.10",
     "typescript": "~5.6.2",
     "vite": "^6.0.3"
   }

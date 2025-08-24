@@ -14,6 +14,7 @@ export class AppSession {
     new LazyStore("appSettings.json", { autoSave: true })
   );
   public loaded: boolean = $state(false);
+  public appVersion: string = __APP_VERSION__;
 
   /**
    * Initializes the app session.
