@@ -18,9 +18,8 @@ if __name__ == "__main__":
   <BreadcrumbItem href="/sandbox">Sandbox</BreadcrumbItem>
 </Breadcrumb>
 
+<h1>Typography</h1>
 <div class="flex flex-col gap-1 items-center justify-center">
-  <h1>Typography</h1>
-
   <h1>Heading 1</h1>
   <h2>Heading 2</h2>
   <h3>Heading 3</h3>
@@ -30,5 +29,23 @@ if __name__ == "__main__":
   <p>Paragraph</p>
   <span>Span</span>
   <small>Small</small>
-  <pre class="google-sans-mono">{code}</pre>
+</div>
+
+<div class="flex flex-col gap-2 border border-[var(--border1)] p-4 rounded">
+  <h1>Example</h1>
+  <small class="border-l-1 border-[var(--border2)] p-2">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+    justo commodo. Proin sodales pulvinar tempor.
+  </small>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus
+    et magnis dis parturient montes, nascetur ridiculus mus.
+  </p>
+  <br />
+  <h2>Monospace</h2>
+  <pre
+    class="google-sans-mono bg-[var(--bg2)] border border-[var(--border2)] p-2 rounded">{code.trim()}</pre>
 </div>
