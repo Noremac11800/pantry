@@ -40,9 +40,5 @@
     {$t("page.home.sandbox")}
   </Button>
 
-  <div id="TODO" class="flex flex-col gap-2">
-    <h1>TODO</h1>
-    <Checkbox>Translate all hard-coded text</Checkbox>
-    <Checkbox>Fill out README</Checkbox>
-  </div>
+  <span>Create fancy background and bigger button for going to sandbox</span>
 </div>
