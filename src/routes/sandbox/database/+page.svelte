@@ -98,7 +98,7 @@
   <Input type="email" bind:value={email} />
   <Button class="brand-solid-button" type="submit">
     <Icons.PlusOutline />
-    page.sandbox.database.insert-new-usernew-user")}
+    {$t("page.sandbox.database.insert-new-user")}
   </Button>
 </form>
 
