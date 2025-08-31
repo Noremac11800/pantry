@@ -9,7 +9,11 @@
   } from "flowbite-svelte";
   import * as Icons from "flowbite-svelte-icons";
 
-  let { isOpen = $bindable(false) }: { isOpen?: boolean } = $props();
+  let {
+    class: className,
+    buttonClass = "brand-outline-button",
+    isOpen = $bindable(false),
+  }: { class?: string; buttonClass?: string; isOpen?: boolean } = $props();
 
   function selectLanguage(langCode: string) {
     locale.set(langCode);
@@ -31,7 +35,7 @@
   </DropdownItem>
 {/snippet}
 
-<Button class="brand-outline-button">
+<Button class="{buttonClass} {className}">
   <Icons.LanguageOutline />
   {$locale}
 </Button>
