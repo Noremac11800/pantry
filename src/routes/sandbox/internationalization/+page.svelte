@@ -335,7 +335,7 @@
   <div class="flex flex-col gap-2">
     <h3>{$t("page.sandbox.i18n.dynamic-strings")}</h3>
     <Button
-      class="brand-solid-button self-center"
+      class="brand-solid-button self-center mt-8"
       onclick={() => buttonPressedCount++}
     >
       {$t("page.sandbox.i18n.button-pressed-count", {
