@@ -32,7 +32,7 @@
         strokeWidth={1.5}
         color="var(--text1)"
       />
-      <span class="text-xl">{title}</span>
+      <span class="text-xl!">{title}</span>
     </div>
     {#if description}
       <span class="text-sm text-[var(--text3)]!">{description}</span>
@@ -41,7 +41,10 @@
 {/snippet}
 
 <Breadcrumb>
-  <BreadcrumbItem href="/">Home</BreadcrumbItem>
+  <BreadcrumbItem home homeClass="text-lg" href="/">Home</BreadcrumbItem>
+  <BreadcrumbItem spanClass="text-lg! text-[var(--text3)]! cursor-default!">
+    Sandbox
+  </BreadcrumbItem>
 </Breadcrumb>
 
 <h1>Sandbox</h1>

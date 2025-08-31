@@ -48,21 +48,10 @@
       <Checkbox>Translate all hard-coded text</Checkbox>
     </li>
     <li>
-      <Checkbox>Implement Typography page</Checkbox>
-    </li>
-    <li>
       <Checkbox>Implement i18n page</Checkbox>
     </li>
     <li>
-      <Checkbox>Implement Git versioning</Checkbox>
-    </li>
-    <li>
       <Checkbox>Fill out README</Checkbox>
-    </li>
-    <li>
-      <Checkbox
-        >Implement device safe areas (see theming page for example using Drawer)</Checkbox
-      >
     </li>
   </ul>
 </div>

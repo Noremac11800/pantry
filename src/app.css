@@ -116,7 +116,7 @@
 
 html,
 body {
-  @apply bg-[var(--fg)] overflow-hidden;
+  @apply bg-[var(--bg1)] overflow-hidden;
 }
 
 body {
@@ -154,7 +154,7 @@ li {
 }
 
 main {
-  @apply flex flex-col gap-4 px-4 pt-0 pb-16 h-full;
+  @apply flex flex-col gap-4 px-4 pt-4 pb-16 h-full bg-[var(--fg)];
 }
 
 h1 {

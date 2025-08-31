@@ -51,8 +51,11 @@
 {/snippet}
 
 <Breadcrumb>
-  <BreadcrumbItem href="/">Home</BreadcrumbItem>
-  <BreadcrumbItem href="/sandbox">Sandbox</BreadcrumbItem>
+  <BreadcrumbItem home homeClass="text-lg" href="/">Home</BreadcrumbItem>
+  <BreadcrumbItem linkClass="text-lg" href="/sandbox">Sandbox</BreadcrumbItem>
+  <BreadcrumbItem spanClass="text-lg! text-[var(--text3)]! cursor-default!">
+    Debugging
+  </BreadcrumbItem>
 </Breadcrumb>
 
 <h1>Debugging</h1>

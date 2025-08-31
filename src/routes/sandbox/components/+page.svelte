@@ -3,8 +3,11 @@
 </script>
 
 <Breadcrumb>
-  <BreadcrumbItem href="/">Home</BreadcrumbItem>
-  <BreadcrumbItem href="/sandbox">Sandbox</BreadcrumbItem>
+  <BreadcrumbItem home homeClass="text-lg" href="/">Home</BreadcrumbItem>
+  <BreadcrumbItem linkClass="text-lg" href="/sandbox">Sandbox</BreadcrumbItem>
+  <BreadcrumbItem spanClass="text-lg! text-[var(--text3)]! cursor-default!">
+    Components
+  </BreadcrumbItem>
 </Breadcrumb>
 
 <h1>Components</h1>
