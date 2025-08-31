@@ -8,50 +8,41 @@
   import { openUrl } from "@tauri-apps/plugin-opener";
 </script>
 
-<div class="flex justify-between items-center">
-  <Button
-    class="brand-outline-button rounded-full! p-4!"
-    onclick={() => appSession.themeManager.toggleTheme()}
-  >
-    {#if appSession.themeManager.isDark}
-      <Icons.MoonSolid />
-    {/if}
-    {#if !appSession.themeManager.isDark}
-      <Icons.SunSolid />
-    {/if}
+<div class="flex flex-col gap-8">
+  <div class="flex justify-between items-center">
+    <Button
+      class="brand-outline-button rounded-full! p-4!"
+      onclick={() => appSession.themeManager.toggleTheme()}
+    >
+      {#if appSession.themeManager.isDark}
+        <Icons.MoonSolid />
+      {/if}
+      {#if !appSession.themeManager.isDark}
+        <Icons.SunSolid />
+      {/if}
+    </Button>
+
+    <LanguageSwitcher />
+  </div>
+
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
+  <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
+  <img
+    src="app-icon.svg"
+    alt="App Icon"
+    onclick={() => openUrl("https://github.com/Noremac11800/TauriFlow")}
+    class="w-48 h-48 self-center hover:scale-105 transition-transform duration-200 cursor-pointer"
+  />
+
+  <h1 class="self-center">Welcome to {$t("page.home.title")}!</h1>
+
+  <Button class="brand-solid-button" onclick={() => goto("/sandbox")}>
+    {$t("page.home.sandbox")}
   </Button>
 
-  <LanguageSwitcher />
-</div>
-
-<!-- svelte-ignore a11y-click-events-have-key-events -->
-<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
-<img
-  src="app-icon.svg"
-  alt="App Icon"
-  onclick={() => openUrl("https://github.com/Noremac11800/TauriFlow")}
-  class="w-48 h-48 self-center hover:scale-105 transition-transform duration-200 cursor-pointer"
-/>
-
-<h1 class="self-center">Welcome to {$t("page.home.title")}</h1>
-
-<Button class="brand-solid-button" onclick={() => goto("/sandbox")}>
-  {$t("page.home.sandbox")}
-</Button>
-
-<span>This is some text that needs to be translated</span>
-
-<div id="TODO" class="flex flex-col gap-2">
-  <h1>TODO</h1>
-  <ul class="text-[var(--text3)]">
-    <li>
-      <Checkbox>Translate all hard-coded text</Checkbox>
-    </li>
-    <li>
-      <Checkbox>Implement i18n page</Checkbox>
-    </li>
-    <li>
-      <Checkbox>Fill out README</Checkbox>
-    </li>
-  </ul>
+  <div id="TODO" class="flex flex-col gap-2">
+    <h1>TODO</h1>
+    <Checkbox>Translate all hard-coded text</Checkbox>
+    <Checkbox>Fill out README</Checkbox>
+  </div>
 </div>
