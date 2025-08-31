@@ -4,5 +4,13 @@
       "sandbox": "স্যান্ডবক্সে যান",
       "title": "টৌরিফ্লো"
     }
+  },
+  "pageTitle": {
+    "home": "বাড়ি"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "বোতাম টিপানো {count} বার"
+    }
   }
 }

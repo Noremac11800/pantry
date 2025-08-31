@@ -4,5 +4,13 @@
       "sandbox": "सैंडबॉक्स पर जाएं",
       "title": "Tauriflow"
     }
+  },
+  "pageTitle": {
+    "home": "घर"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "बटन दबाया {count} बार"
+    }
   }
 }

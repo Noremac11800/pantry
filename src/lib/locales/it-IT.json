@@ -4,5 +4,13 @@
       "sandbox": "Vai a Sandbox",
       "title": "Tauriflow"
     }
+  },
+  "pageTitle": {
+    "home": "Casa"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "Pulsante premuto {count} volte"
+    }
   }
 }

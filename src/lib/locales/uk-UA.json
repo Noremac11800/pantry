@@ -4,5 +4,13 @@
       "sandbox": "Перейдіть до пісочниці",
       "title": "Таврифлоу"
     }
+  },
+  "pageTitle": {
+    "home": "Домашній"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "Натискання кнопки {count} разів"
+    }
   }
 }

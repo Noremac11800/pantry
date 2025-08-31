@@ -4,5 +4,13 @@
       "sandbox": "Перейти к песочнице",
       "title": "Tauriflow"
     }
+  },
+  "pageTitle": {
+    "home": "Дом"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "Нажатая кнопка {count} раз"
+    }
   }
 }

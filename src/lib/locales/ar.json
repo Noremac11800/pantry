@@ -4,5 +4,13 @@
       "title": "TauriFlow",
       "sandbox": "انتقل إلى صندوق الرمل"
     }
+  },
+  "pageTitle": {
+    "home": "بيت"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "زر الضغط على {count} مرات"
+    }
   }
 }

@@ -4,5 +4,13 @@
       "sandbox": "Đi đến hộp cát",
       "title": "Tauriflow"
     }
+  },
+  "pageTitle": {
+    "home": "Trang chủ"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "Nhấn nút {count} lần"
+    }
   }
 }

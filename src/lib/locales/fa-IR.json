@@ -4,5 +4,13 @@
       "sandbox": "به Sandbox بروید",
       "title": "Tauriflow"
     }
+  },
+  "pageTitle": {
+    "home": "خانه"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "دکمه فشار {تعداد بار را فشار دهید"
+    }
   }
 }

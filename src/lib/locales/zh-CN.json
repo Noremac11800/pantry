@@ -4,5 +4,13 @@
       "sandbox": "去沙箱",
       "title": "托利夫洛"
     }
+  },
+  "pageTitle": {
+    "home": "家"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "按钮按{count}时间"
+    }
   }
 }

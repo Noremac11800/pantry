@@ -4,5 +4,13 @@
       "sandbox": "샌드 박스로 이동하십시오",
       "title": "Tauriflow"
     }
+  },
+  "pageTitle": {
+    "home": "집"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "{count} times를 누르면 버튼을 누릅니다"
+    }
   }
 }

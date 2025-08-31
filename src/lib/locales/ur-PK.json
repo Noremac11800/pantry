@@ -4,5 +4,13 @@
       "sandbox": "سینڈ باکس پر جائیں",
       "title": "ٹوریفلو"
     }
+  },
+  "pageTitle": {
+    "home": "گھر"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "بٹن دبائے {count} اوقات"
+    }
   }
 }

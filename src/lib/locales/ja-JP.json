@@ -4,5 +4,13 @@
       "sandbox": "サンドボックスに移動します",
       "title": "タウリフロー"
     }
+  },
+  "pageTitle": {
+    "home": "家"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "{count}を押したボタン"
+    }
   }
 }

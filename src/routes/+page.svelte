@@ -2,7 +2,7 @@
   import { goto } from "$app/navigation";
   import { Button, Checkbox } from "flowbite-svelte";
   import * as Icons from "flowbite-svelte-icons";
-  import { _ } from "svelte-i18n";
+  import { t } from "svelte-i18n";
   import LanguageSwitcher from "./sandbox/components/LanguageSwitcher.svelte";
   import { appSession } from "$lib/app-session.svelte";
   import { openUrl } from "@tauri-apps/plugin-opener";
@@ -33,10 +33,10 @@
   class="w-48 h-48 self-center hover:scale-105 transition-transform duration-200 cursor-pointer"
 />
 
-<h1 class="self-center">Welcome to {$_("page.home.title")}</h1>
+<h1 class="self-center">Welcome to {$t("page.home.title")}</h1>
 
 <Button class="brand-solid-button" onclick={() => goto("/sandbox")}>
-  {$_("page.home.sandbox")}
+  {$t("page.home.sandbox")}
 </Button>
 
 <span>This is some text that needs to be translated</span>

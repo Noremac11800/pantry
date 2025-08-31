@@ -9,5 +9,8 @@
     "i18n": {
       "button-pressed-count": "Button pressed {count} times"
     }
+  },
+  "pageTitle": {
+    "home": "Home"
   }
 }

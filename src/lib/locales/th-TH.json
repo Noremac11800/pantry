@@ -4,5 +4,13 @@
       "sandbox": "ไปที่ Sandbox",
       "title": "ทัวร์วโลว์"
     }
+  },
+  "pageTitle": {
+    "home": "บ้าน"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "กดปุ่ม {count} ครั้ง"
+    }
   }
 }

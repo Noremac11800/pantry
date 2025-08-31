@@ -4,5 +4,13 @@
       "sandbox": "Nenda kwa Sandbox",
       "title": "Tauriflow"
     }
+  },
+  "pageTitle": {
+    "home": "Nyumbani"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "Kitufe cha kubonyeza {count} mara"
+    }
   }
 }

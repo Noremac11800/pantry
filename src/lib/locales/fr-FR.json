@@ -4,5 +4,13 @@
       "sandbox": "Aller à Sandbox",
       "title": "Tauriflow"
     }
+  },
+  "pageTitle": {
+    "home": "Maison"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "Bouton appuyé sur {count} fois"
+    }
   }
 }

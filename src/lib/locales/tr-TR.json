@@ -4,5 +4,13 @@
       "sandbox": "Sandbox'a git",
       "title": "Tauriflow"
     }
+  },
+  "pageTitle": {
+    "home": "Ev"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "Düğmeye basıldı {count} kez"
+    }
   }
 }

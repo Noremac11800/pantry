@@ -4,5 +4,13 @@
       "sandbox": "Pergi ke Sandbox",
       "title": "Tauriflow"
     }
+  },
+  "pageTitle": {
+    "home": "Rumah"
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "Tombol ditekan {count} kali"
+    }
   }
 }

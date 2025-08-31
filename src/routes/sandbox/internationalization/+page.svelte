@@ -12,7 +12,7 @@
     TableHeadCell,
     Timepicker,
   } from "flowbite-svelte";
-  import { locale, _, t, time, date, number, json, format } from "svelte-i18n";
+  import { locale, t, time, date, number } from "svelte-i18n";
   import LanguageSwitcher from "../components/LanguageSwitcher.svelte";
 
   const tableClass = "border border-[var(--border1)]";
@@ -32,7 +32,9 @@
 </script>
 
 <Breadcrumb>
-  <BreadcrumbItem home homeClass="text-lg" href="/">Home</BreadcrumbItem>
+  <BreadcrumbItem home homeClass="text-lg" href="/"
+    >{$t("pageTitle.home")}</BreadcrumbItem
+  >
   <BreadcrumbItem linkClass="text-lg" href="/sandbox">Sandbox</BreadcrumbItem>
   <BreadcrumbItem spanClass="text-lg! text-[var(--text3)]! cursor-default!">
     Internationalization
@@ -305,12 +307,12 @@
   </div>
 
   <div class="flex flex-col gap-2">
-    <h3>Dynamic translations</h3>
+    <h3>Dynamic translations with string interpolation</h3>
     <Button
       class="brand-solid-button self-center"
       onclick={() => buttonPressedCount++}
     >
-      {$_("sandbox.i18n.button-pressed-count", {
+      {$t("sandbox.i18n.button-pressed-count", {
         values: { count: buttonPressedCount },
       })}
     </Button>
