@@ -310,7 +310,9 @@
       class="brand-solid-button self-center"
       onclick={() => buttonPressedCount++}
     >
-      Button pressed {buttonPressedCount} times
+      {$_("sandbox.i18n.button-pressed-count", {
+        values: { count: buttonPressedCount },
+      })}
     </Button>
   </div>
 </div>

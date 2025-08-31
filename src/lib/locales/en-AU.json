@@ -4,5 +4,10 @@
       "title": "TauriFlow",
       "sandbox": "Go to Sandbox"
     }
+  },
+  "sandbox": {
+    "i18n": {
+      "button-pressed-count": "Button pressed {count} times"
+    }
   }
 }
