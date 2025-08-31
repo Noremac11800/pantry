@@ -35,13 +35,15 @@
   <BreadcrumbItem home homeClass="text-lg" href="/"
     >{$t("page-title.home")}</BreadcrumbItem
   >
-  <BreadcrumbItem linkClass="text-lg" href="/sandbox">Sandbox</BreadcrumbItem>
+  <BreadcrumbItem linkClass="text-lg" href="/sandbox"
+    >{$t("page-title.sandbox")}</BreadcrumbItem
+  >
   <BreadcrumbItem spanClass="text-lg! text-[var(--text3)]! cursor-default!">
-    Internationalization
+    {$t("page-title.internationalization")}
   </BreadcrumbItem>
 </Breadcrumb>
 
-<h1>i18n: Internationalization</h1>
+<h1>{$t("page-title.internationalization")}</h1>
 
 <LanguageSwitcher
   class="rounded-xl! self-center"
@@ -50,14 +52,14 @@
 
 <div class="flex flex-col gap-8">
   <div class="flex flex-col gap-4">
-    <h3>Date and time</h3>
+    <h3>{$t("page.sandbox.i18n.date-time")}</h3>
 
     <div class="flex gap-2">
       <Datepicker
         inputClass="flex items-center border border-[var(--border1)] h-12"
         locale={currentLocale}
         translationLocale={currentLocale}
-        placeholder="Select date"
+        placeholder={$t("page.sandbox.i18n.select-date")}
         bind:value={selectedDate}
       />
       <Timepicker
@@ -69,13 +71,17 @@
 
     <Table class={tableClass}>
       <TableHead class={tableHeadClass}>
-        <TableHeadCell>Date format</TableHeadCell>
+        <TableHeadCell>{$t("page.sandbox.i18n.date-format")}</TableHeadCell>
         <TableHeadCell>en-AU</TableHeadCell>
-        <TableHeadCell>Current language ({$locale})</TableHeadCell>
+        <TableHeadCell
+          >{$t("page.sandbox.i18n.current-language", {
+            values: { locale: currentLocale },
+          })}</TableHeadCell
+        >
       </TableHead>
       <TableBody class={tableBodyClass}>
         <TableBodyRow class={tableBodyRowClass}>
-          <TableBodyCell>Date (short)</TableBodyCell>
+          <TableBodyCell>{$t("page.sandbox.i18n.date-short")}</TableBodyCell>
           <TableBodyCell>
             {$date(selectedDate, { format: "short", locale: "en-AU" })}
           </TableBodyCell>
@@ -84,7 +90,7 @@
           </TableBodyCell>
         </TableBodyRow>
         <TableBodyRow class={tableBodyRowClass}>
-          <TableBodyCell>Date (medium)</TableBodyCell>
+          <TableBodyCell>{$t("page.sandbox.i18n.date-medium")}</TableBodyCell>
           <TableBodyCell>
             {$date(selectedDate, { format: "medium", locale: "en-AU" })}
           </TableBodyCell>
@@ -93,7 +99,7 @@
           </TableBodyCell>
         </TableBodyRow>
         <TableBodyRow class={tableBodyRowClass}>
-          <TableBodyCell>Date (long)</TableBodyCell>
+          <TableBodyCell>{$t("page.sandbox.i18n.date-long")}</TableBodyCell>
           <TableBodyCell>
             {$date(selectedDate, { format: "long", locale: "en-AU" })}
           </TableBodyCell>
@@ -102,7 +108,7 @@
           >
         </TableBodyRow>
         <TableBodyRow class={tableBodyRowClass}>
-          <TableBodyCell>Date (full)</TableBodyCell>
+          <TableBodyCell>{$t("page.sandbox.i18n.date-full")}</TableBodyCell>
           <TableBodyCell>
             {$date(selectedDate, { format: "full", locale: "en-AU" })}
           </TableBodyCell>
@@ -115,13 +121,17 @@
 
     <Table class={tableClass}>
       <TableHead class={tableHeadClass}>
-        <TableHeadCell>Time format</TableHeadCell>
+        <TableHeadCell>{$t("page.sandbox.i18n.time-format")}</TableHeadCell>
         <TableHeadCell>en-AU</TableHeadCell>
-        <TableHeadCell>Current language ({$locale})</TableHeadCell>
+        <TableHeadCell
+          >{$t("page.sandbox.i18n.current-language", {
+            values: { locale: currentLocale },
+          })}</TableHeadCell
+        >
       </TableHead>
       <TableBody class={tableBodyClass}>
         <TableBodyRow class={tableBodyRowClass}>
-          <TableBodyCell>Time (short)</TableBodyCell>
+          <TableBodyCell>{$t("page.sandbox.i18n.time-short")}</TableBodyCell>
           <TableBodyCell>
             {$time(timeToDate(selectedTime), {
               format: "short",
@@ -135,7 +145,7 @@
           >
         </TableBodyRow>
         <TableBodyRow class={tableBodyRowClass}>
-          <TableBodyCell>Time (medium)</TableBodyCell>
+          <TableBodyCell>{$t("page.sandbox.i18n.time-medium")}</TableBodyCell>
           <TableBodyCell>
             {$time(timeToDate(selectedTime), {
               format: "medium",
@@ -149,7 +159,7 @@
           >
         </TableBodyRow>
         <TableBodyRow class={tableBodyRowClass}>
-          <TableBodyCell>Time (long)</TableBodyCell>
+          <TableBodyCell>{$t("page.sandbox.i18n.time-long")}</TableBodyCell>
           <TableBodyCell>
             {$time(timeToDate(selectedTime), {
               format: "long",
@@ -163,7 +173,7 @@
           >
         </TableBodyRow>
         <TableBodyRow class={tableBodyRowClass}>
-          <TableBodyCell>Time (full)</TableBodyCell>
+          <TableBodyCell>{$t("page.sandbox.i18n.time-full")}</TableBodyCell>
           <TableBodyCell>
             {$time(timeToDate(selectedTime), {
               format: "full",
@@ -181,19 +191,27 @@
   </div>
 
   <div class="flex flex-col gap-2">
-    <h3>Number and currency</h3>
+    <h3>{$t("page.sandbox.i18n.number-and-currency")}</h3>
 
     <Table class={tableClass}>
       <TableHead class={tableHeadClass}>
         <TableHeadCell></TableHeadCell>
-        <TableHeadCell>Number and currency</TableHeadCell>
+        <TableHeadCell
+          >{$t("page.sandbox.i18n.number-and-currency")}</TableHeadCell
+        >
         <TableHeadCell>en-AU</TableHeadCell>
-        <TableHeadCell>Current language ({$locale})</TableHeadCell>
+        <TableHeadCell
+          >{$t("page.sandbox.i18n.current-language", {
+            values: { locale: currentLocale },
+          })}</TableHeadCell
+        >
       </TableHead>
       <TableBody class={tableBodyClass}>
         <TableBodyRow class={tableBodyRowClass}>
           <TableBodyCell class="text-center">
-            <span class="text-[var(--text1)]! text-semibold!">Number</span>
+            <span class="text-[var(--text1)]! text-semibold!"
+              >{$t("page.sandbox.i18n.number")}</span
+            >
           </TableBodyCell>
           <TableBodyCell>100000000</TableBodyCell>
           <TableBodyCell
@@ -203,7 +221,9 @@
         </TableBodyRow>
         <TableBodyRow class={tableBodyRowClass}>
           <TableBodyCell class="text-center">
-            <span class="text-[var(--text1)]! text-semibold!">Currency</span>
+            <span class="text-[var(--text1)]! text-semibold!"
+              >{$t("page.sandbox.i18n.currency")}</span
+            >
           </TableBodyCell>
           <TableBodyCell>100000000</TableBodyCell>
           <TableBodyCell
@@ -222,7 +242,9 @@
         </TableBodyRow>
         <TableBodyRow class={tableBodyRowClass}>
           <TableBodyCell class="text-center">
-            <span class="text-[var(--text1)]! text-semibold!">Percent</span>
+            <span class="text-[var(--text1)]! text-semibold!"
+              >{$t("page.sandbox.i18n.percent")}</span
+            >
           </TableBodyCell>
           <TableBodyCell>0.1</TableBodyCell>
           <TableBodyCell
@@ -235,7 +257,9 @@
         </TableBodyRow>
         <TableBodyRow class={tableBodyRowClass}>
           <TableBodyCell class="text-center">
-            <span class="text-[var(--text1)]! text-semibold!">Scientific</span>
+            <span class="text-[var(--text1)]! text-semibold!"
+              >{$t("page.sandbox.i18n.scientific")}</span
+            >
           </TableBodyCell>
           <TableBodyCell>100000000</TableBodyCell>
           <TableBodyCell
@@ -250,7 +274,9 @@
         </TableBodyRow>
         <TableBodyRow class={tableBodyRowClass}>
           <TableBodyCell class="text-center">
-            <span class="text-[var(--text1)]! text-semibold!">Engineering</span>
+            <span class="text-[var(--text1)]! text-semibold!"
+              >{$t("page.sandbox.i18n.engineering")}</span
+            >
           </TableBodyCell>
           <TableBodyCell>100000000</TableBodyCell>
           <TableBodyCell
@@ -307,7 +333,7 @@
   </div>
 
   <div class="flex flex-col gap-2">
-    <h3>Dynamic translations with string interpolation</h3>
+    <h3>{$t("page.sandbox.i18n.dynamic-strings")}</h3>
     <Button
       class="brand-solid-button self-center"
       onclick={() => buttonPressedCount++}

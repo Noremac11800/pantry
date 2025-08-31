@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { _, locale } from "svelte-i18n";
+  import { locale, t } from "svelte-i18n";
   import {
     Button,
     Dropdown,
@@ -45,7 +45,9 @@
   bind:isOpen
 >
   <DropdownHeader>
-    <span class="font-semibold">Select language</span>
+    <span class="font-semibold"
+      >{$t("component.language-switcher.select-language")}</span
+    >
   </DropdownHeader>
   <DropdownGroup class="overflow-y-auto max-h-[200px]">
     {@render languageDropdownItem("ar-SA")}
@@ -82,7 +84,7 @@
     class="neutral-solid-button text-sm! font-normal! m-1"
     onclick={() => locale.set("en-AU")}
   >
-    Reset to default
+    {$t("component.language-switcher.reset-to-default")}
     <Icons.RefreshOutline />
   </Button>
 </Dropdown>

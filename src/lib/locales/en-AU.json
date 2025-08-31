@@ -6,15 +6,100 @@
     },
     "sandbox": {
       "i18n": {
-        "button-pressed-count": "Button pressed {count} times"
-      }
+        "button-pressed-count": "Button pressed {count} times",
+        "date-time": "Date and time",
+        "select-date": "Select date",
+        "date-format": "Date format",
+        "current-language": "Current language ({locale})",
+        "date-short": "Date (short)",
+        "date-medium": "Date (medium)",
+        "date-long": "Date (long)",
+        "date-full": "Date (full)",
+        "time-format": "Time format",
+        "time-short": "Time (short)",
+        "time-medium": "Time (medium)",
+        "time-long": "Time (long)",
+        "time-full": "Time (full)",
+        "number-and-currency": "Number and currency",
+        "number": "Number",
+        "currency": "Currency",
+        "percent": "Percent",
+        "scientific": "Scientific",
+        "engineering": "Engineering",
+        "dynamic-strings": "Dynamic translations with string interpolation"
+      },
+      "database": {
+        "refresh": "Refresh",
+        "email": "Email",
+        "insert-new-user": "Insert new user",
+        "insert-random-user": "Insert random user",
+        "name": "Name",
+        "time-created": "Time Created",
+        "time-since-last-update": "Time Since Last Update"
+      },
+      "debugging": {
+        "clear-logs": "Clear logs",
+        "logs": "Logs",
+        "system-info": "System Info"
+      },
+      "theming": {
+        "toggle-theme": "Toggle theme",
+        "reset-colors": "Reset colors",
+        "app-theme-colors": "Application theme colors",
+        "flowbite-theme-colors": "Flowbite default theme colors",
+        "configure-theme-colors": "Configure theme colors",
+        "brand": "Brand",
+        "text": "Text",
+        "status": "Status",
+        "theme-preview": "Theme preview",
+        "primary-text": "primary text",
+        "secondary-text": "secondary text",
+        "tertiary-text": "tertiary text",
+        "css-variables": "CSS variables"
+      },
+      "typography": {
+        "heading-1": "Heading 1",
+        "heading-2": "Heading 2",
+        "heading-3": "Heading 3",
+        "heading-4": "Heading 4",
+        "heading-5": "Heading 5",
+        "heading-6": "Heading 6",
+        "paragraph": "Paragraph",
+        "span": "Span",
+        "small": "Small",
+        "example": "Example",
+        "monospace": "Monospace"
+      },
+      "wcag-accessibility": {
+        "example-text": "Example text",
+        "required-contrast-ratio": "required contrast ratio: > 4.5",
+        "text-color": "Text color",
+        "background-color": "Background color"
+      },
+      "components-description": "A collection of components, styles, and classes implemented by default for convenience, based on Flowbite Svelte. Any components and styles can be easily extended or replaced",
+      "database-description": "Contains examples of using the Tauri 2.0 SQL plugin in order to interact with a local SQLite database",
+      "debugging-description": "Contains debugging information and examples of using the Tauri 2.0 log plugin",
+      "internationalization-description": "Contains examples of the internationalization features available in the application",
+      "theming-description": "Demonstrates the app-level theming defaults and capabilities of the application",
+      "typography-description": "Demonstrates the different typography options available in the application",
+      "wcag-accessibility-description": "Demonstrates the WCAG accessibility features available in the application. Considerable emphasis is placed on WCAG 2.1 AA compliance, especially in the context of color contrast"
     }
   },
-  "sandbox": {
-    "i18n": {}
-  },
-  "pageTitle": {},
   "page-title": {
-    "home": "Home"
+    "home": "Home",
+    "sandbox": "Sandbox",
+    "components": "Components",
+    "database": "Database",
+    "debugging": "Debugging",
+    "internationalization": "i18n: Internationalization",
+    "theming": "Theming",
+    "typography": "Typography",
+    "wcag-accessibility": "WCAG 2.1 Accessibility"
+  },
+  "component": {
+    "language-switcher": {
+      "select-language": "Select language",
+      "reset-to-default": "Reset to default"
+    }
   }
 }

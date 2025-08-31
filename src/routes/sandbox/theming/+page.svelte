@@ -15,6 +15,7 @@
   import * as Icons from "flowbite-svelte-icons";
   import ColorPickerInput from "../components/ColorPickerInput.svelte";
   import { onMount } from "svelte";
+  import { t } from "svelte-i18n";
 
   const tabActiveClass =
     "w-full p-4 bg-[var(--bg2)] rounded-lg cursor-pointer text-[var(--brand1)] hover:bg-[var(--bg3)]";
@@ -137,14 +138,18 @@
 {/snippet}
 
 <Breadcrumb>
-  <BreadcrumbItem home homeClass="text-lg" href="/">Home</BreadcrumbItem>
-  <BreadcrumbItem linkClass="text-lg" href="/sandbox">Sandbox</BreadcrumbItem>
+  <BreadcrumbItem home homeClass="text-lg" href="/"
+    >{$t("page-title.home")}</BreadcrumbItem
+  >
+  <BreadcrumbItem linkClass="text-lg" href="/sandbox"
+    >{$t("page-title.sandbox")}</BreadcrumbItem
+  >
   <BreadcrumbItem spanClass="text-lg! text-[var(--text3)]! cursor-default!">
-    Theming
+    {$t("page-title.theming")}
   </BreadcrumbItem>
 </Breadcrumb>
 
-<h1>Theming</h1>
+<h1>{$t("page-title.theming")}</h1>
 
 <div class="flex justify-around items-center mt-4">
   <div class="flex flex-col gap-2">
@@ -159,7 +164,7 @@
         <Icons.SunSolid />
       {/if}
     </Button>
-    <span>Toggle theme</span>
+    <span>{$t("page.sandbox.theming.toggle-theme")}</span>
   </div>
   <div class="flex flex-col gap-2">
     <Button
@@ -168,11 +173,11 @@
     >
       <Icons.RefreshOutline />
     </Button>
-    <span>Reset colors</span>
+    <span>{$t("page.sandbox.theming.reset-colors")}</span>
   </div>
 </div>
 
-<h2 class="mt-4">Application theme colors</h2>
+<h2 class="mt-4">{$t("page.sandbox.theming.app-theme-colors")}</h2>
 <div class="flex flex-wrap gap-2">
   {@render colorCircle("--brand1")}
   {@render colorCircle("--brand2")}
@@ -211,7 +216,7 @@
     headerClass="cursor-pointer"
   >
     {#snippet header()}
-      <h3>Flowbite default theme colors</h3>
+      <h3>{$t("page.sandbox.theming.flowbite-theme-colors")}</h3>
     {/snippet}
     <div class="flex flex-wrap gap-2">
       {@render colorCircle("--color-primary-50")}
@@ -238,7 +243,7 @@
   </AccordionItem>
 </Accordion>
 
-<h2 class="mt-4">Configure theme colors</h2>
+<h2 class="mt-4">{$t("page.sandbox.theming.configure-theme-colors")}</h2>
 <Tabs
   tabStyle="full"
   ulClass="h-8"
@@ -248,7 +253,7 @@
     class="w-full"
     activeClass={tabActiveClass}
     inactiveClass={tabInactiveClass}
-    title="Brand"
+    title={$t("page.sandbox.theming.brand")}
     open
   >
     <ColorPickerInput
@@ -313,7 +318,7 @@
     class="w-full"
     activeClass={tabActiveClass}
     inactiveClass={tabInactiveClass}
-    title="Text"
+    title={$t("page.sandbox.theming.text")}
   >
     <ColorPickerInput
       label="--text1"
@@ -345,7 +350,7 @@
     class="w-full"
     activeClass={tabActiveClass}
     inactiveClass={tabInactiveClass}
-    title="Status"
+    title={$t("page.sandbox.theming.status")}
   >
     <ColorPickerInput
       label="--status-success1"
@@ -410,16 +415,24 @@
   </TabItem>
 </Tabs>
 
-<h2 class="mt-4">Theme preview</h2>
+<h2 class="mt-4">{$t("page.sandbox.theming.theme-preview")}</h2>
 <div id="theme-preview" class="flex flex-col gap-2">
   <div
     class="flex flex-col gap-2 bg-[var(--bg1)] p-4 border border-[var(--border1)] rounded"
   >
-    <Button class="brand-solid-button self-center">Brand</Button>
+    <Button class="brand-solid-button self-center"
+      >{$t("page.sandbox.theming.brand")}</Button
+    >
     <div class="flex gap-4">
-      <span class="text-[var(--text1)]!">primary text</span>
-      <span class="text-[var(--text2)]!">secondary text</span>
-      <span class="text-[var(--text3)]!">tertiary text</span>
+      <span class="text-[var(--text1)]!"
+        >{$t("page.sandbox.theming.primary-text")}</span
+      >
+      <span class="text-[var(--text2)]!"
+        >{$t("page.sandbox.theming.secondary-text")}</span
+      >
+      <span class="text-[var(--text3)]!"
+        >{$t("page.sandbox.theming.tertiary-text")}</span
+      >
     </div>
     <div class="flex gap-4">
       <span
@@ -443,18 +456,30 @@
       class="flex flex-col gap-2 bg-[var(--bg2)] p-4 border border-[var(--border2)] rounded"
     >
       <div class="flex gap-4">
-        <span class="text-[var(--text1)]!">primary text</span>
-        <span class="text-[var(--text2)]!">secondary text</span>
-        <span class="text-[var(--text3)]!">tertiary text</span>
+        <span class="text-[var(--text1)]!"
+          >{$t("page.sandbox.theming.primary-text")}</span
+        >
+        <span class="text-[var(--text2)]!"
+          >{$t("page.sandbox.theming.secondary-text")}</span
+        >
+        <span class="text-[var(--text3)]!"
+          >{$t("page.sandbox.theming.tertiary-text")}</span
+        >
       </div>
 
       <div
         class="flex flex-col gap-2 bg-[var(--bg3)] p-4 border border-[var(--border3)] rounded"
       >
         <div class="flex gap-4">
-          <span class="text-[var(--text1)]!">primary text</span>
-          <span class="text-[var(--text2)]!">secondary text</span>
-          <span class="text-[var(--text3)]!">tertiary text</span>
+          <span class="text-[var(--text1)]!"
+            >{$t("page.sandbox.theming.primary-text")}</span
+          >
+          <span class="text-[var(--text2)]!"
+            >{$t("page.sandbox.theming.secondary-text")}</span
+          >
+          <span class="text-[var(--text3)]!"
+            >{$t("page.sandbox.theming.tertiary-text")}</span
+          >
         </div>
       </div>
     </div>
@@ -469,7 +494,7 @@
     headerClass="cursor-pointer"
   >
     {#snippet header()}
-      <h3>CSS variables</h3>
+      <h3>{$t("page.sandbox.theming.css-variables")}</h3>
     {/snippet}
     <p class="text-[var(--text1)] font-mono">
       --brand1: {brand1} <br />

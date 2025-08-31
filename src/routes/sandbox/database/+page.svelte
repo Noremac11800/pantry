@@ -17,6 +17,7 @@
   import { onMount } from "svelte";
   import type { User } from "./data_models";
   import { randomNames, randomEmails } from "./data_models";
+  import { t } from "svelte-i18n";
 
   let db: Database | undefined;
   let selectResult: User[] | undefined;
@@ -73,33 +74,37 @@
 </script>
 
 <Breadcrumb>
-  <BreadcrumbItem home homeClass="text-lg" href="/">Home</BreadcrumbItem>
-  <BreadcrumbItem linkClass="text-lg" href="/sandbox">Sandbox</BreadcrumbItem>
+  <BreadcrumbItem home homeClass="text-lg" href="/"
+    >{$t("page-title.home")}</BreadcrumbItem
+  >
+  <BreadcrumbItem linkClass="text-lg" href="/sandbox"
+    >{$t("page-title.sandbox")}</BreadcrumbItem
+  >
   <BreadcrumbItem spanClass="text-lg! text-[var(--text3)]! cursor-default!">
-    Database
+    {$t("page-title.database")}
   </BreadcrumbItem>
 </Breadcrumb>
 
-<h1>Database</h1>
+<h1>{$t("page-title.database")}</h1>
 <Button class="brand-solid-button gap-2" onclick={() => select()}>
   <Icons.RefreshOutline />
-  Refresh
+  {$t("page.sandbox.database.refresh")}
 </Button>
 
 <form class="flex flex-col gap-2" onsubmit={(e) => submit()}>
-  <Label for="name">Name</Label>
+  <Label for="name">{$t("page.sandbox.database.name")}</Label>
   <Input type="text" bind:value={name} />
-  <Label for="email">Email</Label>
+  <Label for="email">{$t("page.sandbox.database.email")}</Label>
   <Input type="email" bind:value={email} />
   <Button class="brand-solid-button" type="submit">
     <Icons.PlusOutline />
-    Insert new user
+    page.sandbox.database.insert-new-usernew-user")}
   </Button>
 </form>
 
 <Button class="brand-outline-button" onclick={() => submit(true)}>
   <Icons.ShuffleOutline />
-  Insert random user
+  {$t("page.sandbox.database.insert-random-user")}
 </Button>
 
 <div class="border border-gray-400 rounded-lg overflow-hidden">
@@ -107,10 +112,12 @@
     <TableHead>
       <TableHeadCell></TableHeadCell>
       <TableHeadCell>ID</TableHeadCell>
-      <TableHeadCell>Name</TableHeadCell>
-      <TableHeadCell>Email</TableHeadCell>
-      <TableHeadCell>Time Created</TableHeadCell>
-      <TableHeadCell>Time Since Last Update</TableHeadCell>
+      <TableHeadCell>{$t("page.sandbox.database.name")}</TableHeadCell>
+      <TableHeadCell>{$t("page.sandbox.database.email")}</TableHeadCell>
+      <TableHeadCell>{$t("page.sandbox.database.time-created")}</TableHeadCell>
+      <TableHeadCell
+        >{$t("page.sandbox.database.time-since-last-update")}</TableHeadCell
+      >
     </TableHead>
     <TableBody>
       {#if selectResult}

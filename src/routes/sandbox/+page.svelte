@@ -3,6 +3,7 @@
   import * as Icons from "flowbite-svelte-icons";
   import type { Component } from "svelte";
   import { goto } from "$app/navigation";
+  import { t } from "svelte-i18n";
 </script>
 
 {#snippet topic(
@@ -32,63 +33,65 @@
         strokeWidth={1.5}
         color="var(--text1)"
       />
-      <span class="text-xl!">{title}</span>
+      <span class="text-xl!">{$t(title)}</span>
     </div>
     {#if description}
-      <span class="text-sm text-[var(--text3)]!">{description}</span>
+      <span class="text-sm text-[var(--text3)]!">{$t(description)}</span>
     {/if}
   </div>
 {/snippet}
 
 <Breadcrumb>
-  <BreadcrumbItem home homeClass="text-lg" href="/">Home</BreadcrumbItem>
+  <BreadcrumbItem home homeClass="text-lg" href="/"
+    >{$t("page-title.home")}</BreadcrumbItem
+  >
   <BreadcrumbItem spanClass="text-lg! text-[var(--text3)]! cursor-default!">
-    Sandbox
+    {$t("page-title.sandbox")}
   </BreadcrumbItem>
 </Breadcrumb>
 
-<h1>Sandbox</h1>
+<h1>{$t("page-title.sandbox")}</h1>
 <div class="flex flex-col gap-4">
   {@render topic(
-    "Components",
+    "page-title.components",
     "/sandbox/components",
     Icons.GridOutline,
-    "A collection of components, styles, and classes implemented by default for convenience, based on Flowbite Svelte. Any components and styles can be easily extended or replaced"
+    "page.sandbox.components-description"
   )}
   {@render topic(
-    "Database",
+    "page-title.database",
     "/sandbox/database",
     Icons.DatabaseOutline,
-    "Contains examples of using the Tauri 2.0 SQL plugin in order to interact with a local SQLite database"
+    "page.sandbox.database-description"
   )}
   {@render topic(
-    "Debugging",
+    "page-title.debugging",
     "/sandbox/debugging",
     Icons.BugOutline,
-    "Contains debugging information and examples of using the Tauri 2.0 log plugin"
+    "page.sandbox.debugging-description"
   )}
   {@render topic(
-    "i18n: Internationalization",
+    "page-title.internationalization",
     "/sandbox/internationalization",
     Icons.LanguageOutline,
-    "Contains examples of the internationalization features available in the application"
+    "page.sandbox.internationalization-description"
   )}
   {@render topic(
-    "Theming",
+    "page-title.theming",
     "/sandbox/theming",
     Icons.PaletteOutline,
-    "Demonstrates the app-level theming defaults and capabilities of the application"
+    "page.sandbox.theming-description"
   )}
   {@render topic(
-    "Typography",
+    "page-title.typography",
     "/sandbox/typography",
     Icons.FontFamilyOutline,
-    "Demonstrates the different typography options available in the application"
+    "page.sandbox.typography-description"
   )}
   {@render topic(
-    "WCAG 2.1 Accessibility",
+    "page-title.wcag-accessibility",
     "/sandbox/wcag-accessibility",
     Icons.EyeOutline,
-    "Demonstrates the WCAG accessibility features available in the application. Considerable emphasis is placed on WCAG 2.1 AA compliance, especially in the context of color contrast"
+    "page.sandbox.wcag-accessibility-description"
   )}
 </div>

@@ -1,6 +1,5 @@
 <script lang="ts">
   import { contrastRatio, getContrastColor } from "$lib/color-helpers";
-  import { info } from "@tauri-apps/plugin-log";
   import { openUrl } from "@tauri-apps/plugin-opener";
   import {
     Breadcrumb,
@@ -17,6 +16,7 @@
     type RgbaColor,
     type HsvaColor,
   } from "svelte-awesome-color-picker";
+  import { t } from "svelte-i18n";
 
   let isColorPicker1Open = $state(false);
   let isColorPicker2Open = $state(false);
@@ -53,14 +53,18 @@
 </script>
 
 <Breadcrumb>
-  <BreadcrumbItem home homeClass="text-lg" href="/">Home</BreadcrumbItem>
-  <BreadcrumbItem linkClass="text-lg" href="/sandbox">Sandbox</BreadcrumbItem>
+  <BreadcrumbItem home homeClass="text-lg" href="/"
+    >{$t("page-title.home")}</BreadcrumbItem
+  >
+  <BreadcrumbItem linkClass="text-lg" href="/sandbox"
+    >{$t("page-title.sandbox")}</BreadcrumbItem
+  >
   <BreadcrumbItem spanClass="text-lg! text-[var(--text3)]! cursor-default!">
-    WCAG Accessibility
+    {$t("page-title.wcag-accessibility")}
   </BreadcrumbItem>
 </Breadcrumb>
 
-<h1>WCAG Accessibility</h1>
+<h1>{$t("page-title.wcag-accessibility")}</h1>
 
 <div class="flex flex-col gap-2">
   <div class="flex flex-col gap-2 items-center justify-center">
@@ -69,7 +73,9 @@
         class="p-4 border rounded"
         style="background-color: {hex2}; border-color: {contrastColor2};"
       >
-        <span style="color: {hex1}">Example text</span>
+        <span style="color: {hex1}"
+          >{$t("page.sandbox.wcag-accessibility.example-text")}</span
+        >
       </div>
     </div>
     <span class="text-sm text-[var(--text3)]!">
@@ -85,7 +91,7 @@
       >
         WCAG 2.x AA
       </a>
-      required contrast ratio: &gt;4.5
+      {$t("page.sandbox.wcag-accessibility.required-contrast-ratio")}
     </span>
     <span class="flex gap-2 items-center">
       {#if contrastRatioValue > 4.5}
@@ -100,7 +106,7 @@
 
 <div class="flex flex-col gap-4">
   <InputAddon class="flex gap-2">
-    <Label>Text color</Label>
+    <Label>{$t("page.sandbox.wcag-accessibility.text-color")}</Label>
     <Input value={hex1 ?? ""} />
     <div class="translate-y-[40px] z-50">
       <ColorPicker
@@ -164,7 +170,7 @@
 
 <div class="flex flex-col gap-4">
   <InputAddon class="flex gap-2">
-    <Label>Background color</Label>
+    <Label>{$t("page.sandbox.wcag-accessibility.background-color")}</Label>
     <Input value={hex2 ?? ""} />
     <div class="translate-y-[40px] z-50">
       <ColorPicker

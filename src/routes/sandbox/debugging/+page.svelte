@@ -2,15 +2,14 @@
   import { appLogDir } from "@tauri-apps/api/path";
   import { info, warn, error } from "@tauri-apps/plugin-log";
   import { onMount } from "svelte";
-  import { Breadcrumb, BreadcrumbItem, Label } from "flowbite-svelte";
+  import { Breadcrumb, BreadcrumbItem } from "flowbite-svelte";
   import { readTextFile, writeTextFile } from "@tauri-apps/plugin-fs";
   import { path } from "@tauri-apps/api";
   import { revealItemInDir } from "@tauri-apps/plugin-opener";
   import { Button } from "flowbite-svelte";
   import * as Icons from "flowbite-svelte-icons";
   import { AppInfo } from "../../../lib/app-info";
-
-  import * as os from "@tauri-apps/plugin-os";
+  import { t } from "svelte-i18n";
 
   const logFileName = "app-logs.log";
   let logDir = $state<string>("");
@@ -51,16 +50,20 @@
 {/snippet}
 
 <Breadcrumb>
-  <BreadcrumbItem home homeClass="text-lg" href="/">Home</BreadcrumbItem>
-  <BreadcrumbItem linkClass="text-lg" href="/sandbox">Sandbox</BreadcrumbItem>
+  <BreadcrumbItem home homeClass="text-lg" href="/"
+    >{$t("page-title.home")}</BreadcrumbItem
+  >
+  <BreadcrumbItem linkClass="text-lg" href="/sandbox"
+    >{$t("page-title.sandbox")}</BreadcrumbItem
+  >
   <BreadcrumbItem spanClass="text-lg! text-[var(--text3)]! cursor-default!">
-    Debugging
+    {$t("page-title.debugging")}
   </BreadcrumbItem>
 </Breadcrumb>
 
-<h1>Debugging</h1>
+<h1>{$t("page-title.debugging")}</h1>
 
-<h2>Logs</h2>
+<h2>{$t("page.sandbox.debugging.logs")}</h2>
 
 <div class="flex gap-2 items-center justify-between">
   {#if AppInfo.isDesktop()}
@@ -73,7 +76,7 @@
 
   <Button class="status-danger-button" onclick={clearLogs}>
     <Icons.TrashBinOutline />
-    Clear logs
+    {$t("page.sandbox.debugging.clear-logs")}
   </Button>
 </div>
 <div
@@ -82,7 +85,9 @@
   <span>{logInfo}</span>
 </div>
 
-<h2>System Info</h2>
+<h2>
+  {$t("page.sandbox.debugging.system-info")}
+</h2>
 
 {@render systemInfo("Platform", AppInfo.platform)}
 {@render systemInfo("Version", AppInfo.version)}
