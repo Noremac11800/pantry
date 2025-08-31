@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "Reiniciar al valor predeterminado",
+      "select-language": "Lenguaje seleccionado"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "Ir a Sandbox"
+      "sandbox": "Ir a Sandbox",
+      "welcome": "¡Bienvenido a Tauriflow!"
     },
     "sandbox": {
+      "components-description": "Una colección de componentes, estilos y clases implementadas de manera predeterminada por conveniencia, basada en FlowBite Svelte. \nCualquier componente y estilos se puede extender o reemplazar fácilmente",
+      "database": {
+        "email": "Correo electrónico",
+        "insert-new-user": "Insertar un nuevo usuario",
+        "insert-random-user": "Insertar usuario aleatorio",
+        "name": "Nombre",
+        "refresh": "Refrescar",
+        "time-created": "Tiempo creado",
+        "time-since-last-update": "Tiempo desde la última actualización"
+      },
+      "database-description": "Contiene ejemplos de uso del complemento Tauri 2.0 SQL para interactuar con una base de datos SQLite local",
+      "debugging": {
+        "clear-logs": "Borrar registros",
+        "logs": "Registro",
+        "system-info": "Información del sistema"
+      },
+      "debugging-description": "Contiene información de depuración y ejemplos de uso del complemento de registro de Tauri 2.0",
       "i18n": {
-        "button-pressed-count": "Botón presionado {count} veces"
-      }
+        "button-pressed-count": "Botón presionado {count} veces",
+        "currency": "Divisa",
+        "current-language": "Lenguaje actual ({locale})",
+        "date-format": "Formato de fecha",
+        "date-full": "Fecha (completa)",
+        "date-long": "Fecha (larga)",
+        "date-medium": "Fecha (medio)",
+        "date-short": "Fecha (corta)",
+        "date-time": "Fecha y hora",
+        "dynamic-strings": "Traducciones dinámicas con interpolación de cadenas",
+        "engineering": "Ingeniería",
+        "number": "Número",
+        "number-and-currency": "Número y moneda",
+        "percent": "Por ciento",
+        "scientific": "Científico",
+        "select-date": "Fecha de selección",
+        "time-format": "Formato de tiempo",
+        "time-full": "Tiempo (completo)",
+        "time-long": "Tiempo (largo)",
+        "time-medium": "Tiempo (medio)",
+        "time-short": "Tiempo (corto)"
+      },
+      "internationalization-description": "Contiene ejemplos de las funciones de internacionalización disponibles en la aplicación",
+      "theming": {
+        "app-theme-colors": "Colores del tema de la aplicación",
+        "brand": "Marca",
+        "configure-theme-colors": "Configurar los colores del tema",
+        "css-variables": "Variables CSS",
+        "flowbite-theme-colors": "Colores de tema predeterminados de FlowBite",
+        "primary-text": "texto principal",
+        "reset-colors": "Restablecer colores",
+        "secondary-text": "texto secundario",
+        "status": "Estado",
+        "tertiary-text": "texto terciario",
+        "text": "Texto",
+        "theme-preview": "Vista previa del tema",
+        "toggle-theme": "Tema de alternar"
+      },
+      "theming-description": "Demuestra los valores predeterminados y capacidades de temas de nivel de la aplicación de la aplicación",
+      "typography": {
+        "example": "Ejemplo",
+        "heading-1": "Encabezado 1",
+        "heading-2": "Encabezado 2",
+        "heading-3": "Encabezado 3",
+        "heading-4": "Encabezado 4",
+        "heading-5": "Encabezado 5",
+        "heading-6": "Encabezado 6",
+        "monospace": "Monos",
+        "paragraph": "Párrafo",
+        "small": "Pequeño",
+        "span": "Durar"
+      },
+      "typography-description": "Demuestra las diferentes opciones de tipografía disponibles en la aplicación.",
+      "wcag-accessibility": {
+        "background-color": "Color de fondo",
+        "example-text": "Texto de ejemplo",
+        "required-contrast-ratio": "Relación de contraste requerida:> 4.5",
+        "text-color": "Color de texto"
+      },
+      "wcag-accessibility-description": "Demuestra las funciones de accesibilidad de WCAG disponibles en la aplicación. \nSe pone un énfasis considerable en el cumplimiento de WCAG 2.1 AA, especialmente en el contexto del contraste de color"
     }
+  },
+  "page-title": {
+    "components": "Componentes",
+    "database": "Base de datos",
+    "debugging": "Depuración",
+    "home": "Hogar",
+    "internationalization": "i18n: internacionalización",
+    "sandbox": "Salvadera",
+    "theming": "Tema",
+    "typography": "Tipografía",
+    "wcag-accessibility": "Accesibilidad WCAG 2.1"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "Hogar"
   }
 }

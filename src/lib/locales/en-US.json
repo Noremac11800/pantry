@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "Reset to default",
+      "select-language": "Select language"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "Go to Sandbox"
+      "sandbox": "Go to Sandbox",
+      "welcome": "Welcome to TauriFlow!"
     },
     "sandbox": {
+      "components-description": "A collection of components, styles, and classes implemented by default for convenience, based on Flowbite Svelte. Any components and styles can be easily extended or replaced",
+      "database": {
+        "email": "Email",
+        "insert-new-user": "Insert new user",
+        "insert-random-user": "Insert random user",
+        "name": "Name",
+        "refresh": "Refresh",
+        "time-created": "Time Created",
+        "time-since-last-update": "Time Since Last Update"
+      },
+      "database-description": "Contains examples of using the Tauri 2.0 SQL plugin in order to interact with a local SQLite database",
+      "debugging": {
+        "clear-logs": "Clear logs",
+        "logs": "Logs",
+        "system-info": "System Info"
+      },
+      "debugging-description": "Contains debugging information and examples of using the Tauri 2.0 log plugin",
       "i18n": {
-        "button-pressed-count": "Button pressed {count} times"
-      }
+        "button-pressed-count": "Button pressed {count} times",
+        "currency": "Currency",
+        "current-language": "Current language ({locale})",
+        "date-format": "Date format",
+        "date-full": "Date (full)",
+        "date-long": "Date (long)",
+        "date-medium": "Date (medium)",
+        "date-short": "Date (short)",
+        "date-time": "Date and time",
+        "dynamic-strings": "Dynamic translations with string interpolation",
+        "engineering": "Engineering",
+        "number": "Number",
+        "number-and-currency": "Number and currency",
+        "percent": "Percent",
+        "scientific": "Scientific",
+        "select-date": "Select date",
+        "time-format": "Time format",
+        "time-full": "Time (full)",
+        "time-long": "Time (long)",
+        "time-medium": "Time (medium)",
+        "time-short": "Time (short)"
+      },
+      "internationalization-description": "Contains examples of the internationalization features available in the application",
+      "theming": {
+        "app-theme-colors": "Application theme colors",
+        "brand": "Brand",
+        "configure-theme-colors": "Configure theme colors",
+        "css-variables": "CSS variables",
+        "flowbite-theme-colors": "Flowbite default theme colors",
+        "primary-text": "primary text",
+        "reset-colors": "Reset colors",
+        "secondary-text": "secondary text",
+        "status": "Status",
+        "tertiary-text": "tertiary text",
+        "text": "Text",
+        "theme-preview": "Theme preview",
+        "toggle-theme": "Toggle theme"
+      },
+      "theming-description": "Demonstrates the app-level theming defaults and capabilities of the application",
+      "typography": {
+        "example": "Example",
+        "heading-1": "Heading 1",
+        "heading-2": "Heading 2",
+        "heading-3": "Heading 3",
+        "heading-4": "Heading 4",
+        "heading-5": "Heading 5",
+        "heading-6": "Heading 6",
+        "monospace": "Monospace",
+        "paragraph": "Paragraph",
+        "small": "Small",
+        "span": "Span"
+      },
+      "typography-description": "Demonstrates the different typography options available in the application",
+      "wcag-accessibility": {
+        "background-color": "Background color",
+        "example-text": "Example text",
+        "required-contrast-ratio": "required contrast ratio: > 4.5",
+        "text-color": "Text color"
+      },
+      "wcag-accessibility-description": "Demonstrates the WCAG accessibility features available in the application. Considerable emphasis is placed on WCAG 2.1 AA compliance, especially in the context of color contrast"
     }
+  },
+  "page-title": {
+    "components": "Components",
+    "database": "Database",
+    "debugging": "Debugging",
+    "home": "Home",
+    "internationalization": "i18n: Internationalization",
+    "sandbox": "Sandbox",
+    "theming": "Theming",
+    "typography": "Typography",
+    "wcag-accessibility": "WCAG 2.1 Accessibility"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "Home"
   }
 }

@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "تنظیم مجدد به طور پیش فرض",
+      "select-language": "زبان را انتخاب کنید"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "به Sandbox بروید"
+      "sandbox": "به Sandbox بروید",
+      "welcome": "به Tairiflow خوش آمدید!"
     },
     "sandbox": {
+      "components-description": "مجموعه ای از مؤلفه ها ، سبک ها و کلاس های اجرا شده به طور پیش فرض برای راحتی ، بر اساس Svelte Flowbite. \nهر مؤلفه و سبک را می توان به راحتی گسترش یا جایگزین کرد",
+      "database": {
+        "email": "ایمیل",
+        "insert-new-user": "کاربر جدید را وارد کنید",
+        "insert-random-user": "کاربر تصادفی را وارد کنید",
+        "name": "نام",
+        "refresh": "تازه کردن",
+        "time-created": "زمان ایجاد شده",
+        "time-since-last-update": "زمان از آخرین بروزرسانی"
+      },
+      "database-description": "شامل نمونه هایی از استفاده از افزونه Tauri 2.0 SQL به منظور تعامل با یک پایگاه داده محلی SQLite",
+      "debugging": {
+        "clear-logs": "سیاهههای روشن",
+        "logs": "سیاهه ها",
+        "system-info": "اطلاعات سیستم"
+      },
+      "debugging-description": "حاوی اطلاعات اشکال زدایی و نمونه هایی از استفاده از افزونه Log Tauri 2.0 است",
       "i18n": {
-        "button-pressed-count": "دکمه فشار {تعداد بار را فشار دهید"
-      }
+        "button-pressed-count": "دکمه فشار {تعداد بار را فشار دهید",
+        "currency": "پول",
+        "current-language": "زبان فعلی ({محلی})",
+        "date-format": "قالب تاریخ",
+        "date-full": "تاریخ (کامل)",
+        "date-long": "تاریخ (طولانی)",
+        "date-medium": "تاریخ (متوسط)",
+        "date-short": "تاریخ (کوتاه)",
+        "date-time": "تاریخ و زمان",
+        "dynamic-strings": "ترجمه های پویا با درون یابی رشته",
+        "engineering": "مهندسی",
+        "number": "شماره",
+        "number-and-currency": "شماره و ارز",
+        "percent": "درصد",
+        "scientific": "علمی",
+        "select-date": "تاریخ را انتخاب کنید",
+        "time-format": "قالب زمانی",
+        "time-full": "زمان (کامل)",
+        "time-long": "زمان (طولانی)",
+        "time-medium": "زمان (متوسط)",
+        "time-short": "زمان (کوتاه)"
+      },
+      "internationalization-description": "شامل نمونه هایی از ویژگی های بین المللی موجود در برنامه",
+      "theming": {
+        "app-theme-colors": "رنگ تم برنامه",
+        "brand": "مارک",
+        "configure-theme-colors": "پیکربندی رنگهای تم را پیکربندی کنید",
+        "css-variables": "متغیرهای CSS",
+        "flowbite-theme-colors": "رنگهای تم پیش فرض Flowbite",
+        "primary-text": "متن اصلی",
+        "reset-colors": "تنظیم مجدد رنگ ها",
+        "secondary-text": "متن ثانویه",
+        "status": "وضعیت",
+        "tertiary-text": "متن سوم",
+        "text": "متن",
+        "theme-preview": "پیش نمایش تم",
+        "toggle-theme": "تم کردن موضوع"
+      },
+      "theming-description": "پیش فرض و قابلیت های برنامه های برنامه در سطح برنامه را نشان می دهد",
+      "typography": {
+        "example": "نمونه",
+        "heading-1": "عنوان 1",
+        "heading-2": "عنوان 2",
+        "heading-3": "عنوان 3",
+        "heading-4": "عنوان 4",
+        "heading-5": "عنوان 5",
+        "heading-6": "عنوان 6",
+        "monospace": "یکنواخت",
+        "paragraph": "پاراگراف",
+        "small": "کوچک",
+        "span": "طول"
+      },
+      "typography-description": "گزینه های مختلف تایپوگرافی موجود در برنامه را نشان می دهد",
+      "wcag-accessibility": {
+        "background-color": "رنگ پس زمینه",
+        "example-text": "متن مثال",
+        "required-contrast-ratio": "نسبت کنتراست مورد نیاز:> 4.5",
+        "text-color": "رنگ متن"
+      },
+      "wcag-accessibility-description": "ویژگی های دسترسی WCAG موجود در برنامه را نشان می دهد. \nتأکید قابل توجهی بر انطباق WCAG 2.1 AA ، به ویژه در زمینه کنتراست رنگ"
     }
+  },
+  "page-title": {
+    "components": "اجزای",
+    "database": "مجموعه پایگاه داده",
+    "debugging": "اشکال زدایی",
+    "home": "خانه",
+    "internationalization": "i18n: بین المللی سازی",
+    "sandbox": "جعبه ماسه",
+    "theming": "مضمون",
+    "typography": "رنگ نگاری",
+    "wcag-accessibility": "دسترسی WCAG 2.1"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "خانه"
   }
 }

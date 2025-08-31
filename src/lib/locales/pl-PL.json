@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "Zresetuj do domyślnego",
+      "select-language": "Wybierz język"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "Przejdź do Sandbox"
+      "sandbox": "Przejdź do Sandbox",
+      "welcome": "Witamy w Tauriflow!"
     },
     "sandbox": {
+      "components-description": "Zbiór komponentów, stylów i klas zaimplementowanych domyślnie dla wygody, w oparciu o Flowbite Svelte. \nWszelkie komponenty i style można łatwo przedłużyć lub wymienić",
+      "database": {
+        "email": "E-mail",
+        "insert-new-user": "Wstaw nowy użytkownik",
+        "insert-random-user": "Wstaw losowy użytkownik",
+        "name": "Nazwa",
+        "refresh": "Odświeżać",
+        "time-created": "Czas stworzony",
+        "time-since-last-update": "Czas od ostatniej aktualizacji"
+      },
+      "database-description": "Zawiera przykłady korzystania z wtyczki TAURI 2.0 SQL w celu interakcji z lokalną bazą danych SQLITE",
+      "debugging": {
+        "clear-logs": "Jasne dzienniki",
+        "logs": "Dzienniki",
+        "system-info": "Informacje o systemie"
+      },
+      "debugging-description": "Zawiera informacje o debugowaniu i przykłady korzystania z wtyczki dziennika TAURI 2.0",
       "i18n": {
-        "button-pressed-count": "Przycisk naciśnięty {count} czasy"
-      }
+        "button-pressed-count": "Przycisk naciśnięty {count} czasy",
+        "currency": "Waluta",
+        "current-language": "Bieżący język ({locale})",
+        "date-format": "Format daty",
+        "date-full": "Data (pełna)",
+        "date-long": "Data (długa)",
+        "date-medium": "Data (medium)",
+        "date-short": "Data (krótka)",
+        "date-time": "Data i godzina",
+        "dynamic-strings": "Dynamiczne tłumaczenia z interpolacją ciągów",
+        "engineering": "Inżynieria",
+        "number": "Numer",
+        "number-and-currency": "Liczba i waluta",
+        "percent": "Procent",
+        "scientific": "Naukowy",
+        "select-date": "Wybierz datę",
+        "time-format": "Format czasu",
+        "time-full": "Czas (pełny)",
+        "time-long": "Czas (długi)",
+        "time-medium": "Czas (medium)",
+        "time-short": "Czas (krótki)"
+      },
+      "internationalization-description": "Zawiera przykłady funkcji internacjonalizacji dostępnych w aplikacji",
+      "theming": {
+        "app-theme-colors": "Kolory motywów aplikacji",
+        "brand": "Marka",
+        "configure-theme-colors": "Skonfiguruj kolory motywów",
+        "css-variables": "Zmienne CSS",
+        "flowbite-theme-colors": "Flowbite Domyślne kolory motywów",
+        "primary-text": "tekst podstawowy",
+        "reset-colors": "Zresetuj kolory",
+        "secondary-text": "tekst drugorzędny",
+        "status": "Status",
+        "tertiary-text": "tekst trzeciorzędowy",
+        "text": "Tekst",
+        "theme-preview": "Podgląd motywu",
+        "toggle-theme": "Przełącz motyw"
+      },
+      "theming-description": "Pokazuje domyślne tematy na poziomie aplikacji i możliwości aplikacji",
+      "typography": {
+        "example": "Przykład",
+        "heading-1": "Nagłówek 1",
+        "heading-2": "Nagłówek 2",
+        "heading-3": "Nagłówek 3",
+        "heading-4": "Nagłówek 4",
+        "heading-5": "Nagłówek 5",
+        "heading-6": "Nagłówek 6",
+        "monospace": "Monospace",
+        "paragraph": "Ustęp",
+        "small": "Mały",
+        "span": "Przęsło"
+      },
+      "typography-description": "Pokazuje różne opcje typografii dostępne w aplikacji",
+      "wcag-accessibility": {
+        "background-color": "Kolor tła",
+        "example-text": "Przykładowy tekst",
+        "required-contrast-ratio": "Wymagany współczynnik kontrastu:> 4,5",
+        "text-color": "Kolor tekstu"
+      },
+      "wcag-accessibility-description": "Pokazuje funkcje dostępności WCAG dostępne w aplikacji. \nZnaczny nacisk kładzie się na zgodność WCAG 2.1 AA, szczególnie w kontekście kontrastu kolorów"
     }
+  },
+  "page-title": {
+    "components": "Komponenty",
+    "database": "Baza danych",
+    "debugging": "Debugowanie",
+    "home": "Dom",
+    "internationalization": "I18N: internacjonalizacja",
+    "sandbox": "Sandbox",
+    "theming": "Tematyka",
+    "typography": "Typografia",
+    "wcag-accessibility": "Dostępność WCAG 2.1"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "Dom"
   }
 }

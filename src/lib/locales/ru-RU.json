@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "Сбросить по умолчанию",
+      "select-language": "Выберите язык"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "Перейти к песочнице"
+      "sandbox": "Перейти к песочнице",
+      "welcome": "Добро пожаловать в Таурифлоу!"
     },
     "sandbox": {
+      "components-description": "Коллекция компонентов, стилей и классов, реализованных по умолчанию для удобства, на основе Flowbite Svelte. \nЛюбые компоненты и стили могут быть легко расширены или заменены",
+      "database": {
+        "email": "Электронная почта",
+        "insert-new-user": "Вставьте нового пользователя",
+        "insert-random-user": "Вставьте случайного пользователя",
+        "name": "Имя",
+        "refresh": "Обновлять",
+        "time-created": "Время создано",
+        "time-since-last-update": "Время с момента последнего обновления"
+      },
+      "database-description": "Содержит примеры использования плагина Tauri 2.0 SQL для взаимодействия с локальной базой данных SQLite",
+      "debugging": {
+        "clear-logs": "Четкие журналы",
+        "logs": "Журналы",
+        "system-info": "Информация о системе"
+      },
+      "debugging-description": "Содержит информацию об отладке и примеры использования плагина журнала Tauri 2.0",
       "i18n": {
-        "button-pressed-count": "Нажатая кнопка {count} раз"
-      }
+        "button-pressed-count": "Нажатая кнопка {count} раз",
+        "currency": "Валюта",
+        "current-language": "Текущий язык ({locale})",
+        "date-format": "Формат даты",
+        "date-full": "Дата (полная)",
+        "date-long": "Дата (длинная)",
+        "date-medium": "Дата (средняя)",
+        "date-short": "Дата (короткая)",
+        "date-time": "Дата и время",
+        "dynamic-strings": "Динамические переводы с помощью строковой интерполяции",
+        "engineering": "Инженерный",
+        "number": "Число",
+        "number-and-currency": "Число и валюта",
+        "percent": "Процент",
+        "scientific": "Научный",
+        "select-date": "Выберите дату",
+        "time-format": "Формат времени",
+        "time-full": "Время (полное)",
+        "time-long": "Время (долго)",
+        "time-medium": "Время (средний)",
+        "time-short": "Время (короткое)"
+      },
+      "internationalization-description": "Содержит примеры функций интернационализации, доступных в приложении",
+      "theming": {
+        "app-theme-colors": "Цвета темы приложения",
+        "brand": "Бренд",
+        "configure-theme-colors": "Настройте цвета темы",
+        "css-variables": "Переменные CSS",
+        "flowbite-theme-colors": "Flowbite по умолчанию цвета темы",
+        "primary-text": "Первичный текст",
+        "reset-colors": "Сбросить цвета",
+        "secondary-text": "Вторичный текст",
+        "status": "Статус",
+        "tertiary-text": "третичный текст",
+        "text": "Текст",
+        "theme-preview": "Предварительный просмотр темы",
+        "toggle-theme": "Переверните тему"
+      },
+      "theming-description": "Демонстрирует тематические значения по умолчанию на уровне приложения",
+      "typography": {
+        "example": "Пример",
+        "heading-1": "Заголовок 1",
+        "heading-2": "Заголовок 2",
+        "heading-3": "Заголовок 3",
+        "heading-4": "Заголовок 4",
+        "heading-5": "Заголовок 5",
+        "heading-6": "Заголовок 6",
+        "monospace": "Моноспорт",
+        "paragraph": "Абзац",
+        "small": "Маленький",
+        "span": "Охватывать"
+      },
+      "typography-description": "Демонстрирует различные варианты типографии, доступные в приложении",
+      "wcag-accessibility": {
+        "background-color": "Цвет фона",
+        "example-text": "Пример текст",
+        "required-contrast-ratio": "Требуется соотношение контрастности:> 4,5",
+        "text-color": "Текст цвета"
+      },
+      "wcag-accessibility-description": "Демонстрирует функции доступности WCAG, доступные в приложении. \nЗначительный акцент делается на соответствие WCAG 2.1 AA, особенно в контексте цветового контраста"
     }
+  },
+  "page-title": {
+    "components": "Компоненты",
+    "database": "База данных",
+    "debugging": "Отладка",
+    "home": "Дом",
+    "internationalization": "I18N: интернационализация",
+    "sandbox": "Песочница",
+    "theming": "Тематическое",
+    "typography": "Типография",
+    "wcag-accessibility": "WCAG 2.1 Доступность"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "Дом"
   }
 }

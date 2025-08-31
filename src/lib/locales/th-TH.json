@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "รีเซ็ตเป็นค่าเริ่มต้น",
+      "select-language": "เลือกภาษา"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "ไปที่ Sandbox"
+      "sandbox": "ไปที่ Sandbox",
+      "welcome": "ยินดีต้อนรับสู่ Tauriflow!"
     },
     "sandbox": {
+      "components-description": "คอลเลกชันของส่วนประกอบรูปแบบและคลาสที่ใช้โดยค่าเริ่มต้นเพื่อความสะดวกตาม Flowbite Svelte \nส่วนประกอบและสไตล์ใด ๆ สามารถขยายหรือเปลี่ยนได้อย่างง่ายดาย",
+      "database": {
+        "email": "อีเมล",
+        "insert-new-user": "แทรกผู้ใช้ใหม่",
+        "insert-random-user": "แทรกผู้ใช้แบบสุ่ม",
+        "name": "ชื่อ",
+        "refresh": "รีเฟรช",
+        "time-created": "เวลาที่สร้างขึ้น",
+        "time-since-last-update": "เวลาตั้งแต่การอัปเดตล่าสุด"
+      },
+      "database-description": "มีตัวอย่างของการใช้ปลั๊กอิน Tauri 2.0 SQL เพื่อโต้ตอบกับฐานข้อมูล SQLite ในเครื่อง",
+      "debugging": {
+        "clear-logs": "ล้างบันทึก",
+        "logs": "ท่อนไม้",
+        "system-info": "ข้อมูลระบบ"
+      },
+      "debugging-description": "มีข้อมูลการดีบักและตัวอย่างของการใช้ปลั๊กอินบันทึก Tauri 2.0",
       "i18n": {
-        "button-pressed-count": "กดปุ่ม {count} ครั้ง"
-      }
+        "button-pressed-count": "กดปุ่ม {count} ครั้ง",
+        "currency": "สกุลเงิน",
+        "current-language": "ภาษาปัจจุบัน ({locale})",
+        "date-format": "รูปแบบวันที่",
+        "date-full": "วันที่ (เต็ม)",
+        "date-long": "วันที่ (ยาว)",
+        "date-medium": "วันที่ (ปานกลาง)",
+        "date-short": "วันที่ (สั้น)",
+        "date-time": "วันที่และเวลา",
+        "dynamic-strings": "การแปลแบบไดนามิกด้วยการแก้ไขสตริง",
+        "engineering": "วิศวกรรม",
+        "number": "ตัวเลข",
+        "number-and-currency": "จำนวนและสกุลเงิน",
+        "percent": "เปอร์เซ็นต์",
+        "scientific": "เกี่ยวกับวิทยาศาสตร์",
+        "select-date": "เลือกวันที่",
+        "time-format": "รูปแบบเวลา",
+        "time-full": "เวลา (เต็ม)",
+        "time-long": "เวลา (ยาว)",
+        "time-medium": "เวลา (ปานกลาง)",
+        "time-short": "เวลา (สั้น)"
+      },
+      "internationalization-description": "มีตัวอย่างของคุณสมบัติสากลที่มีอยู่ในแอปพลิเคชัน",
+      "theming": {
+        "app-theme-colors": "แอปพลิเคชันธีมสี",
+        "brand": "ยี่ห้อ",
+        "configure-theme-colors": "กำหนดค่าสีธีม",
+        "css-variables": "ตัวแปร CSS",
+        "flowbite-theme-colors": "สีธีมเริ่มต้นของ Flowbite",
+        "primary-text": "ข้อความหลัก",
+        "reset-colors": "รีเซ็ตสี",
+        "secondary-text": "ข้อความรอง",
+        "status": "สถานะ",
+        "tertiary-text": "ข้อความตติยภูมิ",
+        "text": "ข้อความ",
+        "theme-preview": "ตัวอย่างธีม",
+        "toggle-theme": "ธีมสลับ"
+      },
+      "theming-description": "แสดงให้เห็นถึงค่าเริ่มต้นและความสามารถของแอปพลิเคชันระดับแอพพลิเคชั่น",
+      "typography": {
+        "example": "ตัวอย่าง",
+        "heading-1": "หัวเรื่อง 1",
+        "heading-2": "หัวเรื่อง 2",
+        "heading-3": "หัวเรื่อง 3",
+        "heading-4": "หัวเรื่อง 4",
+        "heading-5": "หัวเรื่อง 5",
+        "heading-6": "หัวเรื่อง 6",
+        "monospace": "monospace",
+        "paragraph": "ย่อหน้า",
+        "small": "เล็ก",
+        "span": "ช่วง"
+      },
+      "typography-description": "แสดงให้เห็นถึงตัวเลือกการพิมพ์ที่แตกต่างกันในแอปพลิเคชัน",
+      "wcag-accessibility": {
+        "background-color": "สีพื้นหลัง",
+        "example-text": "ตัวอย่างข้อความ",
+        "required-contrast-ratio": "อัตราส่วนความคมชัดที่ต้องการ:> 4.5",
+        "text-color": "สีข้อความ"
+      },
+      "wcag-accessibility-description": "แสดงให้เห็นถึงคุณสมบัติการเข้าถึง WCAG ที่มีอยู่ในแอปพลิเคชัน \nเน้นการปฏิบัติตาม WCAG 2.1 AA อย่างมากโดยเฉพาะอย่างยิ่งในบริบทของความคมชัดสี"
     }
+  },
+  "page-title": {
+    "components": "ส่วนประกอบ",
+    "database": "ฐานข้อมูล",
+    "debugging": "การดีบัก",
+    "home": "บ้าน",
+    "internationalization": "i18n: สากล",
+    "sandbox": "กล่องทราย",
+    "theming": "การสร้างธีม",
+    "typography": "การพิมพ์",
+    "wcag-accessibility": "WCAG 2.1 การเข้าถึง"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "บ้าน"
   }
 }

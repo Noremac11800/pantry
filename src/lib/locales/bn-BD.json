@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "ডিফল্ট পুনরায় সেট করুন",
+      "select-language": "ভাষা নির্বাচন করুন"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "স্যান্ডবক্সে যান"
+      "sandbox": "স্যান্ডবক্সে যান",
+      "welcome": "তৌরিফ্লোতে স্বাগতম!"
     },
     "sandbox": {
+      "components-description": "ফ্লোবিট স্যাভেল্টের উপর ভিত্তি করে সুবিধার জন্য ডিফল্টরূপে প্রয়োগ করা উপাদান, শৈলী এবং ক্লাসগুলির একটি সংগ্রহ। \nযে কোনও উপাদান এবং শৈলী সহজেই প্রসারিত বা প্রতিস্থাপন করা যেতে পারে",
+      "database": {
+        "email": "ইমেল",
+        "insert-new-user": "নতুন ব্যবহারকারী sert োকান",
+        "insert-random-user": "এলোমেলো ব্যবহারকারী sert োকান",
+        "name": "নাম",
+        "refresh": "রিফ্রেশ",
+        "time-created": "সময় তৈরি",
+        "time-since-last-update": "শেষ আপডেটের পরে সময়"
+      },
+      "database-description": "স্থানীয় এসকিউএলাইট ডাটাবেসের সাথে ইন্টারঅ্যাক্ট করার জন্য তৌরি 2.0 এসকিউএল প্লাগইন ব্যবহারের উদাহরণ রয়েছে",
+      "debugging": {
+        "clear-logs": "লগগুলি সাফ করুন",
+        "logs": "লগ",
+        "system-info": "সিস্টেম তথ্য"
+      },
+      "debugging-description": "ডিবাগিং তথ্য এবং তৌরি 2.0 লগ প্লাগইন ব্যবহারের উদাহরণ রয়েছে",
       "i18n": {
-        "button-pressed-count": "বোতাম টিপানো {count} বার"
-      }
+        "button-pressed-count": "বোতাম টিপানো {count} বার",
+        "currency": "মুদ্রা",
+        "current-language": "বর্তমান ভাষা ({লোকেল})",
+        "date-format": "তারিখ ফর্ম্যাট",
+        "date-full": "তারিখ (পূর্ণ)",
+        "date-long": "তারিখ (দীর্ঘ)",
+        "date-medium": "তারিখ (মাঝারি)",
+        "date-short": "তারিখ (সংক্ষিপ্ত)",
+        "date-time": "তারিখ এবং সময়",
+        "dynamic-strings": "স্ট্রিং ইন্টারপোলেশন সহ গতিশীল অনুবাদ",
+        "engineering": "ইঞ্জিনিয়ারিং",
+        "number": "সংখ্যা",
+        "number-and-currency": "সংখ্যা এবং মুদ্রা",
+        "percent": "শতাংশ",
+        "scientific": "বৈজ্ঞানিক",
+        "select-date": "তারিখ নির্বাচন করুন",
+        "time-format": "সময় ফর্ম্যাট",
+        "time-full": "সময় (পূর্ণ)",
+        "time-long": "সময় (দীর্ঘ)",
+        "time-medium": "সময় (মাঝারি)",
+        "time-short": "সময় (সংক্ষিপ্ত)"
+      },
+      "internationalization-description": "অ্যাপ্লিকেশনটিতে উপলব্ধ আন্তর্জাতিকীকরণ বৈশিষ্ট্যগুলির উদাহরণ রয়েছে",
+      "theming": {
+        "app-theme-colors": "অ্যাপ্লিকেশন থিম রঙ",
+        "brand": "ব্র্যান্ড",
+        "configure-theme-colors": "থিমের রঙগুলি কনফিগার করুন",
+        "css-variables": "সিএসএস ভেরিয়েবল",
+        "flowbite-theme-colors": "ফ্লোবাইট ডিফল্ট থিম রঙ",
+        "primary-text": "প্রাথমিক পাঠ্য",
+        "reset-colors": "রঙগুলি পুনরায় সেট করুন",
+        "secondary-text": "গৌণ পাঠ্য",
+        "status": "স্থিতি",
+        "tertiary-text": "তৃতীয় পাঠ্য",
+        "text": "পাঠ্য",
+        "theme-preview": "থিম পূর্বরূপ",
+        "toggle-theme": "টগল থিম"
+      },
+      "theming-description": "অ্যাপ্লিকেশনটির অ্যাপ-লেভেল থিমিং ডিফল্ট এবং ক্ষমতা প্রদর্শন করে",
+      "typography": {
+        "example": "উদাহরণ",
+        "heading-1": "শিরোনাম 1",
+        "heading-2": "শিরোনাম 2",
+        "heading-3": "শিরোনাম 3",
+        "heading-4": "শিরোনাম 4",
+        "heading-5": "শিরোনাম 5",
+        "heading-6": "শিরোনাম 6",
+        "monospace": "মনোস্পেস",
+        "paragraph": "অনুচ্ছেদ",
+        "small": "ছোট",
+        "span": "স্প্যান"
+      },
+      "typography-description": "অ্যাপ্লিকেশনটিতে উপলব্ধ বিভিন্ন টাইপোগ্রাফি বিকল্পগুলি প্রদর্শন করে",
+      "wcag-accessibility": {
+        "background-color": "পটভূমি রঙ",
+        "example-text": "উদাহরণ পাঠ্য",
+        "required-contrast-ratio": "প্রয়োজনীয় বিপরীতে অনুপাত:> 4.5",
+        "text-color": "পাঠ্য রঙ"
+      },
+      "wcag-accessibility-description": "অ্যাপ্লিকেশনটিতে উপলব্ধ ডাব্লুসিএজি অ্যাক্সেসযোগ্যতা বৈশিষ্ট্যগুলি প্রদর্শন করে। \nডাব্লুসিএজি ২.১ এএ সম্মতি, বিশেষত রঙের বৈপরীত্যের প্রসঙ্গে যথেষ্ট জোর দেওয়া হয়েছে"
     }
+  },
+  "page-title": {
+    "components": "উপাদান",
+    "database": "ডাটাবেস",
+    "debugging": "ডিবাগিং",
+    "home": "বাড়ি",
+    "internationalization": "আই 18 এন: আন্তর্জাতিকীকরণ",
+    "sandbox": "স্যান্ডবক্স",
+    "theming": "থিমিং",
+    "typography": "টাইপোগ্রাফি",
+    "wcag-accessibility": "ডাব্লুসিএজি 2.1 অ্যাক্সেসযোগ্যতা"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "বাড়ি"
   }
 }

@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "إعادة تعيين إلى الافتراضي",
+      "select-language": "حدد اللغة"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "انتقل إلى صندوق الرمل"
+      "sandbox": "انتقل إلى صندوق الرمل",
+      "welcome": "مرحبًا بك في Tauriflow!"
     },
     "sandbox": {
+      "components-description": "مجموعة من المكونات والأساليب والفصول التي تم تنفيذها افتراضيًا للراحة ، استنادًا إلى FlowBite Svelte. \nيمكن بسهولة أو استبدال أي مكونات وأنماط",
+      "database": {
+        "email": "بريد إلكتروني",
+        "insert-new-user": "أدخل مستخدم جديد",
+        "insert-random-user": "أدخل مستخدم عشوائي",
+        "name": "اسم",
+        "refresh": "ينعش",
+        "time-created": "الوقت الذي تم إنشاؤه",
+        "time-since-last-update": "الوقت منذ التحديث الأخير"
+      },
+      "database-description": "يحتوي على أمثلة على استخدام البرنامج المساعد Tauri 2.0 SQL من أجل التفاعل مع قاعدة بيانات SQLite المحلية",
+      "debugging": {
+        "clear-logs": "سجلات واضحة",
+        "logs": "سجلات",
+        "system-info": "معلومات النظام"
+      },
+      "debugging-description": "يحتوي على معلومات تصحيح الأخطاء وأمثلة لاستخدام البرنامج المساعد Tauri 2.0",
       "i18n": {
-        "button-pressed-count": "زر الضغط على {count} مرات"
-      }
+        "button-pressed-count": "زر الضغط على {count} مرات",
+        "currency": "عملة",
+        "current-language": "اللغة الحالية ({locale})",
+        "date-format": "تنسيق التاريخ",
+        "date-full": "التاريخ (كامل)",
+        "date-long": "التاريخ (طويل)",
+        "date-medium": "التاريخ (متوسط)",
+        "date-short": "التاريخ (قصير)",
+        "date-time": "التاريخ والوقت",
+        "dynamic-strings": "ترجمات ديناميكية مع استيفاء السلسلة",
+        "engineering": "هندسة",
+        "number": "رقم",
+        "number-and-currency": "العدد والعملة",
+        "percent": "في المئة",
+        "scientific": "علمي",
+        "select-date": "حدد التاريخ",
+        "time-format": "تنسيق الوقت",
+        "time-full": "الوقت (كامل)",
+        "time-long": "الوقت (طويل)",
+        "time-medium": "الوقت (متوسط)",
+        "time-short": "الوقت (قصير)"
+      },
+      "internationalization-description": "يحتوي على أمثلة لميزات التدويل المتاحة في التطبيق",
+      "theming": {
+        "app-theme-colors": "ألوان موضوع التطبيق",
+        "brand": "ماركة",
+        "configure-theme-colors": "تكوين ألوان السمة",
+        "css-variables": "متغيرات CSS",
+        "flowbite-theme-colors": "ألوان السمة الافتراضية FlowBite",
+        "primary-text": "النص الأساسي",
+        "reset-colors": "إعادة ضبط الألوان",
+        "secondary-text": "نص ثانوي",
+        "status": "حالة",
+        "tertiary-text": "النص الثالث",
+        "text": "نص",
+        "theme-preview": "معاينة الموضوع",
+        "toggle-theme": "تبديل موضوع"
+      },
+      "theming-description": "يوضح الافتراضات وقدرات التطبيق على مستوى التطبيق",
+      "typography": {
+        "example": "مثال",
+        "heading-1": "العنوان 1",
+        "heading-2": "العنوان 2",
+        "heading-3": "العنوان 3",
+        "heading-4": "العنوان 4",
+        "heading-5": "العنوان 5",
+        "heading-6": "عنوان 6",
+        "monospace": "Monospace",
+        "paragraph": "فقرة",
+        "small": "صغير",
+        "span": "فترة"
+      },
+      "typography-description": "يوضح خيارات الطباعة المختلفة المتاحة في التطبيق",
+      "wcag-accessibility": {
+        "background-color": "لون الخلفية",
+        "example-text": "مثال نص",
+        "required-contrast-ratio": "نسبة التباين المطلوبة:> 4.5",
+        "text-color": "لون النص"
+      },
+      "wcag-accessibility-description": "يوضح ميزات إمكانية الوصول إلى WCAG المتوفرة في التطبيق. \nيتم التركيز بشكل كبير على امتثال WCAG 2.1 AA ، خاصة في سياق تباين الألوان"
     }
+  },
+  "page-title": {
+    "components": "عناصر",
+    "database": "قاعدة البيانات",
+    "debugging": "تصحيح الأخطاء",
+    "home": "بيت",
+    "internationalization": "I18N: التدويل",
+    "sandbox": "صندوق الرمل",
+    "theming": "هم",
+    "typography": "الطباعة",
+    "wcag-accessibility": "WCAG 2.1 إمكانية الوصول"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "بيت"
   }
 }

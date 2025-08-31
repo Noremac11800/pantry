@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "重置為默認值",
+      "select-language": "選擇語言"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "去沙箱"
+      "sandbox": "去沙箱",
+      "welcome": "歡迎來到托里夫洛！"
     },
     "sandbox": {
+      "components-description": "基於Flowbite Svelte，默認情況下實現的組件，樣式和類集合。任何組件和样式都可以輕鬆擴展或更換",
+      "database": {
+        "email": "電子郵件",
+        "insert-new-user": "插入新用戶",
+        "insert-random-user": "插入隨機用戶",
+        "name": "姓名",
+        "refresh": "重新整理",
+        "time-created": "創建的時間",
+        "time-since-last-update": "自上次更新以來的時間"
+      },
+      "database-description": "包含使用Tauri 2.0 SQL插件的示例，以與本地SQLITE數據庫進行交互",
+      "debugging": {
+        "clear-logs": "清除日誌",
+        "logs": "紀錄",
+        "system-info": "系統信息"
+      },
+      "debugging-description": "包含調試信息和使用Tauri 2.0日誌插件的示例",
       "i18n": {
-        "button-pressed-count": "按鈕按{count}時間"
-      }
+        "button-pressed-count": "按鈕按{count}時間",
+        "currency": "貨幣",
+        "current-language": "當前語言（{locale}）",
+        "date-format": "日期格式",
+        "date-full": "日期（完整）",
+        "date-long": "日期（長）",
+        "date-medium": "日期（媒介）",
+        "date-short": "日期（簡短）",
+        "date-time": "日期和時間",
+        "dynamic-strings": "帶有字符串插值的動態翻譯",
+        "engineering": "工程",
+        "number": "數字",
+        "number-and-currency": "數字和貨幣",
+        "percent": "百分比",
+        "scientific": "科學",
+        "select-date": "選擇日期",
+        "time-format": "時間格式",
+        "time-full": "時間（完整）",
+        "time-long": "時間（長）",
+        "time-medium": "時間（媒介）",
+        "time-short": "時間（短）"
+      },
+      "internationalization-description": "包含應用程序中可用的國際化功能的示例",
+      "theming": {
+        "app-theme-colors": "應用主題顏色",
+        "brand": "品牌",
+        "configure-theme-colors": "配置主題顏色",
+        "css-variables": "CSS變量",
+        "flowbite-theme-colors": "flowbite默認主題顏色",
+        "primary-text": "主文字",
+        "reset-colors": "重置顏色",
+        "secondary-text": "次要文字",
+        "status": "地位",
+        "tertiary-text": "第三本文",
+        "text": "文字",
+        "theme-preview": "主題預覽",
+        "toggle-theme": "切換主題"
+      },
+      "theming-description": "演示應用程序的應用級主題默認值和功能",
+      "typography": {
+        "example": "例子",
+        "heading-1": "標題1",
+        "heading-2": "標題2",
+        "heading-3": "標題3",
+        "heading-4": "標題4",
+        "heading-5": "標題5",
+        "heading-6": "標題6",
+        "monospace": "單層",
+        "paragraph": "段落",
+        "small": "小的",
+        "span": "跨度"
+      },
+      "typography-description": "演示應用程序中可用的不同版式選項",
+      "wcag-accessibility": {
+        "background-color": "背景顏色",
+        "example-text": "示例文本",
+        "required-contrast-ratio": "所需的對比度：> 4.5",
+        "text-color": "文字顏色"
+      },
+      "wcag-accessibility-description": "演示應用程序中可用的WCAG可訪問性功能。非常重點放在WCAG 2.1 AA合規性上，尤其是在顏色對比的背景下"
     }
+  },
+  "page-title": {
+    "components": "成分",
+    "database": "資料庫",
+    "debugging": "偵錯",
+    "home": "家",
+    "internationalization": "I18N：國際化",
+    "sandbox": "沙箱",
+    "theming": "主題",
+    "typography": "排版",
+    "wcag-accessibility": "WCAG 2.1可訪問性"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "家"
   }
 }

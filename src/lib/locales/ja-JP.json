@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "デフォルトにリセットします",
+      "select-language": "言語を選択します"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "サンドボックスに移動します"
+      "sandbox": "サンドボックスに移動します",
+      "welcome": "Tauriflowへようこそ！"
     },
     "sandbox": {
+      "components-description": "Flowbite Svelteに基づいて、便利なためにデフォルトで実装されたコンポーネント、スタイル、クラスのコレクション。\nコンポーネントやスタイルを簡単に拡張または交換できます",
+      "database": {
+        "email": "メール",
+        "insert-new-user": "新しいユーザーを挿入します",
+        "insert-random-user": "ランダムユーザーを挿入します",
+        "name": "名前",
+        "refresh": "リフレッシュします",
+        "time-created": "作成された時間",
+        "time-since-last-update": "最後の更新以来の時間"
+      },
+      "database-description": "ローカルSQLiteデータベースと対話するために、Tauri 2.0 SQLプラグインを使用する例が含まれています",
+      "debugging": {
+        "clear-logs": "ログをクリアします",
+        "logs": "ログ",
+        "system-info": "システム情報"
+      },
+      "debugging-description": "デバッグ情報とTauri 2.0ログプラグインを使用する例が含まれています",
       "i18n": {
-        "button-pressed-count": "{count}を押したボタン"
-      }
+        "button-pressed-count": "{count}を押したボタン",
+        "currency": "通貨",
+        "current-language": "現在の言語（{locale}）",
+        "date-format": "日付形式",
+        "date-full": "日付（フル）",
+        "date-long": "日付（長い）",
+        "date-medium": "日付（中）",
+        "date-short": "日付（ショート）",
+        "date-time": "日時",
+        "dynamic-strings": "文字列補間による動的翻訳",
+        "engineering": "エンジニアリング",
+        "number": "番号",
+        "number-and-currency": "数と通貨",
+        "percent": "パーセント",
+        "scientific": "科学的",
+        "select-date": "[日付]を選択します",
+        "time-format": "時間形式",
+        "time-full": "時間（フル）",
+        "time-long": "時間（長い）",
+        "time-medium": "時間（中）",
+        "time-short": "時間（短い）"
+      },
+      "internationalization-description": "アプリケーションで利用可能な国際化機能の例が含まれています",
+      "theming": {
+        "app-theme-colors": "アプリケーションテーマの色",
+        "brand": "ブランド",
+        "configure-theme-colors": "テーマの色を構成します",
+        "css-variables": "CSS変数",
+        "flowbite-theme-colors": "Flowbiteデフォルトのテーマの色",
+        "primary-text": "プライマリテキスト",
+        "reset-colors": "色をリセットします",
+        "secondary-text": "二次テキスト",
+        "status": "状態",
+        "tertiary-text": "三次テキスト",
+        "text": "文章",
+        "theme-preview": "テーマプレビュー",
+        "toggle-theme": "テーマを切り替えます"
+      },
+      "theming-description": "アプリレベルのテーマのデフォルトとアプリケーションの機能を示します",
+      "typography": {
+        "example": "例",
+        "heading-1": "見出し1",
+        "heading-2": "見出し2",
+        "heading-3": "見出し3",
+        "heading-4": "見出し4",
+        "heading-5": "見出し5",
+        "heading-6": "見出し6",
+        "monospace": "モノスペース",
+        "paragraph": "段落",
+        "small": "小さい",
+        "span": "スパン"
+      },
+      "typography-description": "アプリケーションで利用可能なさまざまなタイポグラフィオプションを示します",
+      "wcag-accessibility": {
+        "background-color": "背景色",
+        "example-text": "テキストの例",
+        "required-contrast-ratio": "必要なコントラスト比：> 4.5",
+        "text-color": "テキスト色"
+      },
+      "wcag-accessibility-description": "アプリケーションで利用可能なWCAGアクセシビリティ機能を示します。\n特に色のコントラストのコンテキストで、WCAG 2.1 AAコンプライアンスにかなり重点が置かれています"
     }
+  },
+  "page-title": {
+    "components": "コンポーネント",
+    "database": "データベース",
+    "debugging": "デバッグ",
+    "home": "家",
+    "internationalization": "I18N：国際化",
+    "sandbox": "サンドボックス",
+    "theming": "テーマ",
+    "typography": "タイポグラフィ",
+    "wcag-accessibility": "WCAG 2.1アクセシビリティ"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "家"
   }
 }

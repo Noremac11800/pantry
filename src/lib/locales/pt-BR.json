@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "Redefinir para padrão",
+      "select-language": "Selecione o idioma"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "Vá para Sandbox"
+      "sandbox": "Vá para Sandbox",
+      "welcome": "Bem -vindo ao Tauriflow!"
     },
     "sandbox": {
+      "components-description": "Uma coleção de componentes, estilos e classes implementadas por padrão para conveniência, com base na Flowbite Sieve. \nQuaisquer componentes e estilos podem ser facilmente estendidos ou substituídos",
+      "database": {
+        "email": "E-mail",
+        "insert-new-user": "Insira o novo usuário",
+        "insert-random-user": "Insira o usuário aleatório",
+        "name": "Nome",
+        "refresh": "Atualizar",
+        "time-created": "Tempo criado",
+        "time-since-last-update": "Tempo desde a última atualização"
+      },
+      "database-description": "Contém exemplos de uso do plug -in Tauri 2.0 SQL para interagir com um banco de dados SQLite local",
+      "debugging": {
+        "clear-logs": "Troncos claros",
+        "logs": "Logs",
+        "system-info": "Informações do sistema"
+      },
+      "debugging-description": "Contém informações de depuração e exemplos de uso do plugin Tauri 2.0 Log -in",
       "i18n": {
-        "button-pressed-count": "Botão pressionado {count} vezes"
-      }
+        "button-pressed-count": "Botão pressionado {count} vezes",
+        "currency": "Moeda",
+        "current-language": "Idioma atual ({Locale})",
+        "date-format": "Formato de data",
+        "date-full": "Data (cheia)",
+        "date-long": "Data (longa)",
+        "date-medium": "Data (média)",
+        "date-short": "Data (curta)",
+        "date-time": "Data e hora",
+        "dynamic-strings": "Traduções dinâmicas com interpolação de string",
+        "engineering": "Engenharia",
+        "number": "Número",
+        "number-and-currency": "Número e moeda",
+        "percent": "Por cento",
+        "scientific": "Científico",
+        "select-date": "Selecione a data",
+        "time-format": "Formato de tempo",
+        "time-full": "Tempo (cheio)",
+        "time-long": "Tempo (longo)",
+        "time-medium": "Tempo (médio)",
+        "time-short": "Tempo (curto)"
+      },
+      "internationalization-description": "Contém exemplos dos recursos de internacionalização disponíveis no aplicativo",
+      "theming": {
+        "app-theme-colors": "Cores do tema do aplicativo",
+        "brand": "Marca",
+        "configure-theme-colors": "Configure as cores do tema",
+        "css-variables": "Variáveis ​​CSS",
+        "flowbite-theme-colors": "Flowbite Cores do tema padrão",
+        "primary-text": "texto primário",
+        "reset-colors": "Redefinir cores",
+        "secondary-text": "texto secundário",
+        "status": "Status",
+        "tertiary-text": "texto terciário",
+        "text": "Texto",
+        "theme-preview": "Visualização do tema",
+        "toggle-theme": "Tema de alternância"
+      },
+      "theming-description": "Demonstra os padrões de tema no nível do aplicativo e os recursos do aplicativo",
+      "typography": {
+        "example": "Exemplo",
+        "heading-1": "Cabeçalho 1",
+        "heading-2": "Titular 2",
+        "heading-3": "Título 3",
+        "heading-4": "Cabeçalho 4",
+        "heading-5": "Titular 5",
+        "heading-6": "CIDADE 6",
+        "monospace": "Monospácia",
+        "paragraph": "Parágrafo",
+        "small": "Pequeno",
+        "span": "Span"
+      },
+      "typography-description": "Demonstra as diferentes opções de tipografia disponíveis no aplicativo",
+      "wcag-accessibility": {
+        "background-color": "Cor de fundo",
+        "example-text": "Exemplo de texto",
+        "required-contrast-ratio": "Taxa de contraste necessária:> 4,5",
+        "text-color": "Cor de texto"
+      },
+      "wcag-accessibility-description": "Demonstra os recursos de acessibilidade do WCAG disponíveis no aplicativo. \nÊnfase considerável é colocada na conformidade do WCAG 2.1 AA, especialmente no contexto de contraste de cores"
     }
+  },
+  "page-title": {
+    "components": "Componentes",
+    "database": "Banco de dados",
+    "debugging": "Depuração",
+    "home": "Lar",
+    "internationalization": "I18N: Internacionalização",
+    "sandbox": "Sandbox",
+    "theming": "Temas",
+    "typography": "Tipografia",
+    "wcag-accessibility": "Acessibilidade do WCAG 2.1"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "Lar"
   }
 }

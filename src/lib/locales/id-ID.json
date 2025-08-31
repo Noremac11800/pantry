@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "Reset ke default",
+      "select-language": "Pilih bahasa"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "Pergi ke Sandbox"
+      "sandbox": "Pergi ke Sandbox",
+      "welcome": "Selamat datang di Tauriflow!"
     },
     "sandbox": {
+      "components-description": "Koleksi komponen, gaya, dan kelas yang diimplementasikan secara default untuk kenyamanan, berdasarkan langsing flowbite. \nKomponen dan gaya apa pun dapat dengan mudah diperluas atau diganti",
+      "database": {
+        "email": "E-mail",
+        "insert-new-user": "Masukkan pengguna baru",
+        "insert-random-user": "Masukkan pengguna acak",
+        "name": "Nama",
+        "refresh": "Menyegarkan",
+        "time-created": "Waktu dibuat",
+        "time-since-last-update": "Waktu sejak pembaruan terakhir"
+      },
+      "database-description": "Berisi contoh menggunakan plugin Tauri 2.0 SQL untuk berinteraksi dengan database SQLite lokal",
+      "debugging": {
+        "clear-logs": "Log Hapus",
+        "logs": "Log",
+        "system-info": "Info sistem"
+      },
+      "debugging-description": "Berisi informasi debugging dan contoh menggunakan plugin log tauri 2.0",
       "i18n": {
-        "button-pressed-count": "Tombol ditekan {count} kali"
-      }
+        "button-pressed-count": "Tombol ditekan {count} kali",
+        "currency": "Mata uang",
+        "current-language": "Bahasa saat ini ({locale})",
+        "date-format": "Format tanggal",
+        "date-full": "Tanggal (Lengkap)",
+        "date-long": "Tanggal (panjang)",
+        "date-medium": "Tanggal (sedang)",
+        "date-short": "Tanggal (pendek)",
+        "date-time": "Tanggal dan waktu",
+        "dynamic-strings": "Terjemahan dinamis dengan interpolasi string",
+        "engineering": "Rekayasa",
+        "number": "Nomor",
+        "number-and-currency": "Nomor dan mata uang",
+        "percent": "Persen",
+        "scientific": "Ilmiah",
+        "select-date": "Pilih Tanggal",
+        "time-format": "Format Waktu",
+        "time-full": "Waktu (penuh)",
+        "time-long": "Waktu (panjang)",
+        "time-medium": "Waktu (sedang)",
+        "time-short": "Waktu (pendek)"
+      },
+      "internationalization-description": "Berisi contoh fitur internasionalisasi yang tersedia dalam aplikasi",
+      "theming": {
+        "app-theme-colors": "Warna tema aplikasi",
+        "brand": "Merek",
+        "configure-theme-colors": "Konfigurasikan warna tema",
+        "css-variables": "Variabel CSS",
+        "flowbite-theme-colors": "Warna tema default flowbite",
+        "primary-text": "teks utama",
+        "reset-colors": "Setel ulang warna",
+        "secondary-text": "teks sekunder",
+        "status": "Status",
+        "tertiary-text": "teks tersier",
+        "text": "Teks",
+        "theme-preview": "Pratinjau tema",
+        "toggle-theme": "Tema tema"
+      },
+      "theming-description": "Menunjukkan default dan kemampuan tema level aplikasi aplikasi",
+      "typography": {
+        "example": "Contoh",
+        "heading-1": "Menuju 1",
+        "heading-2": "Menuju 2",
+        "heading-3": "Menuju 3",
+        "heading-4": "Menuju 4",
+        "heading-5": "Menuju 5",
+        "heading-6": "Menuju 6",
+        "monospace": "Monospace",
+        "paragraph": "Ayat",
+        "small": "Kecil",
+        "span": "Menjangkau"
+      },
+      "typography-description": "Menunjukkan berbagai opsi tipografi yang tersedia dalam aplikasi",
+      "wcag-accessibility": {
+        "background-color": "Warna latar belakang",
+        "example-text": "Contoh teks",
+        "required-contrast-ratio": "rasio kontras yang diperlukan:> 4.5",
+        "text-color": "Warna teks"
+      },
+      "wcag-accessibility-description": "Menunjukkan fitur aksesibilitas WCAG yang tersedia dalam aplikasi. \nPenekanan yang cukup besar ditempatkan pada kepatuhan WCAG 2.1 AA, terutama dalam konteks kontras warna"
     }
+  },
+  "page-title": {
+    "components": "Komponen",
+    "database": "Database",
+    "debugging": "Debugging",
+    "home": "Rumah",
+    "internationalization": "I18n: Internasionalisasi",
+    "sandbox": "Bak pasir",
+    "theming": "Tema",
+    "typography": "Tipografi",
+    "wcag-accessibility": "Aksesibilitas WCAG 2.1"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "Rumah"
   }
 }

@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "वितथ पर ले जाएं",
+      "select-language": "भाषा चुने"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "सैंडबॉक्स पर जाएं"
+      "sandbox": "सैंडबॉक्स पर जाएं",
+      "welcome": "Tauriflow में आपका स्वागत है!"
     },
     "sandbox": {
+      "components-description": "फ्लोबाइट सवेल के आधार पर, सुविधा के लिए डिफ़ॉल्ट रूप से कार्यान्वित घटकों, शैलियों और कक्षाओं का एक संग्रह। \nकिसी भी घटक और शैलियों को आसानी से बढ़ाया जा सकता है या प्रतिस्थापित किया जा सकता है",
+      "database": {
+        "email": "ईमेल",
+        "insert-new-user": "नया उपयोगकर्ता डालें",
+        "insert-random-user": "यादृच्छिक उपयोगकर्ता डालें",
+        "name": "नाम",
+        "refresh": "ताज़ा करना",
+        "time-created": "समय बनाया गया",
+        "time-since-last-update": "अंतिम अद्यतन के बाद से समय"
+      },
+      "database-description": "स्थानीय SQLite डेटाबेस के साथ बातचीत करने के लिए Tauri 2.0 SQL प्लगइन का उपयोग करने के उदाहरण शामिल हैं",
+      "debugging": {
+        "clear-logs": "स्पष्ट लॉग",
+        "logs": "लॉग्स",
+        "system-info": "व्यवस्था की सूचना"
+      },
+      "debugging-description": "Debugging जानकारी और Tauri 2.0 लॉग प्लगइन का उपयोग करने के उदाहरण शामिल हैं",
       "i18n": {
-        "button-pressed-count": "बटन दबाया {count} बार"
-      }
+        "button-pressed-count": "बटन दबाया {count} बार",
+        "currency": "मुद्रा",
+        "current-language": "वर्तमान भाषा ({लोकेल})",
+        "date-format": "तारिख का प्रारूप",
+        "date-full": "दिनांक (पूर्ण)",
+        "date-long": "दिनांक (लंबी)",
+        "date-medium": "दिनांक (मध्यम)",
+        "date-short": "दिनांक (छोटा)",
+        "date-time": "तिथि और समय",
+        "dynamic-strings": "स्ट्रिंग प्रक्षेप के साथ गतिशील अनुवाद",
+        "engineering": "अभियांत्रिकी",
+        "number": "संख्या",
+        "number-and-currency": "संख्या और मुद्रा",
+        "percent": "प्रतिशत",
+        "scientific": "वैज्ञानिक",
+        "select-date": "तारीख़ चुनें",
+        "time-format": "समय स्वरूप",
+        "time-full": "समय (पूर्ण)",
+        "time-long": "समय (लंबा)",
+        "time-medium": "समय (मध्यम)",
+        "time-short": "समय (छोटा)"
+      },
+      "internationalization-description": "आवेदन में उपलब्ध अंतर्राष्ट्रीयकरण सुविधाओं के उदाहरण शामिल हैं",
+      "theming": {
+        "app-theme-colors": "अनुप्रयोग थीम रंग",
+        "brand": "ब्रांड",
+        "configure-theme-colors": "थीम रंगों को कॉन्फ़िगर करें",
+        "css-variables": "सीएसएस चर",
+        "flowbite-theme-colors": "फ्लोबाइट डिफ़ॉल्ट थीम रंग",
+        "primary-text": "प्राथमिक पाठ",
+        "reset-colors": "रंग रीसेट करें",
+        "secondary-text": "द्वितीयक पाठ",
+        "status": "स्थिति",
+        "tertiary-text": "तृतीयक पाठ",
+        "text": "मूलपाठ",
+        "theme-preview": "थीम पूर्वावलोकन",
+        "toggle-theme": "टॉगल थीम"
+      },
+      "theming-description": "एप्लिकेशन की ऐप-लेवल थीमिंग डिफॉल्ट्स और क्षमताओं को प्रदर्शित करता है",
+      "typography": {
+        "example": "उदाहरण",
+        "heading-1": "शीर्षक 1",
+        "heading-2": "शीर्षक 2",
+        "heading-3": "शीर्षक 3",
+        "heading-4": "शीर्षक 4",
+        "heading-5": "शीर्षक ५",
+        "heading-6": "शीर्षक 6",
+        "monospace": "एकलस्पेस",
+        "paragraph": "अनुच्छेद",
+        "small": "छोटा",
+        "span": "अवधि"
+      },
+      "typography-description": "एप्लिकेशन में उपलब्ध विभिन्न टाइपोग्राफी विकल्पों को प्रदर्शित करता है",
+      "wcag-accessibility": {
+        "background-color": "पृष्ठभूमि का रंग",
+        "example-text": "उदाहरण पाठ",
+        "required-contrast-ratio": "आवश्यक विपरीत अनुपात:> 4.5",
+        "text-color": "पाठ का रंग"
+      },
+      "wcag-accessibility-description": "एप्लिकेशन में उपलब्ध WCAG एक्सेसिबिलिटी सुविधाओं को प्रदर्शित करता है। \nWCAG 2.1 AA अनुपालन पर बहुत जोर दिया जाता है, विशेष रूप से रंग कंट्रास्ट के संदर्भ में"
     }
+  },
+  "page-title": {
+    "components": "अवयव",
+    "database": "डेटाबेस",
+    "debugging": "डिबगिंग",
+    "home": "घर",
+    "internationalization": "I18N: अंतर्राष्ट्रीयकरण",
+    "sandbox": "सैंडबॉक्स",
+    "theming": "थीम",
+    "typography": "टाइपोग्राफी",
+    "wcag-accessibility": "WCAG 2.1 एक्सेसिबिलिटी"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "घर"
   }
 }

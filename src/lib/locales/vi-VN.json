@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "Đặt lại về mặc định",
+      "select-language": "Chọn ngôn ngữ"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "Đi đến hộp cát"
+      "sandbox": "Đi đến hộp cát",
+      "welcome": "Chào mừng bạn đến với Tauriflow!"
     },
     "sandbox": {
+      "components-description": "Một bộ sưu tập các thành phần, kiểu dáng và các lớp được thực hiện theo mặc định để thuận tiện, dựa trên Flowbite Svelte. \nBất kỳ thành phần và kiểu dáng nào cũng có thể dễ dàng mở rộng hoặc thay thế",
+      "database": {
+        "email": "E-mail",
+        "insert-new-user": "Chèn người dùng mới",
+        "insert-random-user": "Chèn người dùng ngẫu nhiên",
+        "name": "Tên",
+        "refresh": "Làm cho khỏe lại",
+        "time-created": "Thời gian được tạo ra",
+        "time-since-last-update": "Thời gian kể từ lần cập nhật lần cuối"
+      },
+      "database-description": "Chứa các ví dụ về việc sử dụng plugin Tauri 2.0 SQL để tương tác với cơ sở dữ liệu SQLite cục bộ",
+      "debugging": {
+        "clear-logs": "Xóa nhật ký",
+        "logs": "Nhật ký",
+        "system-info": "Thông tin hệ thống"
+      },
+      "debugging-description": "Chứa thông tin gỡ lỗi và các ví dụ về việc sử dụng plugin đăng nhập Tauri 2.0",
       "i18n": {
-        "button-pressed-count": "Nhấn nút {count} lần"
-      }
+        "button-pressed-count": "Nhấn nút {count} lần",
+        "currency": "Tiền tệ",
+        "current-language": "Ngôn ngữ hiện tại ({locale})",
+        "date-format": "Định dạng ngày",
+        "date-full": "Ngày (đầy đủ)",
+        "date-long": "Ngày (dài)",
+        "date-medium": "Ngày (trung bình)",
+        "date-short": "Ngày (ngắn)",
+        "date-time": "Ngày và thời gian",
+        "dynamic-strings": "Các bản dịch động với phép nội suy chuỗi",
+        "engineering": "Kỹ thuật",
+        "number": "Con số",
+        "number-and-currency": "Số lượng và tiền tệ",
+        "percent": "Phần trăm",
+        "scientific": "Có tính khoa học",
+        "select-date": "Chọn ngày",
+        "time-format": "Định dạng thời gian",
+        "time-full": "Thời gian (đầy đủ)",
+        "time-long": "Thời gian (dài)",
+        "time-medium": "Thời gian (trung bình)",
+        "time-short": "Thời gian (ngắn)"
+      },
+      "internationalization-description": "Chứa các ví dụ về các tính năng quốc tế hóa có sẵn trong ứng dụng",
+      "theming": {
+        "app-theme-colors": "Màu sắc chủ đề ứng dụng",
+        "brand": "Thương hiệu",
+        "configure-theme-colors": "Cấu hình màu chủ đề",
+        "css-variables": "Biến CSS",
+        "flowbite-theme-colors": "Flowbite mặc định màu chủ đề",
+        "primary-text": "văn bản chính",
+        "reset-colors": "Đặt lại màu sắc",
+        "secondary-text": "văn bản thứ cấp",
+        "status": "Trạng thái",
+        "tertiary-text": "văn bản cấp ba",
+        "text": "Chữ",
+        "theme-preview": "Xem trước chủ đề",
+        "toggle-theme": "Chuyển đổi chủ đề"
+      },
+      "theming-description": "Thể hiện các mặc định và khả năng mặc định theo chủ đề cấp ứng dụng của ứng dụng",
+      "typography": {
+        "example": "Ví dụ",
+        "heading-1": "Đứng đầu 1",
+        "heading-2": "Đứng đầu 2",
+        "heading-3": "Đứng đầu 3",
+        "heading-4": "Đứng đầu 4",
+        "heading-5": "Đứng đầu 5",
+        "heading-6": "Đứng đầu 6",
+        "monospace": "Không gian đơn",
+        "paragraph": "Đoạn văn",
+        "small": "Bé nhỏ",
+        "span": "Nhịp"
+      },
+      "typography-description": "Thể hiện các tùy chọn kiểu chữ khác nhau có sẵn trong ứng dụng",
+      "wcag-accessibility": {
+        "background-color": "Màu nền",
+        "example-text": "Ví dụ văn bản",
+        "required-contrast-ratio": "Tỷ lệ tương phản bắt buộc:> 4,5",
+        "text-color": "Màu văn bản"
+      },
+      "wcag-accessibility-description": "Thể hiện các tính năng truy cập WCAG có sẵn trong ứng dụng. \nSự nhấn mạnh đáng kể được đặt vào sự tuân thủ WCAG 2.1 AA, đặc biệt là trong bối cảnh tương phản màu sắc"
     }
+  },
+  "page-title": {
+    "components": "Các thành phần",
+    "database": "Cơ sở dữ liệu",
+    "debugging": "Gỡ lỗi",
+    "home": "Trang chủ",
+    "internationalization": "I18N: Quốc tế hóa",
+    "sandbox": "Hộp cát",
+    "theming": "Theo chủ đề",
+    "typography": "Kiểu chữ",
+    "wcag-accessibility": "Khả năng truy cập WCAG 2.1"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "Trang chủ"
   }
 }

@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "پہلے سے طے شدہ پر دوبارہ ترتیب دیں",
+      "select-language": "زبان منتخب کریں"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "سینڈ باکس پر جائیں"
+      "sandbox": "سینڈ باکس پر جائیں",
+      "welcome": "توریفلو میں خوش آمدید!"
     },
     "sandbox": {
+      "components-description": "فلو بائٹ سویلٹ پر مبنی ، سہولت کے لئے ڈیفالٹ کے ذریعہ نافذ کردہ اجزاء ، شیلیوں اور کلاسوں کا ایک مجموعہ۔ \nکسی بھی اجزاء اور شیلیوں کو آسانی سے بڑھا یا تبدیل کیا جاسکتا ہے",
+      "database": {
+        "email": "ای میل",
+        "insert-new-user": "نیا صارف داخل کریں",
+        "insert-random-user": "بے ترتیب صارف داخل کریں",
+        "name": "نام",
+        "refresh": "ریفریش",
+        "time-created": "وقت پیدا ہوا",
+        "time-since-last-update": "آخری تازہ کاری کے بعد کا وقت"
+      },
+      "database-description": "مقامی SQLITE ڈیٹا بیس کے ساتھ بات چیت کرنے کے لئے توری 2.0 ایس کیو ایل پلگ ان کے استعمال کی مثالوں پر مشتمل ہے۔",
+      "debugging": {
+        "clear-logs": "واضح نوشتہ جات",
+        "logs": "نوشتہ جات",
+        "system-info": "سسٹم کی معلومات"
+      },
+      "debugging-description": "ڈیبگنگ کی معلومات اور توری 2.0 لاگ ان پلگ ان کے استعمال کی مثالوں پر مشتمل ہے",
       "i18n": {
-        "button-pressed-count": "بٹن دبائے {count} اوقات"
-      }
+        "button-pressed-count": "بٹن دبائے {count} اوقات",
+        "currency": "کرنسی",
+        "current-language": "موجودہ زبان ({لوکل})",
+        "date-format": "تاریخ کی شکل",
+        "date-full": "تاریخ (مکمل)",
+        "date-long": "تاریخ (لمبی)",
+        "date-medium": "تاریخ (میڈیم)",
+        "date-short": "تاریخ (مختصر)",
+        "date-time": "تاریخ اور وقت",
+        "dynamic-strings": "سٹرنگ انٹرپولیشن کے ساتھ متحرک ترجمے",
+        "engineering": "انجینئرنگ",
+        "number": "نمبر",
+        "number-and-currency": "نمبر اور کرنسی",
+        "percent": "فیصد",
+        "scientific": "سائنسی",
+        "select-date": "تاریخ منتخب کریں",
+        "time-format": "وقت کی شکل",
+        "time-full": "وقت (مکمل)",
+        "time-long": "وقت (لمبا)",
+        "time-medium": "وقت (میڈیم)",
+        "time-short": "وقت (مختصر)"
+      },
+      "internationalization-description": "درخواست میں دستیاب بین الاقوامی خصوصیات کی مثالوں پر مشتمل ہے",
+      "theming": {
+        "app-theme-colors": "ایپلی کیشن تھیم رنگ",
+        "brand": "برانڈ",
+        "configure-theme-colors": "تھیم رنگوں کو تشکیل دیں",
+        "css-variables": "سی ایس ایس متغیرات",
+        "flowbite-theme-colors": "فلو بائٹ ڈیفالٹ تھیم رنگ",
+        "primary-text": "بنیادی متن",
+        "reset-colors": "رنگوں کو دوبارہ ترتیب دیں",
+        "secondary-text": "ثانوی متن",
+        "status": "حیثیت",
+        "tertiary-text": "ترتیری متن",
+        "text": "متن",
+        "theme-preview": "تھیم پیش نظارہ",
+        "toggle-theme": "ٹوگل تھیم"
+      },
+      "theming-description": "ایپلی کیشن کی ایپ لیول تھیمنگ ڈیفالٹس اور درخواست کی صلاحیتوں کا مظاہرہ کرتا ہے",
+      "typography": {
+        "example": "مثال",
+        "heading-1": "سرخی 1",
+        "heading-2": "سرخی 2",
+        "heading-3": "3",
+        "heading-4": "ہیڈنگ 4",
+        "heading-5": "سرخی 5",
+        "heading-6": "سرخی 6",
+        "monospace": "مونو اسپیس",
+        "paragraph": "پیراگراف",
+        "small": "چھوٹا",
+        "span": "اسپین"
+      },
+      "typography-description": "درخواست میں دستیاب ٹائپوگرافی کے مختلف اختیارات کا مظاہرہ کرتا ہے",
+      "wcag-accessibility": {
+        "background-color": "پس منظر کا رنگ",
+        "example-text": "مثال کے طور پر متن",
+        "required-contrast-ratio": "مطلوبہ برعکس تناسب:> 4.5",
+        "text-color": "متن کا رنگ"
+      },
+      "wcag-accessibility-description": "ایپلی کیشن میں دستیاب WCAG قابل رسائی خصوصیات کا مظاہرہ کرتا ہے۔ \nڈبلیو سی اے جی 2.1 اے اے کی تعمیل پر خاص طور پر رنگ کے برعکس کے تناظر میں کافی زور دیا گیا ہے"
     }
+  },
+  "page-title": {
+    "components": "اجزاء",
+    "database": "ڈیٹا بیس",
+    "debugging": "ڈیبگنگ",
+    "home": "گھر",
+    "internationalization": "I18N: عالمگیریت",
+    "sandbox": "سینڈ باکس",
+    "theming": "تھیمنگ",
+    "typography": "نوع ٹائپ",
+    "wcag-accessibility": "WCAG 2.1 قابل رسائی"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "گھر"
   }
 }

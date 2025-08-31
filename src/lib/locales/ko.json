@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "기본값으로 재설정하십시오",
+      "select-language": "언어를 선택하십시오"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "샌드 박스로 이동하십시오"
+      "sandbox": "샌드 박스로 이동하십시오",
+      "welcome": "Tauriflow에 오신 것을 환영합니다!"
     },
     "sandbox": {
+      "components-description": "FlowBite Svelte를 기반으로 편의를 위해 기본적으로 구현 된 구성 요소, 스타일 및 클래스 모음. \n모든 구성 요소와 스타일을 쉽게 확장하거나 교체 할 수 있습니다.",
+      "database": {
+        "email": "이메일",
+        "insert-new-user": "새 사용자를 삽입하십시오",
+        "insert-random-user": "임의의 사용자를 삽입하십시오",
+        "name": "이름",
+        "refresh": "새로 고치다",
+        "time-created": "생성 된 시간",
+        "time-since-last-update": "마지막 업데이트 이후 시간"
+      },
+      "database-description": "로컬 SQLITE 데이터베이스와 상호 작용하기 위해 Tauri 2.0 SQL 플러그인 사용의 예가 포함되어 있습니다.",
+      "debugging": {
+        "clear-logs": "명확한 로그",
+        "logs": "로그",
+        "system-info": "시스템 정보"
+      },
+      "debugging-description": "디버깅 정보 및 Tauri 2.0 로그 플러그인 사용의 예가 포함",
       "i18n": {
-        "button-pressed-count": "{count} times를 누르면 버튼을 누릅니다"
-      }
+        "button-pressed-count": "{count} times를 누르면 버튼을 누릅니다",
+        "currency": "통화",
+        "current-language": "현재 언어 ({locale})",
+        "date-format": "날짜 형식",
+        "date-full": "날짜 (전체)",
+        "date-long": "날짜 (긴)",
+        "date-medium": "날짜 (중간)",
+        "date-short": "날짜 (짧은)",
+        "date-time": "날짜와 시간",
+        "dynamic-strings": "문자열 보간이있는 동적 번역",
+        "engineering": "공학",
+        "number": "숫자",
+        "number-and-currency": "수와 통화",
+        "percent": "퍼센트",
+        "scientific": "과학",
+        "select-date": "날짜를 선택하십시오",
+        "time-format": "시간 형식",
+        "time-full": "시간 (전체)",
+        "time-long": "시간 (Long)",
+        "time-medium": "시간 (중간)",
+        "time-short": "시간 (짧은)"
+      },
+      "internationalization-description": "응용 프로그램에서 이용할 수있는 국제화 기능의 예가 포함",
+      "theming": {
+        "app-theme-colors": "응용 프로그램 테마 색상",
+        "brand": "상표",
+        "configure-theme-colors": "테마 색상을 구성합니다",
+        "css-variables": "CSS 변수",
+        "flowbite-theme-colors": "FlowBite 기본 테마 색상",
+        "primary-text": "기본 텍스트",
+        "reset-colors": "색상을 재설정하십시오",
+        "secondary-text": "보조 텍스트",
+        "status": "상태",
+        "tertiary-text": "3 차 텍스트",
+        "text": "텍스트",
+        "theme-preview": "테마 미리보기",
+        "toggle-theme": "테마 토글"
+      },
+      "theming-description": "응용 프로그램의 앱 레벨 테마 기본값 및 기능을 보여줍니다.",
+      "typography": {
+        "example": "예",
+        "heading-1": "제목 1",
+        "heading-2": "제목 2",
+        "heading-3": "제목 3",
+        "heading-4": "제목 4",
+        "heading-5": "제목 5",
+        "heading-6": "제목 6",
+        "monospace": "모노 스페이스",
+        "paragraph": "절",
+        "small": "작은",
+        "span": "기간"
+      },
+      "typography-description": "응용 프로그램에서 사용 가능한 다양한 타이포그래피 옵션을 보여줍니다",
+      "wcag-accessibility": {
+        "background-color": "배경색",
+        "example-text": "예제 텍스트",
+        "required-contrast-ratio": "필요한 대비 비율 :> 4.5",
+        "text-color": "텍스트 색상"
+      },
+      "wcag-accessibility-description": "응용 프로그램에서 사용 가능한 WCAG 접근성 기능을 보여줍니다. \n특히 색상 대비의 맥락에서 WCAG 2.1 AA 준수에 상당한 강조가 있습니다."
     }
+  },
+  "page-title": {
+    "components": "구성 요소",
+    "database": "데이터 베이스",
+    "debugging": "디버깅",
+    "home": "집",
+    "internationalization": "I18N : 국제화",
+    "sandbox": "모래 상자",
+    "theming": "테마",
+    "typography": "타이포그래피",
+    "wcag-accessibility": "WCAG 2.1 접근성"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "집"
   }
 }

@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "Varsayılan olarak sıfırlayın",
+      "select-language": "Dili seçin"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "Sandbox'a git"
+      "sandbox": "Sandbox'a git",
+      "welcome": "Tauriflow'a hoş geldiniz!"
     },
     "sandbox": {
+      "components-description": "Flowbite Svelte'ye dayanan kolaylık sağlamak için varsayılan olarak uygulanan bileşenler, stiller ve sınıflardan oluşan bir koleksiyon. \nHerhangi bir bileşen ve stil kolayca genişletilebilir veya değiştirilebilir",
+      "database": {
+        "email": "E -posta",
+        "insert-new-user": "Yeni Kullanıcı Ekle",
+        "insert-random-user": "Rastgele Kullanıcı Ekle",
+        "name": "İsim",
+        "refresh": "Yenilemek",
+        "time-created": "Zaman yaratıldı",
+        "time-since-last-update": "Son güncellemeden bu yana zaman"
+      },
+      "database-description": "Yerel bir SQLite veritabanı ile etkileşim kurmak için Tauri 2.0 SQL eklentisini kullanma örnekleri içerir",
+      "debugging": {
+        "clear-logs": "Net Günlükler",
+        "logs": "Kütükler",
+        "system-info": "Sistem bilgisi"
+      },
+      "debugging-description": "Hata ayıklama bilgileri ve Tauri 2.0 günlük eklentisini kullanmanın örneklerini içerir",
       "i18n": {
-        "button-pressed-count": "Düğmeye basıldı {count} kez"
-      }
+        "button-pressed-count": "Düğmeye basıldı {count} kez",
+        "currency": "Para birimi",
+        "current-language": "Mevcut Dil ({locale})",
+        "date-format": "Tarih biçimi",
+        "date-full": "Tarih (tam)",
+        "date-long": "Tarih (Uzun)",
+        "date-medium": "Tarih (Orta)",
+        "date-short": "Tarih (kısa)",
+        "date-time": "Tarih ve saat",
+        "dynamic-strings": "Dize enterpolasyonu ile dinamik çeviriler",
+        "engineering": "Mühendislik",
+        "number": "Sayı",
+        "number-and-currency": "Sayı ve para birimi",
+        "percent": "Yüzde",
+        "scientific": "İlmi",
+        "select-date": "Tarih'i seçin",
+        "time-format": "Zaman biçimi",
+        "time-full": "Zaman (tam)",
+        "time-long": "Zaman (uzun)",
+        "time-medium": "Zaman (Orta)",
+        "time-short": "Zaman (kısa)"
+      },
+      "internationalization-description": "Uygulamada bulunan uluslararasılaşma özelliklerinin örneklerini içerir",
+      "theming": {
+        "app-theme-colors": "Uygulama Tema Renkleri",
+        "brand": "Marka",
+        "configure-theme-colors": "Tema renklerini yapılandırın",
+        "css-variables": "CSS değişkenleri",
+        "flowbite-theme-colors": "Flowbite varsayılan tema renkleri",
+        "primary-text": "birincil metin",
+        "reset-colors": "Renkleri Sıfırla",
+        "secondary-text": "ikincil metin",
+        "status": "Durum",
+        "tertiary-text": "üçüncül metin",
+        "text": "Metin",
+        "theme-preview": "Tema Önizleme",
+        "toggle-theme": "Toggle teması"
+      },
+      "theming-description": "Uygulamanın uygulama düzeyinde tema varsayılanlarını ve özelliklerini gösterir",
+      "typography": {
+        "example": "Örnek",
+        "heading-1": "Başlık 1",
+        "heading-2": "Başlık 2",
+        "heading-3": "Başlık 3",
+        "heading-4": "Başlık 4",
+        "heading-5": "Başlık 5",
+        "heading-6": "6.",
+        "monospace": "Manastırlı",
+        "paragraph": "Paragraf",
+        "small": "Küçük",
+        "span": "Aralık"
+      },
+      "typography-description": "Uygulamada bulunan farklı tipografi seçeneklerini gösterir",
+      "wcag-accessibility": {
+        "background-color": "Arka plan rengi",
+        "example-text": "Örnek metin",
+        "required-contrast-ratio": "Gerekli kontrast oranı:> 4.5",
+        "text-color": "Metin rengi"
+      },
+      "wcag-accessibility-description": "Uygulamada bulunan WCAG erişilebilirlik özelliklerini gösterir. \nWCAG 2.1 AA uyumluluğuna, özellikle renk kontrastı bağlamında önemli bir vurgu yapılır"
     }
+  },
+  "page-title": {
+    "components": "Bileşenler",
+    "database": "Veritabanı",
+    "debugging": "Hata ayıklama",
+    "home": "Ev",
+    "internationalization": "i18n: uluslararasılaşma",
+    "sandbox": "Kum havuzu",
+    "theming": "Temin",
+    "typography": "Tipografi",
+    "wcag-accessibility": "WCAG 2.1 Erişilebilirlik"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "Ev"
   }
 }

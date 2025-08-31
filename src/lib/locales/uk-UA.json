@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "Скидання за замовчуванням",
+      "select-language": "Виберіть мову"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "Перейдіть до пісочниці"
+      "sandbox": "Перейдіть до пісочниці",
+      "welcome": "Ласкаво просимо до Таврифлоу!"
     },
     "sandbox": {
+      "components-description": "Колекція компонентів, стилів та класів, реалізованих за замовчуванням для зручності, заснована на блок -блокуванні. \nБудь -які компоненти та стилі можна легко продовжити або замінити",
+      "database": {
+        "email": "Електронна пошта",
+        "insert-new-user": "Вставте нового користувача",
+        "insert-random-user": "Вставте випадкового користувача",
+        "name": "Назва",
+        "refresh": "Оновлювати",
+        "time-created": "Створений час",
+        "time-since-last-update": "Час з останнього оновлення"
+      },
+      "database-description": "Містить приклади використання плагіна Tauri 2.0 SQL для взаємодії з локальною базою даних SQLite",
+      "debugging": {
+        "clear-logs": "Чіткі журнали",
+        "logs": "Журнали",
+        "system-info": "Інформація про систему"
+      },
+      "debugging-description": "Містить інформацію про налагодження та приклади використання плагіну Tauri 2.0",
       "i18n": {
-        "button-pressed-count": "Натискання кнопки {count} разів"
-      }
+        "button-pressed-count": "Натискання кнопки {count} разів",
+        "currency": "Валюта",
+        "current-language": "Поточна мова ({locale})",
+        "date-format": "Формат дати",
+        "date-full": "Дата (повна)",
+        "date-long": "Дата (довга)",
+        "date-medium": "Дата (середній)",
+        "date-short": "Дата (коротка)",
+        "date-time": "Дата та час",
+        "dynamic-strings": "Динамічні переклади з рядковою інтерполяцією",
+        "engineering": "Інженерний",
+        "number": "Число",
+        "number-and-currency": "Кількість та валюта",
+        "percent": "Відсоток",
+        "scientific": "Науковий",
+        "select-date": "Виберіть дату",
+        "time-format": "Формат часу",
+        "time-full": "Час (повний)",
+        "time-long": "Час (довгий)",
+        "time-medium": "Час (середній)",
+        "time-short": "Час (короткий)"
+      },
+      "internationalization-description": "Містить приклади функцій інтернаціоналізації, доступних у додатку",
+      "theming": {
+        "app-theme-colors": "Кольори теми застосування",
+        "brand": "Бренд",
+        "configure-theme-colors": "Налаштування кольорів теми",
+        "css-variables": "Змінні CSS",
+        "flowbite-theme-colors": "Кольори теми за замовчуванням за замовчуванням",
+        "primary-text": "первинний текст",
+        "reset-colors": "Скидання кольорів",
+        "secondary-text": "вторинний текст",
+        "status": "Статус",
+        "tertiary-text": "Третинний текст",
+        "text": "Текст",
+        "theme-preview": "Попередній перегляд теми",
+        "toggle-theme": "Тема перемикання"
+      },
+      "theming-description": "Демонструє тематичні програми та можливості програми",
+      "typography": {
+        "example": "Приклад",
+        "heading-1": "Заголовок 1",
+        "heading-2": "Заголовок 2",
+        "heading-3": "Заголовок 3",
+        "heading-4": "Заголовок 4",
+        "heading-5": "Заголовок 5",
+        "heading-6": "Заголовок 6",
+        "monospace": "Моноспір",
+        "paragraph": "Абзац",
+        "small": "Невеликий",
+        "span": "Проводити"
+      },
+      "typography-description": "Демонструє різні варіанти типографії, доступні в додатку",
+      "wcag-accessibility": {
+        "background-color": "Фоновий колір",
+        "example-text": "Приклад тексту",
+        "required-contrast-ratio": "Необхідне співвідношення контрасту:> 4,5",
+        "text-color": "Текстовий колір"
+      },
+      "wcag-accessibility-description": "Демонструє функції доступності WCAG, доступні в додатку. \nЗначний акцент робиться на відповідність WCAG 2.1 AA, особливо в контексті кольорового контрасту"
     }
+  },
+  "page-title": {
+    "components": "Компоненти",
+    "database": "База даних",
+    "debugging": "Налагодження",
+    "home": "Домашній",
+    "internationalization": "i18n: Інтернаціоналізація",
+    "sandbox": "Пісочниця",
+    "theming": "Тематика",
+    "typography": "Типографія",
+    "wcag-accessibility": "WCAG 2.1 доступність"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "Домашній"
   }
 }

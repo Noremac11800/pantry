@@ -1,19 +1,109 @@
 {
+  "component": {
+    "language-switcher": {
+      "reset-to-default": "Rudisha kwa chaguo -msingi",
+      "select-language": "Chagua lugha"
+    }
+  },
   "page": {
     "home": {
-      "sandbox": "Nenda kwa Sandbox"
+      "sandbox": "Nenda kwa Sandbox",
+      "welcome": "Karibu Tauriflow!"
     },
     "sandbox": {
+      "components-description": "Mkusanyiko wa vifaa, mitindo, na madarasa yanayotekelezwa na chaguo -msingi kwa urahisi, kulingana na Svelte ya Flowbite. \nVipengele na mitindo yoyote inaweza kupanuliwa kwa urahisi au kubadilishwa",
+      "database": {
+        "email": "Barua pepe",
+        "insert-new-user": "Ingiza mtumiaji mpya",
+        "insert-random-user": "Ingiza mtumiaji wa nasibu",
+        "name": "Jina",
+        "refresh": "Refresh",
+        "time-created": "Wakati umeundwa",
+        "time-since-last-update": "Wakati tangu sasisho la mwisho"
+      },
+      "database-description": "Inayo mifano ya kutumia programu -jalizi ya Tauri 2.0 SQL ili kuingiliana na hifadhidata ya SQLite ya ndani",
+      "debugging": {
+        "clear-logs": "Wazi magogo",
+        "logs": "Magogo",
+        "system-info": "Maelezo ya Mfumo"
+      },
+      "debugging-description": "Inayo habari ya kurekebisha na mifano ya kutumia programu -jalizi ya logi ya Tauri 2.0",
       "i18n": {
-        "button-pressed-count": "Kitufe cha kubonyeza {count} mara"
-      }
+        "button-pressed-count": "Kitufe cha kubonyeza {count} mara",
+        "currency": "Sarafu",
+        "current-language": "Lugha ya sasa ({locale})",
+        "date-format": "Muundo wa tarehe",
+        "date-full": "Tarehe (kamili)",
+        "date-long": "Tarehe (ndefu)",
+        "date-medium": "Tarehe (Kati)",
+        "date-short": "Tarehe (fupi)",
+        "date-time": "Tarehe na wakati",
+        "dynamic-strings": "Tafsiri za nguvu na tafsiri ya kamba",
+        "engineering": "Uhandisi",
+        "number": "Nambari",
+        "number-and-currency": "Nambari na sarafu",
+        "percent": "Asilimia",
+        "scientific": "Sayansi",
+        "select-date": "Chagua Tarehe",
+        "time-format": "Muundo wa wakati",
+        "time-full": "Wakati (kamili)",
+        "time-long": "Wakati (mrefu)",
+        "time-medium": "Wakati (kati)",
+        "time-short": "Wakati (mfupi)"
+      },
+      "internationalization-description": "Inayo mifano ya huduma za utandawazi zinazopatikana katika programu",
+      "theming": {
+        "app-theme-colors": "Rangi ya mandhari ya maombi",
+        "brand": "Chapa",
+        "configure-theme-colors": "Sanidi rangi ya mandhari",
+        "css-variables": "Viwango vya CSS",
+        "flowbite-theme-colors": "Flowbite chaguo -msingi rangi ya mandhari",
+        "primary-text": "Nakala ya msingi",
+        "reset-colors": "Rudisha rangi",
+        "secondary-text": "maandishi ya sekondari",
+        "status": "Hali",
+        "tertiary-text": "maandishi ya hali ya juu",
+        "text": "Maandishi",
+        "theme-preview": "Hakikisho la mandhari",
+        "toggle-theme": "Kubadilisha mandhari"
+      },
+      "theming-description": "Inaonyesha defaults za kiwango cha programu na uwezo wa programu",
+      "typography": {
+        "example": "Mfano",
+        "heading-1": "Kichwa 1",
+        "heading-2": "Kichwa 2",
+        "heading-3": "Kichwa 3",
+        "heading-4": "Kichwa 4",
+        "heading-5": "Kichwa 5",
+        "heading-6": "Kichwa 6",
+        "monospace": "Monospace",
+        "paragraph": "Aya",
+        "small": "Ndogo",
+        "span": "Urefu"
+      },
+      "typography-description": "Inaonyesha chaguzi tofauti za uchapaji zinazopatikana katika programu",
+      "wcag-accessibility": {
+        "background-color": "Rangi ya asili",
+        "example-text": "Nakala ya mfano",
+        "required-contrast-ratio": "Kiwango kinachohitajika cha kutofautisha:> 4.5",
+        "text-color": "Rangi ya maandishi"
+      },
+      "wcag-accessibility-description": "Inaonyesha huduma za ufikiaji wa WCAG zinazopatikana katika programu. \nMkazo mkubwa umewekwa kwenye kufuata WCAG 2.1 AA, haswa katika muktadha wa rangi tofauti"
     }
+  },
+  "page-title": {
+    "components": "Vifaa",
+    "database": "Hifadhidata",
+    "debugging": "Debugging",
+    "home": "Nyumbani",
+    "internationalization": "I18N: Utandawazi",
+    "sandbox": "Sandbox",
+    "theming": "Kuweka",
+    "typography": "Uchapaji",
+    "wcag-accessibility": "Ufikiaji wa WCAG 2.1"
   },
   "pageTitle": {},
   "sandbox": {
     "i18n": {}
-  },
-  "page-title": {
-    "home": "Nyumbani"
   }
 }
