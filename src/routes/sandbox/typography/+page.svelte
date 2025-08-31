@@ -55,5 +55,6 @@ if __name__ == "__main__":
   <br />
   <h2>{$t("page.sandbox.typography.monospace")}</h2>
   <pre
-    class="google-sans-mono bg-[var(--bg2)] border border-[var(--border2)] p-2 rounded">{code.trim()}</pre>
+    class="google-sans-mono bg-[var(--bg2)] border border-[var(--border2)] p-2 rounded"
+    dir="ltr">{code.trim()}</pre>
 </div>

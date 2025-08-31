@@ -496,7 +496,7 @@
     {#snippet header()}
       <h3>{$t("page.sandbox.theming.css-variables")}</h3>
     {/snippet}
-    <p class="text-[var(--text1)] font-mono">
+    <p class="text-[var(--text1)] font-mono" dir="ltr">
       --brand1: {brand1} <br />
       --brand2: {brand2} <br />
       --brand3: {brand3} <br />
