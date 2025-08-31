@@ -2,14 +2,17 @@
   "page": {
     "home": {
       "sandbox": "Đi đến hộp cát"
+    },
+    "sandbox": {
+      "i18n": {
+        "button-pressed-count": "Nhấn nút {count} lần"
+      }
     }
   },
   "pageTitle": {
     "home": "Trang chủ"
   },
   "sandbox": {
-    "i18n": {
-      "button-pressed-count": "Nhấn nút {count} lần"
-    }
+    "i18n": {}
   }
 }

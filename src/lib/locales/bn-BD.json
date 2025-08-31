@@ -2,14 +2,17 @@
   "page": {
     "home": {
       "sandbox": "স্যান্ডবক্সে যান"
+    },
+    "sandbox": {
+      "i18n": {
+        "button-pressed-count": "বোতাম টিপানো {count} বার"
+      }
     }
   },
   "pageTitle": {
     "home": "বাড়ি"
   },
   "sandbox": {
-    "i18n": {
-      "button-pressed-count": "বোতাম টিপানো {count} বার"
-    }
+    "i18n": {}
   }
 }

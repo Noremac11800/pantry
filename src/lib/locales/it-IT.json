@@ -2,14 +2,17 @@
   "page": {
     "home": {
       "sandbox": "Vai a Sandbox"
+    },
+    "sandbox": {
+      "i18n": {
+        "button-pressed-count": "Pulsante premuto {count} volte"
+      }
     }
   },
   "pageTitle": {
     "home": "Casa"
   },
   "sandbox": {
-    "i18n": {
-      "button-pressed-count": "Pulsante premuto {count} volte"
-    }
+    "i18n": {}
   }
 }

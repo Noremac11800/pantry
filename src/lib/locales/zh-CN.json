@@ -2,14 +2,17 @@
   "page": {
     "home": {
       "sandbox": "去沙箱"
+    },
+    "sandbox": {
+      "i18n": {
+        "button-pressed-count": "按钮按{count}时间"
+      }
     }
   },
   "pageTitle": {
     "home": "家"
   },
   "sandbox": {
-    "i18n": {
-      "button-pressed-count": "按钮按{count}时间"
-    }
+    "i18n": {}
   }
 }

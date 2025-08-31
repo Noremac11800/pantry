@@ -312,7 +312,7 @@
       class="brand-solid-button self-center"
       onclick={() => buttonPressedCount++}
     >
-      {$t("sandbox.i18n.button-pressed-count", {
+      {$t("page.sandbox.i18n.button-pressed-count", {
         values: { count: buttonPressedCount },
       })}
     </Button>

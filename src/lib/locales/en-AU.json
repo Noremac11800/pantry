@@ -1,13 +1,17 @@
 {
   "page": {
     "home": {
-      "sandbox": "Go to Sandbox"
+      "sandbox": "Go to Sandbox",
+      "welcome": "Welcome to TauriFlow!"
+    },
+    "sandbox": {
+      "i18n": {
+        "button-pressed-count": "Button pressed {count} times"
+      }
     }
   },
   "sandbox": {
-    "i18n": {
-      "button-pressed-count": "Button pressed {count} times"
-    }
+    "i18n": {}
   },
   "pageTitle": {
     "home": "Home"

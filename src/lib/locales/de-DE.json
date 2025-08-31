@@ -2,14 +2,17 @@
   "page": {
     "home": {
       "sandbox": "Gehen Sie zum Sandbox"
+    },
+    "sandbox": {
+      "i18n": {
+        "button-pressed-count": "Taste gedrückt {count} mal"
+      }
     }
   },
   "pageTitle": {
     "home": "Heim"
   },
   "sandbox": {
-    "i18n": {
-      "button-pressed-count": "Taste gedrückt {count} mal"
-    }
+    "i18n": {}
   }
 }

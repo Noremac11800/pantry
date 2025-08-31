@@ -2,14 +2,17 @@
   "page": {
     "home": {
       "sandbox": "به Sandbox بروید"
+    },
+    "sandbox": {
+      "i18n": {
+        "button-pressed-count": "دکمه فشار {تعداد بار را فشار دهید"
+      }
     }
   },
   "pageTitle": {
     "home": "خانه"
   },
   "sandbox": {
-    "i18n": {
-      "button-pressed-count": "دکمه فشار {تعداد بار را فشار دهید"
-    }
+    "i18n": {}
   }
 }

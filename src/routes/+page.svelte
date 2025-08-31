@@ -34,7 +34,7 @@
     class="w-48 h-48 self-center hover:scale-105 transition-transform duration-200 cursor-pointer"
   />
 
-  <h1 class="self-center">Welcome to TauriFlow!</h1>
+  <h1 class="self-center">{$t("page.home.welcome")}</h1>
 
   <Button class="brand-solid-button" onclick={() => goto("/sandbox")}>
     {$t("page.home.sandbox")}

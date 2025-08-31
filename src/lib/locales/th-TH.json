@@ -2,14 +2,17 @@
   "page": {
     "home": {
       "sandbox": "ไปที่ Sandbox"
+    },
+    "sandbox": {
+      "i18n": {
+        "button-pressed-count": "กดปุ่ม {count} ครั้ง"
+      }
     }
   },
   "pageTitle": {
     "home": "บ้าน"
   },
   "sandbox": {
-    "i18n": {
-      "button-pressed-count": "กดปุ่ม {count} ครั้ง"
-    }
+    "i18n": {}
   }
 }
