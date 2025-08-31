@@ -9,10 +9,11 @@
       }
     }
   },
-  "pageTitle": {
-    "home": "خانه"
-  },
+  "pageTitle": {},
   "sandbox": {
     "i18n": {}
+  },
+  "page-title": {
+    "home": "خانه"
   }
 }

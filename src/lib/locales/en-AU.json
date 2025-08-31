@@ -13,7 +13,8 @@
   "sandbox": {
     "i18n": {}
   },
-  "pageTitle": {
+  "pageTitle": {},
+  "page-title": {
     "home": "Home"
   }
 }

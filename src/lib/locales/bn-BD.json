@@ -9,10 +9,11 @@
       }
     }
   },
-  "pageTitle": {
-    "home": "বাড়ি"
-  },
+  "pageTitle": {},
   "sandbox": {
     "i18n": {}
+  },
+  "page-title": {
+    "home": "বাড়ি"
   }
 }

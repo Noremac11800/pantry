@@ -9,10 +9,11 @@
       }
     }
   },
-  "pageTitle": {
-    "home": "Trang chủ"
-  },
+  "pageTitle": {},
   "sandbox": {
     "i18n": {}
+  },
+  "page-title": {
+    "home": "Trang chủ"
   }
 }

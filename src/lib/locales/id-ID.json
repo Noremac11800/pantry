@@ -9,10 +9,11 @@
       }
     }
   },
-  "pageTitle": {
-    "home": "Rumah"
-  },
+  "pageTitle": {},
   "sandbox": {
     "i18n": {}
+  },
+  "page-title": {
+    "home": "Rumah"
   }
 }

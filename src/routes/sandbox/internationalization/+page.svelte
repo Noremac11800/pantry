@@ -33,7 +33,7 @@
 
 <Breadcrumb>
   <BreadcrumbItem home homeClass="text-lg" href="/"
-    >{$t("pageTitle.home")}</BreadcrumbItem
+    >{$t("page-title.home")}</BreadcrumbItem
   >
   <BreadcrumbItem linkClass="text-lg" href="/sandbox">Sandbox</BreadcrumbItem>
   <BreadcrumbItem spanClass="text-lg! text-[var(--text3)]! cursor-default!">

@@ -9,10 +9,11 @@
       }
     }
   },
-  "pageTitle": {
-    "home": "Lar"
-  },
+  "pageTitle": {},
   "sandbox": {
     "i18n": {}
+  },
+  "page-title": {
+    "home": "Lar"
   }
 }

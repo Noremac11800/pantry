@@ -9,10 +9,11 @@
       }
     }
   },
-  "pageTitle": {
-    "home": "Дом"
-  },
+  "pageTitle": {},
   "sandbox": {
     "i18n": {}
+  },
+  "page-title": {
+    "home": "Дом"
   }
 }
