@@ -39,6 +39,4 @@
   <Button class="brand-solid-button" onclick={() => goto("/sandbox")}>
     {$t("page.home.sandbox")}
   </Button>
-
-  <span>Create fancy background and bigger button for going to sandbox</span>
 </div>
