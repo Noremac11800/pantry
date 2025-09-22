@@ -194,31 +194,31 @@ small,
 /* Buttons */
 /* ============================================================== */
 .brand-solid-button {
-  @apply bg-[var(--brand1)] hover:bg-[var(--brand2)] active:bg-[var(--brand3)] text-[var(--text-invariant)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center shadow;
+  @apply bg-[var(--brand1)] hover:bg-[var(--brand2)] active:bg-[var(--brand3)] text-[var(--text-invariant)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center shadow disabled:opacity-70 disabled:cursor-default disabled:hover:bg-[var(--brand1)] disabled:active:bg-[var(--brand1)];
 }
 
 .brand-outline-button {
-  @apply border border-[var(--brand1)] hover:border-[var(--brand2)] active:border-[var(--brand3)] bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--brand1)] hover:text-[var(--brand2)] active:text-[var(--brand3)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center;
+  @apply border border-[var(--brand1)] hover:border-[var(--brand2)] active:border-[var(--brand3)] bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--brand1)] hover:text-[var(--brand2)] active:text-[var(--brand3)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center disabled:opacity-70 disabled:cursor-default disabled:hover:border-[var(--brand1)] disabled:active:border-[var(--brand1)] disabled:hover:text-[var(--brand1)] disabled:active:text-[var(--brand1)] disabled:hover:bg-transparent disabled:active:bg-transparent;
 }
 
 .brand-transparent-button {
-  @apply bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--brand1)] hover:text-[var(--brand2)] active:text-[var(--brand3)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center;
+  @apply bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--brand1)] hover:text-[var(--brand2)] active:text-[var(--brand3)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center disabled:opacity-70 disabled:cursor-default disabled:hover:bg-transparent disabled:active:bg-transparent disabled:hover:text-[var(--brand1)] disabled:active:text-[var(--brand1)];
 }
 
 .neutral-solid-button {
-  @apply bg-[var(--bg1)] hover:bg-[var(--bg2)] active:bg-[var(--bg3)] text-[var(--text1)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center;
+  @apply bg-[var(--bg1)] hover:bg-[var(--bg2)] active:bg-[var(--bg3)] text-[var(--text1)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center disabled:opacity-70 disabled:cursor-default disabled:hover:bg-[var(--bg1)] disabled:active:bg-[var(--bg1)];
 }
 
 .neutral-outline-button {
-  @apply border border-[var(--border1)] hover:border-[var(--border2)] active:border-[var(--border3)] bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--text1)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center;
+  @apply border border-[var(--border1)] hover:border-[var(--border2)] active:border-[var(--border3)] bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--text1)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center disabled:opacity-70 disabled:cursor-default disabled:hover:border-[var(--border1)] disabled:active:border-[var(--border1)] disabled:hover:text-[var(--text1)] disabled:active:text-[var(--text1)] disabled:hover:bg-transparent disabled:active:bg-transparent;
 }
 
 .neutral-transparent-button {
-  @apply bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--text1)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center;
+  @apply bg-transparent hover:bg-[var(--bg1)] active:bg-[var(--bg2)] text-[var(--text1)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center disabled:opacity-70 disabled:cursor-default disabled:hover:bg-transparent disabled:active:bg-transparent disabled:hover:text-[var(--text1)] disabled:active:text-[var(--text1)];
 }
 
 .status-danger-button {
-  @apply bg-transparent text-[var(--status-danger1)] hover:text-[var(--status-danger2)] active:text-[var(--status-danger3)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center;
+  @apply bg-transparent text-[var(--status-danger1)] hover:text-[var(--status-danger2)] active:text-[var(--status-danger3)] font-bold py-2 px-4 rounded transition-colors duration-100 cursor-pointer gap-2 flex items-center disabled:opacity-70 disabled:cursor-default disabled:hover:text-[var(--status-danger1)] disabled:active:text-[var(--status-danger1)];
 }
 /* ============================================================== */
 
