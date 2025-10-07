@@ -42,7 +42,7 @@
   }
 </script>
 
-<div>
+<div class="flex flex-col gap-2">
   <ul>
     {#each items as item}
       <li>
@@ -73,7 +73,7 @@
   {:else}
     <Button
       id="add-item-button"
-      class="brand-outline-button w-full h-8 mt-2"
+      class="brand-outline-button w-full h-8"
       onclick={() => {
         addItemPressed();
       }}
