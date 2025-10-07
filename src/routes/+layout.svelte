@@ -28,9 +28,6 @@
 {#if isLocaleReady && appSession.loaded}
   {#key $page.url.pathname}
     <main in:fly={{ duration: 500 }} class="overflow-auto">
-      <small class="text-center">
-        &copy; {new Date().getFullYear()} TauriFlow v{appSession.appVersion}
-      </small>
       {@render children()}
     </main>
   {/key}
