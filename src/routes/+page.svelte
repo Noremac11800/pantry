@@ -169,7 +169,10 @@
           <p>Delete items</p>
         </div>
         {#if deleteActive}
-          <Button class="status-danger-button h-6!" onclick={clearListPressed}>
+          <Button
+            class="status-danger-button h-6! px-0!"
+            onclick={clearListPressed}
+          >
             Clear entire list
             <SquareX />
           </Button>

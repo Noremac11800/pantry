@@ -1,4 +1,4 @@
-package com.cam.tauriflow
+package com.cam.pantry
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
