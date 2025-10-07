@@ -222,6 +222,10 @@ small,
 }
 /* ============================================================== */
 
+input {
+  @apply h-8 border border-[var(--border1)] rounded px-2 outline-none! ring-0! focus-visible:ring-0!;
+}
+
 a {
   @apply text-[var(--status-info1)] hover:text-[var(--status-info2)] active:text-[var(--status-info3)] cursor-pointer;
 }
